@@ -1,0 +1,86 @@
+nav a[href^="/"], a[href^="#section-2"], a[href^="#section-6"], a[href^="#section-11"], a[href^="#section-16"] {
+   
+}
+
+/*#course-toc ol#chapters li:nth-child(n+2):nth-child(-n+5)>a:before {
+   content: "\f126";
+   font-family: FontAwesome;
+   font-size: inherit;
+   color: gray;
+   margin-right: 1.1rem;
+}*/
+#course-toc ol#chapters {
+   list-style-type: none;
+}
+#course-toc ol#chapters li:nth-child(n+3):nth-child(-n+6)>a:before {
+   content: "";
+   display: inline-block;
+   width: 1.3em;
+   height: 1.3em;
+   margin-right: 8px;
+   background: url('https://image.flaticon.com/icons/png/512/603/603621.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   vertical-align: middle;
+   transition: 0.3s ease-in-out;
+}
+#course-toc ol#chapters li:nth-child(n+3):nth-child(-n+6)>a:hover:before {
+   content: "";
+   display: inline-block;
+   width: 1.3em;
+   height: 1.3em;
+   margin-right: 8px;
+   background: url('https://image.flaticon.com/icons/png/512/603/603519.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   vertical-align: middle;
+   transition: 0.3s ease-in-out;
+}
+#course-toc ol#chapters li:nth-child(n+7):nth-child(-n+11)>a:before {
+   content: "";
+   display: inline-block;
+   width: 1.3em;
+   height: 1.3em;
+   margin-right: 8px;
+   background: url('https://image.flaticon.com/icons/png/512/1184/1184079.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   vertical-align: middle;
+   transition: 0.3s ease-in-out;
+}
+#course-toc ol#chapters li:nth-child(n+7):nth-child(-n+11)>a:hover:before {
+   content: "";
+   display: inline-block;
+   width: 1.3em;
+   height: 1.3em;
+   margin-right: 8px;
+   background: url('https://image.flaticon.com/icons/png/512/1184/1184129.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   vertical-align: middle;
+   transition: 0.3s ease-in-out;
+}
+#course-toc ol#chapters li:nth-child(n+12):nth-child(-n+16)>a:before {
+   content: "";
+   display: inline-block;
+   width: 1.3em;
+   height: 1.3em;
+   margin-right: 8px;
+   background: url('https://image.flaticon.com/icons/png/512/3419/3419488.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   vertical-align: middle;
+   transition: 0.3s ease-in-out;
+}
+#course-toc ol#chapters li:nth-child(n+12):nth-child(-n+16)>a:hover:before {
+   content: "";
+   display: inline-block;
+   width: 1.3em;
+   height: 1.3em;
+   margin-right: 8px;
+   background: url('https://image.flaticon.com/icons/png/512/3419/3419441.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   vertical-align: middle;
+   transition: 0.3s ease-in-out;
+}

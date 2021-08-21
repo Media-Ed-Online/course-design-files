@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+#moodle-page {
+    background: url('https://video-public.canva.com/VADsKm3H4Xs/v/b466841ff9.gif');
+    background-repeat: no-repeat;
+    background-position: -100px -200px;
+    background-size: 632px 609px;
+}
+#region-main {
+    background-color: transparent;
+}
+#page {
+    background: url('https://video-public.canva.com/VADsKrGfd3o/v/dbfbe62ae7.gif');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 300px 300px;
+}
+
+/*
+<!-- SCRIPTS FOR TOPIC -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+WebFont.load({
+    google: {
+        families: ['Fredericka+the+Great:400']
+    }
+});
+</script>
+<script>
+$('#moodle-page').css({
+    "background": "url(https://video-public.canva.com/VADsKm3H4Xs/v/b466841ff9.gif)",
+    "background-repeat": "no-repeat",
+    "background-position": "-100px -200px",
+    "background-size": "632px 609px",
+});
+$('#region-main').css({
+    "background-color": "transparent",
+});
+$('#page').css({
+    "background": "url(https://video-public.canva.com/VADsKrGfd3o/v/dbfbe62ae7.gif",
+    "background-repeat": "no-repeat",
+    "background-position": "bottom right",
+    "background-size": "300px 300px",
+});
+$('#region-main').prepend('<img src="https://video-public.canva.com/VADls-1PCW0/videos/e9ebf767df.gif" style="width: 200px; height: 200px; position: absolute; bottom: -100px; left: -100px;"/>');
+</script>
+*/
