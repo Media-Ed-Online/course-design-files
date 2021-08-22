@@ -1,0 +1,20 @@
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: ['Fredoka One', ]
+        }
+    });
+</script>
+<script>
+    $("#page-mast h1, #page-mast h1 a").css({
+        'color': '#34d2cc',
+        'font-family': '"Fredoka One", sans-serif',
+    });
+    $("nav#course-toc h2").each(function() {
+        var text = $(this).text();
+        text = text.replace("Contents", "Levels");
+        $(this).text(text);
+    });
+    $("ul.topics li h2.sectionname").css("visibility", "hidden");
+</script>
