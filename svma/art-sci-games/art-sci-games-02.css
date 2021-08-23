@@ -36,7 +36,7 @@ to {background-position: 500px 0;}
   background: #4e54c8;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
 }
-#moodle-page ul:first-of-type {
+#moodle-page ul.circles {
   position: absolute;
   top: 0;
   left: 0;
@@ -44,7 +44,7 @@ to {background-position: 500px 0;}
   height: 100%;
   overflow: hidden;
 }
-#moodle-page ul:first-of-type li {
+#moodle-page ul.circles li {
   position: absolute;
   display: block;
   list-style: none;
@@ -54,65 +54,65 @@ to {background-position: 500px 0;}
   animation: animate 25s linear infinite;
   bottom: -150px;
 }
-#moodle-page ul:first-of-type li:nth-child(1){
+#moodle-page ul.circles li:nth-child(1){
   left: 25%;
   width: 80px;
   height: 80px;
   animation-delay: 0s;
 }
-#moodle-page ul:first-of-type li:nth-child(2){
+#moodle-page ul.circles li:nth-child(2){
   left: 10%;
   width: 20px;
   height: 20px;
   animation-delay: 2s;
   animation-duration: 12s;
 }
-#moodle-page ul:first-of-type li:nth-child(3){
+#moodle-page ul.circles li:nth-child(3){
   left: 70%;
   width: 20px;
   height: 20px;
   animation-delay: 4s;
 }
-#moodle-page ul:first-of-type li:nth-child(4){
+#moodle-page ul.circles li:nth-child(4){
   left: 40%;
   width: 60px;
   height: 60px;
   animation-delay: 0s;
   animation-duration: 18s;
 }
-#moodle-page ul:first-of-type li:nth-child(5){
+#moodle-page ul.circles li:nth-child(5){
   left: 65%;
   width: 20px;
   height: 20px;
   animation-delay: 0s;
 }
-#moodle-page ul:first-of-type li:nth-child(6){
+#moodle-page ul.circles li:nth-child(6){
   left: 75%;
   width: 110px;
   height: 110px;
   animation-delay: 3s;
 }
-#moodle-page ul:first-of-type li:nth-child(7){
+#moodle-page ul.circles li:nth-child(7){
   left: 35%;
   width: 150px;
   height: 150px;
   animation-delay: 7s;
 }
-#moodle-page ul:first-of-type li:nth-child(8){
+#moodle-page ul.circles li:nth-child(8){
   left: 50%;
   width: 25px;
   height: 25px;
   animation-delay: 15s;
   animation-duration: 45s;
 }
-#moodle-page ul:first-of-type li:nth-child(9){
+#moodle-page ul.circles li:nth-child(9){
   left: 20%;
   width: 15px;
   height: 15px;
   animation-delay: 2s;
   animation-duration: 35s;
 }
-#moodle-page ul:first-of-type li:nth-child(10){
+#moodle-page ul.circles li:nth-child(10){
   left: 85%;
   width: 150px;
   height: 150px;
