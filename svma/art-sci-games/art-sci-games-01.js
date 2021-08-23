@@ -10,4 +10,4 @@ $("nav#course-toc h2").each(function() {
 var $backgroundCircles = $( "<ul class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>")
 
 $( "#moodle-page" ).append( $backgroundCircles );
-$( "#moodle-page ul.circles" ).height($(document).height());
+//$( "#moodle-page ul.circles" ).height($(document).height());
