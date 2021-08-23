@@ -6,8 +6,8 @@ $("nav#course-toc h2").each(function() {
     text = text.replace("Contents", "Levels");
     $(this).text(text);
 });
-//$("#moodle-page").prepend("<ul class="circles"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>");
 
-var $newdiv1 = $( "<ul class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>")
+var $backgroundCircles = $( "<ul class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>")
 
-$( "#moodle-page" ).prepend( $newdiv1 );
+$( "#moodle-page" ).append( $backgroundCircles );
+$( "#moodle-page ul.circles" ).height($(document).height());
