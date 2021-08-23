@@ -6,3 +6,4 @@ $("nav#course-toc h2").each(function() {
     text = text.replace("Contents", "Levels");
     $(this).text(text);
 });
+$("#moodle-page").append("<ul class="circles"><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>");
