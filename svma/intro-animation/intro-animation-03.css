@@ -9,10 +9,10 @@
 
 /* Nav Bar Items */
 .tab-group .nav-item {
-   display: flex;
+   margin: 0 !important;
+   padding: 0 !important;
    position: relative;
    text-align: center;
-
 }
 
 /* Nav Bar Links */
