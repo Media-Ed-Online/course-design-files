@@ -1,0 +1,93 @@
+.tabGroup {
+   box-sizing: border-box;
+   --bgColorMenu: #1d1d27;
+   --duration: .7s;
+   --bgColorItem: #ff8c00;
+}
+.tabGroup button {
+   background: transparent !important;
+   margin: 0.55em .85em 0.85em !important;
+}
+.tabGroup .menu {
+   margin: 0;
+   display: flex;
+   width: 100%;
+   margin-bottom: 1.5em;
+   font-size: 1.5em;
+   padding: 0 2.85em;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--bgColorMenu);
+}
+
+.tabGroup .nav-link {
+   all: unset;
+   flex-grow: 1;
+   z-index: 100;
+   display: flex;
+   cursor: pointer;
+   position: relative;
+   border: 10px solid var(--bgColorMenu);
+   border-radius: 50%;
+   align-items: center;
+   will-change: transform;
+   justify-content: center;
+   transition: transform var(--timeOut , var(--duration));
+}
+.tabGroup .nav-link::before {
+   content: "";
+   z-index: -1;
+   width: 4.2em;
+   height: 4.2em;
+   border-radius: 50%;
+   position: absolute;
+   transform: scale(0);
+   transition: background-color var(--duration), transform var(--duration);
+}
+.tabGroup .nav-link.active {
+   transform: translate3d(0, .8em , 0);
+}
+.tabGroup .nav-link.active::before {
+   transform: scale(1);
+   background-color: var(--bgColorItem);
+}
+
+.tabGroup .icon {
+   width: 2.6em;
+   height: 2.6em;
+   stroke: white;
+   fill: transparent;
+   stroke-width: 1pt;
+   stroke-miterlimit: 10;
+   stroke-linecap: round;
+   stroke-linejoin: round;
+   stroke-dasharray: 400;
+}
+
+.tabGroup .nav-link.active .icon {
+   animation: stroke 1.5s reverse;
+}
+
+@keyframes stroke {
+   100% {
+      stroke-dashoffset: 400;
+   }
+}
+
+.tabGroup .menu-border {
+   left: 0;
+   bottom: 99%;
+   width: 10.9em;
+   height: 2.4em;
+   position: absolute;
+   clip-path: url(#menu);
+   will-change: transform;
+   background-color: var(--bgColorMenu);
+   transition: transform var(--timeOut , var(--duration));
+}
+
+.tabGroup .svg-container {
+   width: 0;
+   height: 0;
+}
