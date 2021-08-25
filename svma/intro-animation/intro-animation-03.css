@@ -5,13 +5,16 @@
    --bgColorItem: #ff8c00;
 }
 .tabGroup button {
-   background: transparent !important;
-   margin: 0.55em .85em 0.85em !important;
+  background: transparent !important;
+  margin: 1.5em !important;
+  width: 50px !important;
+  height: 50px !important;
 }
 .tabGroup .menu {
    margin: 0;
    display: flex;
    width: 100%;
+   height: 90px;
    margin-bottom: 1.5em;
    font-size: 1.5em;
    padding: 0 2.85em;
