@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
-
 /* Nav Bar */
 .tab-group ul.nav {
    width: 100%;
@@ -8,7 +6,7 @@
    padding: 0 !important;
    margin-bottom: 1.5em;
    position: relative;
-   background-color: #1D1D27;
+   background-color: #5C21B5;
 }
 
 /* Nav Bar Items */
@@ -54,7 +52,7 @@
    position: absolute;
    top: 0;
    left: 0;
-   background-color: #FF8C00 !important;
+   /*background-color: #FF8C00 !important;*/
    transform: scale(1);
 }
 
@@ -72,11 +70,40 @@
 .tab-group a.nav-link.active .icon {
    animation: stroke 1.5s reverse;
 }
-
 @keyframes stroke {
    100% {
       stroke-dashoffset: 400;
    }
+}
+
+.wave {
+   width: 150px;
+   height: 150px;
+   position: absolute;
+   top: -10%;
+   left: -25%;
+   transform-origin: 50% 48%;
+   border-radius: 43%;
+   z-index: -50;
+}
+.wave.-one {
+   animation: drift 3000ms infinite linear;
+   background: #75d5fd;
+   opacity: .5;
+}
+.wave.-two {
+   animation: drift 7000ms infinite linear;
+   background: #db2581;
+   opacity: .8;
+}
+.wave.-three {
+   animation: drift 5000ms infinite linear;
+   background: #5c21b5;
+   opacity: 1;
+}
+@keyframes drift {
+   from { transform: rotate(0deg); }
+   from { transform: rotate(360deg); }
 }
 
 
