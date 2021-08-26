@@ -151,3 +151,26 @@
       stroke-dashoffset: 400;
    }
 }
+
+
+
+/* ------------------
+| Small Screen       |
+------------------ */
+@media (max-width: 360px) {
+   .tab-group ul.nav {
+      height: 50px;
+   }
+   .tab-group a.nav-link {
+      width: 50px;
+      height: 50px;
+      padding: 0;
+   }
+   .tab-group a.nav-link .icon {
+      width: 25px;
+      height: 25px;
+   }
+   .tab-group a.nav-link.active::after {
+      top: 45px;
+   }
+}
