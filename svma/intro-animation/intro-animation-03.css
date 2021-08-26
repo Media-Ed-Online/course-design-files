@@ -1,5 +1,7 @@
-
-.tab-group ul.nav {
+/* ------------------
+| Pill Group         |
+ ------------------ */
+.pill-group ul.nav {
    width: 100%;
    height: 100px;
    margin: 0 !important;
@@ -8,87 +10,26 @@
    background-color: #75D5FD;
 }
 
-/* Nav Bar Items */
-.tab-group .nav-item {
+
+
+/* ------------------
+| Pill Group         |
+ ------------------ */
+.pill-group .nav-item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
    position: relative;
-   text-align: center;
-   display: flex;
-   align-items: center;
-   justify-content: center;
 }
 
-/* Nav Bar Links */
-.tab-group a.nav-link {
-   width: 100px;
-   height: 100px;
-   /*margin: 0 10px;*/
-   border-radius: 50% !important;
-   background-color: inherit;
-   color: #fff !important;
-   transition: transform .7s;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-.tab-group a.nav-link.active {
-   background-color: transparent !important;
-   transform: translate3d(0, 10px , 0);
-   transition: transform .1s ease-in .5s;
-}
 
-.tab-group a.nav-link::before {
-   content: "";
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   top: 0;
-   left: 0;
-   z-index: -1;
-   border-radius: 50% !important;
-   transform: scale(0);
-   transition: background-color .5s, transform .5s;
-}
-.tab-group a.nav-link.active::before {
-   content: "";
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   top: 0;
-   left: 0;
-   z-index: -1;
-   background-color: #5C21B5 !important;
-   transform: scale(1);
-}
-.tab-group a.nav-link::after {
-   content: "";
-   width: 100%;
-   height: 0;
-   position: absolute;
-   /*top: 50px;*/
-   left: 0;
-   z-index: -2;
-   background: url(https://video-public.canva.com/VADsKvQpM9s/v/6c32031876.gif);
-   background-size: contain;
-   background-repeat: no-repeat;
-}
-.tab-group a.nav-link.active::after {
-   content: "";
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   top: 90px;
-   left: 0;
-   z-index: -2;
-   background: url(https://video-public.canva.com/VADsKvQpM9s/v/6c32031876.gif);
-   background-size: contain;
-   background-repeat: no-repeat;
-   transition: height .1s linear .6s, top .25s ease-in-out .5s;
-}
 
-.tab-group a.nav-link .icon {
+/* ------------------
+| Icons              |
+ ------------------ */
+.pill-group a.nav-link .icon {
    width: 50px;
    height: 50px;
-   /*margin: 25px 0;*/
    stroke: white;
    fill: transparent;
    stroke-width: 1pt;
@@ -97,30 +38,11 @@
    stroke-linejoin: round;
    stroke-dasharray: 400;
 }
-.tab-group a.nav-link.active .icon {
-   /*margin-top: 15px;*/
-   animation: stroke 1.4s reverse;
+.pill-group a.nav-link.active .icon {
+   animation: stroke 1.5s reverse;
 }
 @keyframes stroke {
    100% {
       stroke-dashoffset: 400;
-   }
-}
-
-@media (max-width: 360px) {
-   .tab-group ul.nav {
-      height: 50px;
-   }
-   .tab-group a.nav-link {
-      width: 50px;
-      height: 50px;
-      padding: 0;
-   }
-   .tab-group a.nav-link .icon {
-      width: 25px;
-      height: 25px;
-   }
-   .tab-group a.nav-link.active::after {
-      top: 45px;
    }
 }
