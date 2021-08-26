@@ -1,18 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
 /* Nav Bar */
 .tab-group ul.nav {
    width: 100%;
    height: 100px;
    margin: 0 !important;
    padding: 0 !important;
-   margin-bottom: 1.5em;
    position: relative;
-   background-color: #5C21B5;
+   background-color: #75D5FD;
 }
 
 /* Nav Bar Items */
 .tab-group .nav-item {
-   margin: 0 !important;
-   padding: 0 !important;
    position: relative;
    text-align: center;
    text-transform: uppercase;
@@ -29,6 +28,10 @@
    color: #fff !important;
    transition: transform .7s;
 }
+.tab-group a.nav-link.active {
+   background-color: transparent !important;
+   transform: translate3d(0, 10px , 0);
+}
 .tab-group a.nav-link::before {
    content: "";
    width: 100px;
@@ -41,10 +44,6 @@
    transform: scale(0);
    transition: background-color .7s, transform .7s;
 }
-.tab-group a.nav-link.active {
-   background-color: transparent !important;
-   transform: translate3d(0, 1em , 0);
-}
 .tab-group a.nav-link.active::before {
    content: "";
    width: 100%;
@@ -52,8 +51,36 @@
    position: absolute;
    top: 0;
    left: 0;
-   /*background-color: #FF8C00 !important;*/
+   z-index: -1;
+   background-color: #5C21B5 !important;
    transform: scale(1);
+}
+.tab-group a.nav-link::after {
+   content: "";
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -2;
+   background: url(https://video-public.canva.com/VADsKvQpM9s/v/6c32031876.gif);
+   background-size: contain;
+   background-repeat: no-repeat;
+   transform: scale(0);
+}
+.tab-group a.nav-link.active::after {
+   content: "";
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 90px;
+   left: 0;
+   z-index: -2;
+   background: url(https://video-public.canva.com/VADsKvQpM9s/v/6c32031876.gif);
+   background-size: contain;
+   background-repeat: no-repeat;
+   transform: scale(1);
+   transition: top .6s .2s
 }
 
 .tab-group a.nav-link .icon {
@@ -75,135 +102,3 @@
       stroke-dashoffset: 400;
    }
 }
-
-.wave {
-   width: 150px;
-   height: 150px;
-   position: absolute;
-   top: -10%;
-   left: -25%;
-   transform-origin: 50% 48%;
-   border-radius: 43%;
-   z-index: -50;
-}
-.wave.-one {
-   animation: drift 3000ms infinite linear;
-   background: #75d5fd;
-   opacity: .5;
-}
-.wave.-two {
-   animation: drift 7000ms infinite linear;
-   background: #db2581;
-   opacity: .8;
-}
-.wave.-three {
-   animation: drift 5000ms infinite linear;
-   background: #5c21b5;
-   opacity: 1;
-}
-@keyframes drift {
-   from { transform: rotate(0deg); }
-   from { transform: rotate(360deg); }
-}
-
-
-
-
-
-
-/*.tabGroup {
-   box-sizing: border-box;
-   --bgColorMenu: #1d1d27;
-   --duration: .7s;
-   --bgColorItem: #ff8c00;
-}
-.tabGroup button {
-  background: transparent !important;
-  margin: 1.5em !important;
-  width: 50px !important;
-  height: 50px !important;
-}
-.tabGroup .menu {
-   margin: 0;
-   display: flex;
-   width: 100%;
-   height: 90px;
-   margin-bottom: 1.5em;
-   font-size: 1.5em;
-   padding: 0 2.85em;
-   position: relative;
-   align-items: center;
-   justify-content: center;
-   background-color: var(--bgColorMenu);
-}
-
-.tabGroup .nav-link {
-   all: unset;
-   flex-grow: 1;
-   z-index: 100;
-   display: flex;
-   cursor: pointer;
-   position: relative;
-   border: 10px solid var(--bgColorMenu);
-   border-radius: 50%;
-   align-items: center;
-   will-change: transform;
-   justify-content: center;
-   transition: transform var(--timeOut , var(--duration));
-}
-.tabGroup .nav-link::before {
-   content: "";
-   z-index: -1;
-   width: 4.2em;
-   height: 4.2em;
-   border-radius: 50%;
-   position: absolute;
-   transform: scale(0);
-   transition: background-color var(--duration), transform var(--duration);
-}
-.tabGroup .nav-link.active {
-   transform: translate3d(0, .8em , 0);
-}
-.tabGroup .nav-link.active::before {
-   transform: scale(1);
-   background-color: var(--bgColorItem);
-}
-
-.tabGroup .icon {
-   width: 2.6em;
-   height: 2.6em;
-   stroke: white;
-   fill: transparent;
-   stroke-width: 1pt;
-   stroke-miterlimit: 10;
-   stroke-linecap: round;
-   stroke-linejoin: round;
-   stroke-dasharray: 400;
-}
-
-.tabGroup .nav-link.active .icon {
-   animation: stroke 1.5s reverse;
-}
-
-@keyframes stroke {
-   100% {
-      stroke-dashoffset: 400;
-   }
-}
-
-.tabGroup .menu-border {
-   left: 0;
-   bottom: 99%;
-   width: 10.9em;
-   height: 2.4em;
-   position: absolute;
-   clip-path: url(#menu);
-   will-change: transform;
-   background-color: var(--bgColorMenu);
-   transition: transform var(--timeOut , var(--duration));
-}
-
-.tabGroup .svg-container {
-   width: 0;
-   height: 0;
-}*/
