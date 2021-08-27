@@ -60,9 +60,9 @@
 }
 #tab-container .tab-content .snap-asset-actions {
   position: relative;
-  margin-top: -50px !important;
+  margin-top: -20px !important;
   margin-left: 20px;
-  padding-top: 10px;
+  padding-top: 15px;
   background: rgba(0,0,0,.25)
 }
 #tab-container .tab-content .snap-asset-actions::before {
