@@ -48,23 +48,23 @@
    border-right: 20px solid transparent !important;
 }
 
-#tab-container .tab-content {
+.tab-container .tab-content {
   border: none !important;
   box-shadow:2px 2px 2px 2px rgba(0,0,0,.1);
   transition-delay: 0s !important;
 }
-#tab-container .tab-content > div:not(.snap-asset-actions) {
+.tab-container .tab-content > div:not(.snap-asset-actions) {
    padding: 30px !important;
    background: #F2EEE2;
    box-shadow: 0 3px 10px rgba(0,0,0,.3);
 }
-#tab-container .tab-content .snap-asset-actions {
+.tab-container .tab-content .snap-asset-actions {
   position: relative;
   padding-top: 25px;
   background: rgba(255,255,255,.8);
   box-shadow: 0 3px 10px rgba(0,0,0,.3);
 }
-#tab-container .tab-content .snap-asset-actions::before {
+.tab-container .tab-content .snap-asset-actions::before {
   content: "Edit this tab's content:";
   position: absolute;
   font-style: italic;
