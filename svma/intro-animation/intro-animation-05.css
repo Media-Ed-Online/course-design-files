@@ -60,8 +60,9 @@
 }
 #tab-container .tab-content .snap-asset-actions {
   position: relative;
-  padding-top: 20px;
-  background: rgba(0,0,0,.1)
+  padding-top: 25px;
+  background: rgba(0,0,0,.15);
+  box-shadow: 0 3px 10px rgba(0,0,0,.3);
 }
 #tab-container .tab-content .snap-asset-actions::before {
   content: "Edit this tab's content:";
