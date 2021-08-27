@@ -67,8 +67,7 @@
 }
 #tab-container .tab-content > div {
   padding: 1em !important;
-  margin: 1em !important;
-   height: 600px;
+   height: 200px;
    overflow-y: scroll;
    padding: 30px !important;
    background: #F2EEE2;
