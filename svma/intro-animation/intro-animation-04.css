@@ -1,9 +1,18 @@
+body { background:url('https://westfieldcc.files.wordpress.com/2011/10/simple-blur-ipad-background.jpg') no-repeat center center fixed;
+   background-size: cover;
+}
+#container {
+   width: 50%;
+   max-width: 600px;
+   min-width: 340px;
+   margin: 150px auto;
+}
 .tab-group {
    width: 100%;
-   position: relative;
+   position: relative !important;
 }
 .tab-group a.nav-link {
-   width: 20%;
+   width: 150px;
    height: 70px;
    border: none !important;
    position: relative;
@@ -12,13 +21,12 @@
    text-transform: uppercase;
    color: #fff;
    line-height: 90px;
-   background: linear-gradient(165deg, transparent 29%, #98927C 30%) !important;
+   background: linear-gradient(168deg, transparent 29%, #98927C 30%) !important;
 }
 
 .tab-group a.nav-link:hover, .tab-group a.nav-link.active {
-   background: linear-gradient(165deg,transparent 29%, #F2EEE2 30%) !important;
-   color: #98927C;
-   transition: background 1s linear 1s;
+   background: linear-gradient(168deg,transparent 29%, #F2EEE2 30%) !important;
+   color: #98927C !important;
 }
 
 .tab-group a.nav-link::before {
@@ -40,7 +48,7 @@
    top: 0;
    left: 100%;
    z-index: 2;
-   border-bottom: 70px solid rgba(0,0,0,.2) !impotant;
+   border-bottom: 70px solid rgba(0,0,0,.2) !important;
    border-right: 20px solid transparent !important;
 }
 .tab-group img {
