@@ -2,6 +2,9 @@
    width: 100%;
    position: relative !important;
 }
+.tab-group .nav-tab {
+   margin: 0 !important;
+}
 .tab-group a.nav-link {
    width: 150px;
    height: 70px;
