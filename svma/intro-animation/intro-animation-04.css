@@ -20,7 +20,7 @@
    text-decoration: none;
    text-transform: uppercase;
    font-size: 10pt !important;
-   color: #fff;
+   color: #fff !important;
    line-height: 90px;
    background: linear-gradient(168deg, transparent 29%, #98927C 30%) !important;
 }
