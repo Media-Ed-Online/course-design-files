@@ -60,15 +60,14 @@
 }
 #tab-container .tab-content .snap-asset-actions {
   position: relative;
-  margin-top: -20px !important;
-  margin-left: 20px;
   padding-top: 15px;
   background: rgba(0,0,0,.25)
 }
 #tab-container .tab-content .snap-asset-actions::before {
-  content: "edit this tab content";
+  content: "Edit this tab's content:";
   position: absolute;
+  font-style: italic;
   font-size: 10pt;
-  top: 3px;
-  left: 3px;
+  top: 5px;
+  left: 5px;
 }
