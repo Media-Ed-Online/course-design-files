@@ -10,7 +10,7 @@
    height: 70px;
    border: none !important;
    position: relative;
-   z-index: 2;
+   z-index: 1;
    text-align: center;
    text-decoration: none;
    text-transform: uppercase;
