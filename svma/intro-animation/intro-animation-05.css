@@ -58,3 +58,6 @@
    background: #F2EEE2;
    box-shadow: 0 3px 10px rgba(0,0,0,.3);
 }
+.snap-asset-actions {
+  background: rgba(0,0,0,.2)
+}
