@@ -59,7 +59,15 @@
    box-shadow: 0 3px 10px rgba(0,0,0,.3);
 }
 #tab-container .tab-content .snap-asset-actions {
-  margin-top: -40px;
+  position: relative;
+  margin-top: -100px !important;
   margin-left: 20px;
-  background: rgba(0,0,0,.1)
+  padding-top: 5px;
+  background: rgba(0,0,0,.25)
+}
+#tab-container .tab-content .snap-asset-actions::before {
+  content: "edit this tab content";
+  position: absolute;
+  top: 3px;
+  left: 3px;
 }
