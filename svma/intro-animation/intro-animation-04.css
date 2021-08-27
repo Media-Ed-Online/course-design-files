@@ -1,5 +1,6 @@
 #tab-container {
-   width: 85%;
+   width: 100%;
+   padding: 100px;
    margin: 150px auto 0 !important;
    min-width: 340px;
 }
