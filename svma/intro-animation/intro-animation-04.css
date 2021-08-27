@@ -1,3 +1,4 @@
+
 #tab-container {
    width: 85%;
    min-width: 340px;
@@ -11,7 +12,7 @@
    margin: 0 !important;
 }
 .tab-group a.nav-link {
-   width: 200px;
+   width: 150px;
    height: 70px;
    border: none !important;
    position: relative;
@@ -19,13 +20,14 @@
    text-align: center;
    text-decoration: none;
    text-transform: uppercase;
+   font-size: 10pt !important;
    color: #fff;
    line-height: 90px;
-   background: linear-gradient(171deg, transparent 29%, #98927C 30%) !important;
+   background: linear-gradient(168deg, transparent 29%, #98927C 30%) !important;
 }
 
 .tab-group a.nav-link:hover, .tab-group a.nav-link.active {
-   background: linear-gradient(171deg,transparent 29%, #F2EEE2 30%) !important;
+   background: linear-gradient(168deg,transparent 29%, #F2EEE2 30%) !important;
    color: #98927C !important;
 }
 
@@ -70,7 +72,7 @@
 .tab-content div {
    height: 500px;
    overflow-y: scroll;
-   padding: 30px;
+   padding: 50px 30px;
    background: #F2EEE2;
    box-shadow: 0 3px 10px rgba(0,0,0,.3);
 }
