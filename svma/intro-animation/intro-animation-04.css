@@ -1,5 +1,5 @@
 #tab-container {
-   width: 95%;
+   width: 85%;
    min-width: 340px;
    margin: 150px auto;
 }
@@ -11,7 +11,7 @@
    margin: 0 !important;
 }
 .tab-group a.nav-link {
-   width: 150px;
+   width: 200px;
    height: 70px;
    border: none !important;
    position: relative;
@@ -21,11 +21,11 @@
    text-transform: uppercase;
    color: #fff;
    line-height: 90px;
-   background: linear-gradient(168deg, transparent 29%, #98927C 30%) !important;
+   background: linear-gradient(171deg, transparent 29%, #98927C 30%) !important;
 }
 
 .tab-group a.nav-link:hover, .tab-group a.nav-link.active {
-   background: linear-gradient(168deg,transparent 29%, #F2EEE2 30%) !important;
+   background: linear-gradient(171deg,transparent 29%, #F2EEE2 30%) !important;
    color: #98927C !important;
 }
 
