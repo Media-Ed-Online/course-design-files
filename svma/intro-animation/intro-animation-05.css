@@ -54,7 +54,7 @@
   transition-delay: 0s !important;
 }
 #tab-container .tab-content > div {
-   padding: 50px 30px !important;
+   /*padding: 50px 30px !important;*/
    background: #F2EEE2;
    box-shadow: 0 3px 10px rgba(0,0,0,.3);
 }
