@@ -59,6 +59,7 @@
 }
 
 #tab-container .tab-content {
+  padding: 1em !important;
   height: 300px;
   background: #F2EEE2;
   border: none !important;
