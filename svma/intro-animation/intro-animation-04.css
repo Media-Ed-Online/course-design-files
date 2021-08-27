@@ -1,8 +1,7 @@
-
 #tab-container {
-   width: 85%;
+   width: 90%;
    min-width: 340px;
-   margin: 150px auto;
+   margin-top: 150px;
 }
 .tab-group {
    width: 100%;
