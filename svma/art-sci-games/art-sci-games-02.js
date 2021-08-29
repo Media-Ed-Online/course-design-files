@@ -7,9 +7,9 @@ $(document).ready(function(index) {
   var H5P = $('li.modtype_h5pactivity:contains(textTitle)');
   var findText = $('li:contains("Tutorial")');
 
-  if ($(findText).length > 0) {
+  if ($(this).find(findText).length > 0) {
 
-    $(this).find(URL).each(function(index) {
+    $(URL).each(function(index) {
       // variables
       let oldTitle = $(this).find(".snap-asset-link")
       let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
