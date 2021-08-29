@@ -112,5 +112,8 @@ $(document).ready(function(index) {
       'height': '30px',
       'font-size': '30px',
     });
-  };
+  }
+  else {
+        // Do nothing
+  }
 });
