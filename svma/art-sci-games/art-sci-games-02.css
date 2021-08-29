@@ -1,69 +1,10 @@
 /* ------------------
 | BACKGROUND        |
 ------------------ */
-/*#moodle-page {
-  margin: 0;
-  padding: 0;
-  background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
-  -webkit-animation: 10s linear 0s normal none infinite animate;
-  -moz-animation: 10s linear 0s normal none infinite animate;
-  -ms-animation: 10s linear 0s normal none infinite animate;
-  -o-animation: 10s linear 0s normal none infinite animate;
-  animation: 10s linear 0s normal none infinite animate;
-}
+/* Animated Squares */
+/* Inspiration: https://codepen.io/mohaiman/pen/MQqMyo */
 
-@-webkit-keyframes animate {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: 500px 0;
-  }
-}
-
-@-moz-keyframes animate {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: 500px 0;
-  }
-}
-
-@-ms-keyframes animate {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: 500px 0;
-  }
-}
-
-@-o-keyframes animate {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: 500px 0;
-  }
-}
-
-@keyframes animate {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: 500px 0;
-  }
-}*/
-
-
-.bg {
+.bgShapes {
   background: #4e54c8;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
   bottom:0;
@@ -74,143 +15,94 @@
   top:0;
   z-index:-1;
 }
-
-.bg span:nth-child(1) {
+.bgShapes span {
   display: block;
   position: absolute;
   background: rgba(255, 255, 255, 0.2);
-  animation: animate 25s linear infinite;
+  animation: bgShapesRotate 25s linear infinite;
   bottom: -50px;
-
-  left: 25%;
+}
+.bgShapes span:nth-child(1) {
   width: 80px;
   height: 80px;
+  left: 25%;
   animation-delay: 0s;
+  animation-duration: ;
 }
 
-.bg span:nth-child(2) {
-  display: block;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.2);
-  animation: animate 25s linear infinite;
-  bottom: -50px;
-
-  left: 10%;
+.bgShapes span:nth-child(2) {
   width: 20px;
   height: 20px;
+  left: 10%;
   animation-delay: 2s;
   animation-duration: 12s;
 }
 
-.bg span:nth-child(3) {
-  display: block;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.2);
-  animation: animate 25s linear infinite;
-  bottom: -50px;
-
-  left: 70%;
+.bgShapes span:nth-child(3) {
   width: 20px;
   height: 20px;
+  left: 70%;
   animation-delay: 4s;
+  animation-duration: ;
 }
 
-.bg span:nth-child(4) {
-  display: block;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.2);
-  animation: animate 25s linear infinite;
-  bottom: -50px;
-
-  left: 40%;
+.bgShapes span:nth-child(4) {
   width: 60px;
   height: 60px;
+  left: 40%;
   animation-delay: 0s;
   animation-duration: 18s;
 }
 
-.bg span:nth-child(5) {
-  display: block;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.2);
-  animation: animate 25s linear infinite;
-  bottom: -50px;
-
-  left: 65%;
+.bgShapes span:nth-child(5) {
   width: 20px;
   height: 20px;
+  left: 65%;
   animation-delay: 0s;
+  animation-duration: ;
 }
 
-.bg span:nth-child(6) {
-  display: block;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.2);
-  animation: animate 25s linear infinite;
-  bottom: -50px;
-
-  left: 75%;
+.bgShapes span:nth-child(6) {
   width: 110px;
   height: 110px;
+  left: 75%;
   animation-delay: 3s;
+  animation-duration: ;
 }
 
-.bg span:nth-child(7) {
-  display: block;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.2);
-  animation: animate 25s linear infinite;
-  bottom: -50px;
-
-  left: 35%;
+.bgShapes span:nth-child(7) {
   width: 150px;
-  height: 150px;
+  height: 150px;;
+  left: 35%;
   animation-delay: 7s;
+  animation-duration: ;
 }
 
-.bg span:nth-child(8) {
-  display: block;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.2);
-  animation: animate 25s linear infinite;
-  bottom: -50px;
-
-  left: 50%;
+.bgShapes span:nth-child(8) {
   width: 25px;
   height: 25px;
+  left: 50%;
   animation-delay: 15s;
   animation-duration: 45s;
 }
 
-.bg span:nth-child(9) {
-  display: block;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.2);
-  animation: animate 25s linear infinite;
-  bottom: -50px;
-
-  left: 20%;
+.bgShapes span:nth-child(9) {
   width: 15px;
   height: 15px;
+  left: 20%;
   animation-delay: 2s;
   animation-duration: 35s;
 }
 
-.bg span:nth-child(10) {
-  display: block;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.2);
-  animation: animate 25s linear infinite;
-  bottom: -50px;
-
-  left: 85%;
+.bgShapes span:nth-child(10) {
   width: 150px;
   height: 150px;
+  left: 85%;
   animation-delay: 0s;
   animation-duration: 11s;
 }
 
-@keyframes animate {
+@keyframes bgShapesRotate {
   0% {
     transform: translateY(0) rotate(0deg);
     opacity: 1;
@@ -222,7 +114,4 @@
     opacity: 1;
     border-radius: 50%;
   }
-}
-#region-main {
-  background: transparent;
 }

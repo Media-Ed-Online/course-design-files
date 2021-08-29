@@ -10,3 +10,12 @@
 ul.topics li h2.sectionname {
   visibility: hidden;
 }
+
+
+
+/* ------------------
+| LAYOUT             |
+ ------------------ */
+#region-main {
+  background: transparent;
+}
