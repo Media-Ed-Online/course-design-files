@@ -38,7 +38,7 @@ $(document).ready(function(index) {
   var H5P = "li.modtype_h5pactivity"
 
   // select only items titled Level...
-  if ( $("li.modtype_url p:contains('Tutorial')").length ){
+  if ( $("p:contains('Tutorial')").length ){
 
     //-- CHANGE THE URL MODTYPE TITLE
     $(this).each(function(index) {
