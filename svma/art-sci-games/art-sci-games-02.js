@@ -32,4 +32,11 @@ $(document).ready(function() {
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-$('li.modtype_url:contains("test")').css('background-color', 'red');
+$('li.modtype_url:contains("tutorial")').each(function(index) {
+  // variables
+  let oldTitle = $(this).find(".snap-asset-link")
+  let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
+  // save the title, remove it, and add to new location
+  oldTitle.remove();
+  newTitle.append(oldTitle);
+});
