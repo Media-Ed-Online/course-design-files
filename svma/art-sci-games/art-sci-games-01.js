@@ -35,7 +35,7 @@ $(document).ready(function() {
 $(document).ready(function(index) {
 
   // select only items titled Level...
-  if ($(this).find("p.instancename:contains('Tutorial')").length > 0) {
+  if ($(this).find('p.instancename:contains("Tutorial")').length > 0) {
 
     let URL = "li.modtype_url"
     let BOOK = "li.modtype_book"
