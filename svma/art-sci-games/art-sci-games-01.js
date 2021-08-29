@@ -35,11 +35,11 @@ $(document).ready(function() {
 $(document).ready(function(index) {
 
   // select only items titled Level...
-  if ($(this).find('p.instancename:contains("Tutorial")').length > 0) {
+  if ($(this).find('p.instancename:contains("Tutorial")'').length > 0) {
 
-    let URL = $("li.modtype_url").find('p.instancename:contains("Tutorial")')
-    let BOOK = $("li.modtype_book").find('p.instancename:contains("Tutorial")')
-    let H5P = $("li.modtype_h5pactivity").find('p.instancename:contains("Tutorial")')
+    let URL = "li.modtype_url"
+    let BOOK = "li.modtype_book"
+    let H5P = "li.modtype_h5pactivity"
 
     //-- CHANGE THE URL MODTYPE TITLE
     $(URL).each(function(index) {
