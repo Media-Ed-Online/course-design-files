@@ -40,7 +40,7 @@ $(document).ready(function(index) {
 
 
   // select only items titled Level...
-  if ($(this).find('p.instancename:contains("Tutorial")').length > 0) {
+  if ($(this).find('').length > 0) {
 
     //-- CHANGE THE URL MODTYPE TITLE
     $(URL).each(function(index) {
