@@ -1,7 +1,7 @@
 /* ------------------
 | BACKGROUND        |
 ------------------ */
-/*#moodle-page {
+#moodle-page {
 margin:0;
 padding:0;
 background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
@@ -32,10 +32,10 @@ from {background-position:0 0;}
 to {background-position: 500px 0;}
 }*/
 
-/*#moodle-page {
+#moodle-page {
   background: #4e54c8;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
-}*/
+}
 #moodle-page ul.circles {
   position: absolute;
   top: 0;
