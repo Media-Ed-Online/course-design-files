@@ -7,7 +7,7 @@ $(document).ready(function(index) {
   var H5P = $('li.modtype_h5pactivity:contains(textTitle)');
   var findText = $('li p.instancename:contains("Tutorial")');
 
-  $('li.modtype_rul p.instancename:contains("Tutorial")').css("background","red")
+  $('li.modtype_url p.instancename:contains("Tutorial")').css("background","red")
 
   if ($(this).find(findText).length > 0) {
 
