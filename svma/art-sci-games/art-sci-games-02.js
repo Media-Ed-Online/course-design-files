@@ -38,7 +38,7 @@ $('li.modtype_url').each(function(index) {
   var H5P = "li.modtype_h5pactivity"
 
   // select only items titled Level...
-  if ($("p:contains('Tutorial')").length).each(function(index) {
+  if ($(this).find("p:contains('Tutorial')").length).each(function(index) {
     // variables
     let oldTitle = $(this).find(".snap-asset-link")
     let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
