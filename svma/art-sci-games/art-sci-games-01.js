@@ -38,7 +38,7 @@ $(document).ready(function(index) {
   var H5P = "li.modtype_h5pactivity"
 
   // select only items titled Level...
-  if ($(this).find("p.instancename:contains('Syllabus')").length > 0) {
+  
 
     //-- CHANGE THE URL MODTYPE TITLE
     $(URL).each(function(index) {
