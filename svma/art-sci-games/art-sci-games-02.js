@@ -32,18 +32,4 @@ $(document).ready(function() {
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-$('li.modtype_url').each(function(index) {
-  var URL = "li.modtype_url"
-  var BOOK = "li.modtype_book"
-  var H5P = "li.modtype_h5pactivity"
-
-  // select only items titled Level...
-  if ($(this).find("p:contains('Tutorial')").length).each(function(index) {
-    // variables
-    let oldTitle = $(this).find(".snap-asset-link")
-    let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
-    // save the title, remove it, and add to new location
-    oldTitle.remove();
-    newTitle.append(oldTitle);
-  });
-});
+$('li.modtype_url:contains("test")').css('background-color', 'red');
