@@ -4,123 +4,122 @@
 /* Animated Squares */
 /* Inspiration: https://codepen.io/mohaiman/pen/MQqMyo */
 .bgShapes {
-  position: fixed;
-  top: 0;
-  right: -50%;
-  bottom: 0;
-  left: -50%;
-  background: #4e54c8;
-  background: -webkit-linear-gradient(90deg, rgba(143, 148, 251, 1) 35%, rgba(78, 84, 200, 1);
-  background: -moz-linear-gradient(90deg, rgba(143, 148, 251, 1) 35%, rgba(78, 84, 200, 1) background: -o-linear-gradient(90deg, rgba(143, 148, 251, 1) 35%, rgba(78, 84, 200, 1) background: linear-gradient(90deg, rgba(143, 148, 251, 1) 35%, rgba(78, 84, 200, 1) 100%);
-  opacity: .5;
-  z-index: -1;
+position: fixed;
+top: 0;
+right: -50%;
+bottom: 0;
+left: -50%;
+background: #4e54c8;
+background: linear-gradient(90deg, rgba(143,148,251,1) 35%, rgba(78,84,200,1) 100%);
+opacity: .5;
+z-index: -1;
 }
 
 .bgShapes span {
-  display: block;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.2);
-  animation: bgShapesRotate 25s linear infinite;
-  bottom: -150px;
+display: block;
+position: absolute;
+background: rgba(255, 255, 255, 0.2);
+animation: bgShapesRotate 25s linear infinite;
+bottom: -150px;
 }
 
 .bgShapes span:nth-child(1) {
-  width: 80px;
-  height: 80px;
-  left: 25%;
-  animation-delay: 0s;
-  animation-duration: ;
+width: 80px;
+height: 80px;
+left: 25%;
+animation-delay: 0s;
+animation-duration: ;
 }
 
 .bgShapes span:nth-child(2) {
-  width: 20px;
-  height: 20px;
-  left: 10%;
-  animation-delay: 2s;
-  animation-duration: 12s;
+width: 20px;
+height: 20px;
+left: 10%;
+animation-delay: 2s;
+animation-duration: 12s;
 }
 
 .bgShapes span:nth-child(3) {
-  width: 20px;
-  height: 20px;
-  left: 70%;
-  animation-delay: 4s;
-  animation-duration: ;
+width: 20px;
+height: 20px;
+left: 70%;
+animation-delay: 4s;
+animation-duration: ;
 }
 
 .bgShapes span:nth-child(4) {
-  width: 60px;
-  height: 60px;
-  left: 40%;
-  animation-delay: 0s;
-  animation-duration: 18s;
+width: 60px;
+height: 60px;
+left: 40%;
+animation-delay: 0s;
+animation-duration: 18s;
 }
 
 .bgShapes span:nth-child(5) {
-  width: 20px;
-  height: 20px;
-  left: 65%;
-  animation-delay: 0s;
-  animation-duration: ;
+width: 20px;
+height: 20px;
+left: 65%;
+animation-delay: 0s;
+animation-duration: ;
 }
 
 .bgShapes span:nth-child(6) {
-  width: 110px;
-  height: 110px;
-  left: 75%;
-  animation-delay: 3s;
-  animation-duration: ;
+width: 110px;
+height: 110px;
+left: 75%;
+animation-delay: 3s;
+animation-duration: ;
 }
 
 .bgShapes span:nth-child(7) {
-  width: 150px;
-  height: 150px;
-  ;
-  left: 35%;
-  animation-delay: 7s;
-  animation-duration: ;
+width: 150px;
+height: 150px;
+;
+left: 35%;
+animation-delay: 7s;
+animation-duration: ;
 }
 
 .bgShapes span:nth-child(8) {
-  width: 25px;
-  height: 25px;
-  left: 50%;
-  animation-delay: 15s;
-  animation-duration: 45s;
+width: 25px;
+height: 25px;
+left: 50%;
+animation-delay: 15s;
+animation-duration: 45s;
 }
 
 .bgShapes span:nth-child(9) {
-  width: 15px;
-  height: 15px;
-  left: 20%;
-  animation-delay: 2s;
-  animation-duration: 35s;
+width: 15px;
+height: 15px;
+left: 20%;
+animation-delay: 2s;
+animation-duration: 35s;
 }
 
 .bgShapes span:nth-child(10) {
-  width: 150px;
-  height: 150px;
-  left: 85%;
-  animation-delay: 0s;
-  animation-duration: 11s;
+width: 150px;
+height: 150px;
+left: 85%;
+animation-delay: 0s;
+animation-duration: 11s;
 }
 
 @keyframes bgShapesRotate {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
-    border-radius: 0;
-  }
+0% {
+  transform: translateY(0) rotate(0deg);
+  opacity: 1;
+  border-radius: 0;
+}
 
-  85% {
-    transform: translateY(-1000px) rotate(720deg);
-    opacity: 1;
-    border-radius: 50%;
-  }
+85% {
+  transform: translateY(-1000px) rotate(720deg);
+  opacity: 1;
+  border-radius: 50%;
+}
 
-  100% {
-    transform: translateY(-1000px) rotate(720deg);
-    opacity: 1;
-    border-radius: 50%;
-  }
+100% {
+  transform: translateY(-1000px) rotate(720deg);
+  opacity: 1;
+  border-radius: 50%;
+}
 }
