@@ -9,7 +9,7 @@
   right: -50%;
   bottom: 0;
   left: -50%;
-  background: #21223D;
+  /*background: #21223D;*/
   /*background: linear-gradient(90deg, #084B86 25%, #21223D 100%);*/
   opacity: .5;
   z-index: -1;
@@ -18,7 +18,8 @@
 .bgShapes span {
   display: block;
   position: absolute;
-  background: rgba(255, 255, 255, 0.2);
+  /*background: rgba(255, 255, 255, 0.2);*/
+  background: #FBF5E3;
   animation: bgShapesRotate 25s linear infinite;
   bottom: -150px;
 }
