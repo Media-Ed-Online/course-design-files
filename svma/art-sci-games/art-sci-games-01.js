@@ -24,13 +24,13 @@ $(document).ready(function() {
   $("#page").prepend($backgroundShapes);
   $('div.bgShapes span').css('background', bgShapesColorRand);
 });
-$(document).ready(function() {
+$("div.bgShapes span").each(function() {
   // Random BG Colors
   var bgShapesColorOpts = ["#ff0000", "blue", "gray"];
   var bgShapesColorRand = bgShapesColorOpts[Math.floor(Math.random() * bgShapesColorOpts.length)];
   console.log(bgShapesColorRand);
 
-  $('div.bgShapes span').css('background', bgShapesColorRand);
+  $(this).css('background', bgShapesColorRand);
 });
 
 
