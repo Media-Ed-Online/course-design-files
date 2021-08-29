@@ -7,7 +7,6 @@ $("nav#course-toc h2").each(function() {
     $(this).text(text);
 });
 
-var $backgroundCircles = $( "<ul class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>")
+var $backgroundCircles = $( "<div class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></div>")
 
 $( "#page" ).prepend( $backgroundCircles );
-$( "ul.circles" ).height($(document).height()).width($(document).width());

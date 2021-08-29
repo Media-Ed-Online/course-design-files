@@ -67,7 +67,7 @@ body {
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
 }
 
-ul.circles {
+div.circles {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -76,7 +76,7 @@ ul.circles {
   overflow: hidden;
 }
 
-body ul.circles li {
+div.circles li {
   position: absolute;
   display: block;
   list-style: none;
@@ -87,14 +87,14 @@ body ul.circles li {
   bottom: -150px;
 }
 
-ul.circles li:nth-child(1) {
+div.circles li:nth-child(1) {
   left: 25%;
   width: 80px;
   height: 80px;
   animation-delay: 0s;
 }
 
-ul.circles li:nth-child(2) {
+div.circles li:nth-child(2) {
   left: 10%;
   width: 20px;
   height: 20px;
@@ -109,7 +109,7 @@ ul.circles li:nth-child(3) {
   animation-delay: 4s;
 }
 
-ul.circles li:nth-child(4) {
+div.circles li:nth-child(4) {
   left: 40%;
   width: 60px;
   height: 60px;
@@ -117,28 +117,28 @@ ul.circles li:nth-child(4) {
   animation-duration: 18s;
 }
 
-ul.circles li:nth-child(5) {
+div.circles li:nth-child(5) {
   left: 65%;
   width: 20px;
   height: 20px;
   animation-delay: 0s;
 }
 
-body ul.circles li:nth-child(6) {
+div.circles li:nth-child(6) {
   left: 75%;
   width: 110px;
   height: 110px;
   animation-delay: 3s;
 }
 
-ul.circles li:nth-child(7) {
+div.circles li:nth-child(7) {
   left: 35%;
   width: 150px;
   height: 150px;
   animation-delay: 7s;
 }
 
-ul.circles li:nth-child(8) {
+div.circles li:nth-child(8) {
   left: 50%;
   width: 25px;
   height: 25px;
@@ -146,7 +146,7 @@ ul.circles li:nth-child(8) {
   animation-duration: 45s;
 }
 
-ul.circles li:nth-child(9) {
+div.circles li:nth-child(9) {
   left: 20%;
   width: 15px;
   height: 15px;
@@ -154,7 +154,7 @@ ul.circles li:nth-child(9) {
   animation-duration: 35s;
 }
 
-ul.circles li:nth-child(10) {
+div.circles li:nth-child(10) {
   left: 85%;
   width: 150px;
   height: 150px;

@@ -13,4 +13,3 @@ $(document).ready(function(index) {
 var $backgroundLines = $( "<div class='bg'></div><div class='bg bg2'></div><div class='bg bg3'></div>")
 
 $( "#page" ).prepend( $backgroundLines );
-//$( "body ul.circles" ).height($(document).height()).width($(document).width());
