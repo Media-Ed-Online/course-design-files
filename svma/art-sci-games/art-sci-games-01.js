@@ -14,13 +14,13 @@ $("nav#course-toc h2").each(function() {
 ------------------ */
 
 $(document).ready(function() {
-  var bgShapesColor = ["#ff0000", "blue", "gray"];
-  var bgShapesColorRand = bgShapesColor[Math.floor(Math.random() * bgShapesColor.length)];
-  console.log(bgShapesColorRand);
+  var back = ["#ff0000","blue","gray"];
+  var rand = back[Math.floor(Math.random() * back.length)];
+  console.log(rand);
+  $('.bgShapes span').css('background',rand);
 
   var $backgroundShapes = $("<div class='bgShapes'><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>")
 
-  $('.bgShapes span').css('background', bgShapesColorRand);
   $("#page").prepend($backgroundShapes);
 });
 
