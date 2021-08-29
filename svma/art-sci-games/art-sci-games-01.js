@@ -37,8 +37,8 @@ $(document).ready(function(index) {
   var BOOK = "li.modtype_book"
   var H5P = "li.modtype_h5pactivity"
 
-  // select only items titled Gamififed...
-  if ($(this).find("p.instancename:contains('Stage')").length > 0) {
+  // select only items titled Level...
+  if ($(this).find("p.instancename:contains('Syllabus'), p.instancename:contains('Schedule'), p.instancename:contains('Level')").length > 0) {
 
     //-- CHANGE THE URL MODTYPE TITLE
     $(URL).each(function(index) {
