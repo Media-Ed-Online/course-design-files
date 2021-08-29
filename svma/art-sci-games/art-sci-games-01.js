@@ -20,7 +20,7 @@ $(document).ready(function() {
 
   // Random BG Colors
   var bgShapesColorOpts = ["#ff0000","blue","gray"];
-  var bgShapesColorRand = bgShapesColorOpts[Math.floor(Math.random() * bgShapesColorOpts.length)];
+  var bgShapesColorRand = rand[Math.floor(Math.random() * bgShapesColorOpts.length)];
   console.log(bgShapesColorRand);
   $('div.bgShapes span').css('background',bgShapesColorRand);
 });
