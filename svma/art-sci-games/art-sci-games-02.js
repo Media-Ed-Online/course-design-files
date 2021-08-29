@@ -2,9 +2,9 @@
 | TABLE OF CONTENTS  |
 ------------------ */
 /*$("nav#course-toc h2").each(function() {
-  var text = $(this).text();
-  text = text.replace("Contents", "Levels");
-  $(this).text(text);
+var text = $(this).text();
+text = text.replace("Contents", "Levels");
+$(this).text(text);
 });*/
 
 
@@ -32,13 +32,13 @@ $(document).ready(function() {
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-$(document).ready(function(index) {
+$('li.modtype_url').each(function(index) {
   var URL = "li.modtype_url"
   var BOOK = "li.modtype_book"
   var H5P = "li.modtype_h5pactivity"
 
   // select only items titled Level...
-  if ( $("p:contains('Tutorial')").length ){
+  if ($("p:contains('Tutorial')").length) {
 
     //-- CHANGE THE URL MODTYPE TITLE
     $(this).each(function(index) {
