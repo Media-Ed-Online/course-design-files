@@ -17,11 +17,12 @@ $(document).ready(function() {
   var back = ["#ff0000","blue","gray"];
   var rand = back[Math.floor(Math.random() * back.length)];
   console.log(rand);
-  $('.bgShapes span').css('background',rand);
+
 
   var $backgroundShapes = $("<div class='bgShapes'><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>")
 
   $("#page").prepend($backgroundShapes);
+  $('div.bgShapes span').css('background',rand);
 });
 
 
