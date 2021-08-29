@@ -3,7 +3,7 @@
 ------------------ */
 $(document).ready(function(index) {
   var textTitle = "Tutorial"
-  var URL = $('li.modtype_url:contains(textTitle)');
+  var URL = $('li.modtype_url:contains("Tutorial")');
   var BOOK = $('li.modtype_book:contains(textTitle)');
   var H5P = $('li.modtype_h5pactivity:contains(textTitle)');
 
