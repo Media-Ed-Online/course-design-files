@@ -8,6 +8,7 @@ $(document).ready(function(index) {
   var findText = $('li:contains("Tutorial")');
 
   if ($(this).find(findText).length > 0) {
+    $(this).css("background","red")
 
     $(URL).each(function(index) {
       // variables
