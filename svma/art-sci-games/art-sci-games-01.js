@@ -1,11 +1,11 @@
 /* ------------------
 | TABLE OF CONTENTS  |
 ------------------ */
-$("nav#course-toc h2").each(function() {
+/*$("nav#course-toc h2").each(function() {
   var text = $(this).text();
   text = text.replace("Contents", "Levels");
   $(this).text(text);
-});
+});*/
 
 
 
@@ -19,7 +19,7 @@ $(document).ready(function() {
 
   $("div.bgShapes span").each(function() {
     // Random BG Colors
-    var bgShapesColorOpts = ["#ff0000", "blue", "gray"];
+    var bgShapesColorOpts = ["#DF3D9B", "#FDC273", "#0573CD"];
     var bgShapesColorRand = bgShapesColorOpts[Math.floor(Math.random() * bgShapesColorOpts.length)];
     console.log(bgShapesColorRand);
     $(this).css('background', bgShapesColorRand);
@@ -38,7 +38,7 @@ $(document).ready(function(index) {
   var H5P = "li.modtype_h5pactivity"
 
   // select only items titled Gamififed...
-  if ($(this).find("p.instancename:contains('Level')").length > 0) {
+  if ($(this).find("p.instancename:contains('Stage')").length > 0) {
 
     //-- CHANGE THE URL MODTYPE TITLE
     $(URL).each(function(index) {
