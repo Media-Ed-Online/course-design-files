@@ -10,7 +10,7 @@ $(document).ready(function(index) {
   if ($(this).find(findText).length > 0) {
     $(this).css("background","red")
 
-    $(URL).each(function(index) {
+    $(this).find(URL).each(function(index) {
       // variables
       let oldTitle = $(this).find(".snap-asset-link")
       let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
