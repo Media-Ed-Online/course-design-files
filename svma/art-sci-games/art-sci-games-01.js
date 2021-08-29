@@ -37,7 +37,7 @@ $(document).ready(function(index) {
   var BOOK = "li.modtype_book"
   var H5P = "li.modtype_h5pactivity"
 
-  $('#region-main p.instancename:contains("Tutorial")').css('color', 'red');
+
 
   // select only items titled Level...
   if ($(this).find("p.instancename:contains('Tutorial')").length > 0) {
@@ -119,3 +119,5 @@ $(document).ready(function(index) {
         // Do nothing
   }
 });
+
+$('#region-main p.instancename:contains("Tutorial")').css('color', 'red');
