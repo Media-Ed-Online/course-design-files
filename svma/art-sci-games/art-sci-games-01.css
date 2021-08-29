@@ -10,9 +10,6 @@
 ul.topics li h2.sectionname {
   visibility: hidden;
 }
-p.instancename::before, p.instancename::after {
-  display: none;
-}
 
 
 
