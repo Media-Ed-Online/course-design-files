@@ -10,7 +10,7 @@ right: -50%;
 bottom: 0;
 left: -50%;
 background: #4e54c8;
-background: linear-gradient(90deg, rgba(143,148,251,1) 35%, rgba(78,84,200,1) 100%);
+background: linear-gradient(90deg, rgba(143,148,251,1) 50%, rgba(78,84,200,1) 100%);
 opacity: .5;
 z-index: -1;
 }
