@@ -6,14 +6,12 @@
 .bgShapes {
   position: fixed;
   top: 0;
-  /*right: -50%;*/
+  right: -50%;
   bottom: 0;
-  /*left: -50%;*/
+  left: -50%;
   background: #4e54c8;
-  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
-  background: -moz-linear-gradient(to left, #8f94fb, #4e54c8);
-  background: -o-linear-gradient(to left, #8f94fb, #4e54c8);
-  background: linear-gradient(to left, #8f94fb, #4e54c8);
+  background: -webkit-linear-gradient(90deg, rgba(143, 148, 251, 1) 35%, rgba(78, 84, 200, 1);
+  background: -moz-linear-gradient(90deg, rgba(143, 148, 251, 1) 35%, rgba(78, 84, 200, 1) background: -o-linear-gradient(90deg, rgba(143, 148, 251, 1) 35%, rgba(78, 84, 200, 1) background: linear-gradient(90deg, rgba(143, 148, 251, 1) 35%, rgba(78, 84, 200, 1) 100%);
   opacity: .5;
   z-index: -1;
 }
