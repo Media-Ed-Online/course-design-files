@@ -38,10 +38,10 @@ $(document).ready(function(index) {
   var H5P = "li.modtype_h5pactivity"
 
   // select only items titled Level...
-  if ($(URL).find(':contains("tutorial")').length > 0) {
+  if ($(this).find('p.instancename:contains("Tutorial")').length > 0) {
 
     //-- CHANGE THE URL MODTYPE TITLE
-    $(this).each(function(index) {
+    $(URL).each(function(index) {
       // variables
       let oldTitle = $(this).find(".snap-asset-link")
       let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")

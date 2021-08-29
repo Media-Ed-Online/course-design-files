@@ -32,7 +32,7 @@ $(document).ready(function() {
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-$('li.modtype_url:contains("tutorial")').each(function(index) {
+$('li.modtype_url:contains("tutorial"), li.modtype_book:contains("tutorial")').each(function(index) {
   // variables
   let oldTitle = $(this).find(".snap-asset-link")
   let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
