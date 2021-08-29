@@ -33,6 +33,12 @@ $(document).ready(function() {
 | URL MODULE GROUP   |
 ------------------ */
 $('li.modtype_url:contains("tutorial"), li.modtype_book:contains("tutorial")').each(function(index) {
+
+  var URL = "li.modtype_url"
+  var BOOK = "li.modtype_book"
+  var H5P = "li.modtype_h5pactivity"
+
+  
   // variables
   let oldTitle = $(this).find(".snap-asset-link")
   let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
