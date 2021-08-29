@@ -13,7 +13,7 @@ $("nav#course-toc h2").each(function() {
 | BACKGROUND         |
 ------------------ */
 
-$(document).ready(function() {
+$(document).ready(function(index) {
   // Draw Shapes
   var $backgroundShapes = $("<div class='bgShapes'><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>")
   $("#page").prepend($backgroundShapes);
