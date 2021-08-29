@@ -37,8 +37,10 @@ $(document).ready(function(index) {
   var BOOK = "li.modtype_book"
   var H5P = "li.modtype_h5pactivity"
 
+  $('#region-main p.instancename:contains("Tutorial")').css('color', 'red');
+
   // select only items titled Level...
-  if ($("p.instancename").is(':contains("Tutorial")').length > 0) {
+  if ($(this).find("p.instancename:contains('Tutorial')").length > 0) {
 
     //-- CHANGE THE URL MODTYPE TITLE
     $(URL).each(function(index) {
