@@ -9,7 +9,7 @@
   right: -50%;
   bottom: 0;
   left: -50%;
-  background: #E9E9E9;
+  background: #F5F7F0;
   /*background: linear-gradient(90deg, #084B86 25%, #21223D 100%);*/
   opacity: .5;
   z-index: -1;
@@ -107,13 +107,13 @@
 @keyframes bgShapesRotate {
   0% {
     transform: translateY(0) rotate(0deg);
-    opacity: .5;
+    opacity: .3;
     border-radius: 0;
   }
 
   100% {
     transform: translateY(-1000px) rotate(720deg);
-    opacity: .2;
-    border-radius: 75%;
+    opacity: .1;
+    border-radius: 50%;
   }
 }
