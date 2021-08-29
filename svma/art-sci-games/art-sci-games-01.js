@@ -72,7 +72,7 @@ $(document).ready(function(index) {
       $(this).find(".snap-header-card").css("display", "none");
       $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
       $(this).find("p.snap-resource-card-fadeout").remove();
-      $(this).find("li.snap-resource.modtype_url").css("background-image: none;");
+      $(this).find("body.snap-resource-card li.snap-resource.modtype_url").css("background-image: none;");
       // new style
       $(this).css({
         'height': 'auto',
