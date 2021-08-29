@@ -33,14 +33,13 @@ $(document).ready(function() {
 | URL MODULE GROUP   |
 ------------------ */
 $(document).ready(function(index) {
-  var URL = "li.modtype_url"
-  var BOOK = "li.modtype_book"
-  var H5P = "li.modtype_h5pactivity"
-
-
 
   // select only items titled Level...
-  if ($(this).find('').length > 0) {
+  if ($(this).find("p.instancename:contains('Tutorial')").length > 0) {
+
+    let URL = "li.modtype_url"
+    let BOOK = "li.modtype_book"
+    let H5P = "li.modtype_h5pactivity"
 
     //-- CHANGE THE URL MODTYPE TITLE
     $(URL).each(function(index) {
