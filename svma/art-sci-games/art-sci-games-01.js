@@ -16,13 +16,7 @@ $(document).ready(function() {
   // Draw Shapes
   var $backgroundShapes = $("<div class='bgShapes'><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>")
 
-  // Random BG Colors
-  var bgShapesColorOpts = ["#ff0000", "blue", "gray"];
-  var bgShapesColorRand = bgShapesColorOpts[Math.floor(Math.random() * bgShapesColorOpts.length)];
-  console.log(bgShapesColorRand);
-
   $("#page").prepend($backgroundShapes);
-  $('div.bgShapes span').css('background', bgShapesColorRand);
 });
 $("div.bgShapes span").each(function() {
   // Random BG Colors
