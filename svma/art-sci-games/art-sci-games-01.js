@@ -10,4 +10,4 @@ $("nav#course-toc h2").each(function() {
 var $backgroundCircles = $( "<ul class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul>")
 
 $( "#page" ).prepend( $backgroundCircles );
-$( "body ul.circles" ).height($(document).height()).width($(document).width());
+$( "ul.circles" ).height($(document).height()).width($(document).width());

@@ -8,3 +8,9 @@ $(document).ready(function(index) {
   $('li.modtype_label:nth-of-type(2)').contents().appendTo('#tab-container div.tab-content div#nav-second');
   $('li.modtype_label:nth-of-type(3)').contents().appendTo('#tab-container div.tab-content div#nav-third');
 });
+
+
+var $backgroundLines = $( "<div class='bg'></div><div class='bg bg2'></div><div class='bg bg3'></div>")
+
+$( "#page" ).prepend( $backgroundLines );
+//$( "body ul.circles" ).height($(document).height()).width($(document).width());
