@@ -32,25 +32,11 @@ $(document).ready(function() {
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-$('li.modtype_url:contains("tutorial"), li.modtype_book:contains("tutorial")').each(function(index) {
+$('li.modtype_url:contains("tutorial"), li.modtype_url:contains("tutorial")').each(function(index) {
   // variables
   let oldTitle = $(this).find(".snap-asset-link")
   let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
   // save the title, remove it, and add to new location
   oldTitle.remove();
   newTitle.append(oldTitle);
-
-  $('li.modtype_url:contains("tutorial"), li.modtype_book:contains("tutorial")').each(function() {
-    var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-    var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
-    // first of set
-    $(this).each(function() {
-      // find the first of each, add empty class to mark
-      let oldIcon_URL = $('li.modtype_url').first().find(oldIcon).addClass("moved")
-      let oldIcon_BOOK = $('li.modtype_book').first().addClass("moved").find(oldIcon)
-      let oldIcon_H5P = $('li.modtype_h5pactivity').first().addClass("moved").find(oldIcon)
-      let newIconLocation = $('li.modtype_url').first().addClass("moved").find(newIcon)
-      // relocated all moved-targeted items to new location
-      newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
-    });
 });
