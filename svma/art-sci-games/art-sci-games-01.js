@@ -15,16 +15,15 @@ $("nav#course-toc h2").each(function() {
 $(document).ready(function() {
   // Draw Shapes
   var $backgroundShapes = $("<div class='bgShapes'><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>")
-
   $("#page").prepend($backgroundShapes);
-});
-$("div.bgShapes span").each(function() {
-  // Random BG Colors
-  var bgShapesColorOpts = ["#ff0000", "blue", "gray"];
-  var bgShapesColorRand = bgShapesColorOpts[Math.floor(Math.random() * bgShapesColorOpts.length)];
-  console.log(bgShapesColorRand);
 
-  $(this).css('background', bgShapesColorRand);
+  $("div.bgShapes span").each(function() {
+    // Random BG Colors
+    var bgShapesColorOpts = ["#ff0000", "blue", "gray"];
+    var bgShapesColorRand = bgShapesColorOpts[Math.floor(Math.random() * bgShapesColorOpts.length)];
+    console.log(bgShapesColorRand);
+    $(this).css('background', bgShapesColorRand);
+  });
 });
 
 
@@ -99,7 +98,7 @@ $(document).ready(function(index) {
         'font-family': '"Fredoka One"',
         'color': '#4C5656',
         'padding-right': '0px',
-        'margin':'0px',
+        'margin': '0px',
       });
     });
     $(BOOK).each(function() {
