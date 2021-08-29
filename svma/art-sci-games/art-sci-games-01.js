@@ -97,6 +97,7 @@ $(document).ready(function(index) {
         'font-family': '"Fredoka One"',
         'color': '#4C5656',
         'padding-right': '0px',
+        'margin':'0px',
       });
     });
     $(BOOK).each(function() {
