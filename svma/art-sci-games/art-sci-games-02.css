@@ -9,8 +9,8 @@
   right: -50%;
   bottom: 0;
   left: -50%;
-  background: #F8EAC5;
-  background: linear-gradient(90deg, #F4F7E2 25%, #F8EAC5 50%);
+  background: #88C7E8;
+  /*background: linear-gradient(90deg, #F4F7E2 25%, #F8EAC5 50%);*/
   opacity: .5;
   z-index: -1;
 }
