@@ -17,13 +17,13 @@ $(document).ready(function() {
   var $backgroundShapes = $("<div class='bgShapes'><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>")
   $("#page").prepend($backgroundShapes);
 
-  /*$("div.bgShapes span").each(function() {
+  $("div.bgShapes span").each(function() {
     // Random BG Colors
     var bgShapesColorOpts = ["#DF3D9B", "#FDC273", "#0573CD"];
     var bgShapesColorRand = bgShapesColorOpts[Math.floor(Math.random() * bgShapesColorOpts.length)];
     console.log(bgShapesColorRand);
     $(this).css('background', bgShapesColorRand);
-  });*/
+  });
 });
 
 
@@ -65,14 +65,14 @@ $(document).ready(function(index) {
         newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
       });
       //next of each modtype, repeated
-      setInterval(function() {
+      //setInterval(function() {
         // find the first non-targeted of each, add empty class to mark
         let oldIcon_URL = $("li.modtype_url:not(.moved)").first().find(oldIcon).addClass("moved")
         let oldIcon_BOOK = $("li.modtype_book:not(.moved)").first().addClass("moved").find(oldIcon)
         let oldIcon_H5P = $("li.modtype_h5pactivity:not(.moved)").first().addClass("moved").find(oldIcon)
         let newIconLocation = $("li.modtype_url:not(.moved)").first().addClass("moved").find(newIcon)
         // relocated all moved-targeted items to new location
-        newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
+        newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P//);
       });
     });
 
