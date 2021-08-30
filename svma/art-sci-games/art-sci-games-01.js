@@ -38,7 +38,7 @@ $(document).ready(function(index) {
   var H5P = "li.modtype_h5pactivity"
 
   // select only items titled Level...
-  if ($(this).find('p.instancename:contains("Ludology")').length > 0) {
+  if ($(this).find('p.instancename:contains("Syllabus")').length > 0) {
 
     //-- CHANGE THE URL MODTYPE TITLE
     $(URL).each(function(index) {
@@ -64,14 +64,8 @@ $(document).ready(function(index) {
         // relocated all moved-targeted items to new location
         newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
       });
-      let oldIcon_URL = $("li.modtype_url:not(.moved)").first().find(oldIcon).addClass("moved")
-      let oldIcon_BOOK = $("li.modtype_book:not(.moved)").first().addClass("moved").find(oldIcon)
-      let oldIcon_H5P = $("li.modtype_h5pactivity:not(.moved)").first().addClass("moved").find(oldIcon)
-      let newIconLocation = $("li.modtype_url:not(.moved)").first().addClass("moved").find(newIcon)
-      // relocated all moved-targeted items to new location
-      newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
       //next of each modtype, repeated
-      /*setInterval(function() {
+      setInterval(function() {
         // find the first non-targeted of each, add empty class to mark
         let oldIcon_URL = $("li.modtype_url:not(.moved)").first().find(oldIcon).addClass("moved")
         let oldIcon_BOOK = $("li.modtype_book:not(.moved)").first().addClass("moved").find(oldIcon)
@@ -79,7 +73,7 @@ $(document).ready(function(index) {
         let newIconLocation = $("li.modtype_url:not(.moved)").first().addClass("moved").find(newIcon)
         // relocated all moved-targeted items to new location
         newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
-      });*/
+      });
     });
 
     //-- Styling Changes
