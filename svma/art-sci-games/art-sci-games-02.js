@@ -2,7 +2,7 @@
 | URL MODULE GROUP   |
 ------------------ */
 $(document).ready(function(index) {
-  var URL = $('li.modtype_url:contains("Tutorial")');
+  var URL = $('li.modtype_url:contains("Level")');
   var BOOK = $('li.modtype_book:contains(textTitle)');
   var H5P = $('li.modtype_h5pactivity:contains(textTitle)');
 
