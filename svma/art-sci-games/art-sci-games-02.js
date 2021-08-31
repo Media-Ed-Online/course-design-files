@@ -21,13 +21,9 @@ $(document).ready(function() {
   $("li.modtype_url").each(function() { //loop through the elements
     var elem = $(this); //reference to current
     var txt = $.trim(elem.text()); //get its text
-    if (lookup[txt]) { //if we have had this text already, remove the element
-      // variables
-      let oldTitle = $(this).find(".snap-asset-link")
-      let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
-      // save the title, remove it, and add to new location
-      oldTitle.remove();
-      newTitle.append(oldTitle);
+    if (lookup[txt]) {
+      $(this).find(".snap-asset-link").remove()
+      $("li.modtype_book").find(".snap-asset-link").remove()
     } else {
       lookup[txt] = true; //set the key in the lookup
     }
