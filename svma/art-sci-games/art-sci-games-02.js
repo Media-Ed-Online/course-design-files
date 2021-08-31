@@ -18,7 +18,7 @@
 
 $(document).ready(function() {
   var lookup = {}; //store text here
-  $("div").each(function() { //loop through the elements
+  $("li.modtype_url").each(function() { //loop through the elements
     var elem = $(this); //reference to current
     var txt = $.trim(elem.text()); //get its text
     if (lookup[txt]) { //if we have had this text already, remove the element
