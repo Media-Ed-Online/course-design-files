@@ -1,8 +1,8 @@
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-$(document).ready(function(index) {
-  var URL = $('li.modtype_url:contains("Level")');
+/*$(document).ready(function(index) {
+  var URL = $('li.modtype_url:contains("Level" + B)');
   var BOOK = $('li.modtype_book:contains(textTitle)');
   var H5P = $('li.modtype_h5pactivity:contains(textTitle)');
 
@@ -14,15 +14,18 @@ $(document).ready(function(index) {
     oldTitle.remove();
     newTitle.append(oldTitle);
   });
-});
+});*/
 
-
-/*function findElementByText(text) {
-  var jSpot = $("p:contains(" + Level + ")")
-    .filter(function() {
-      $(this).css('background','red')
-    })
-    .parent(); // because you asked the parent of that element
-
-  return jSpot;
-}*/
+$(document).ready(function() {
+  var lookup = {}; //store text here
+  $("div").each(function() { //loop through the elements
+    var elem = $(this); //reference to current
+    var txt = $.trim(elem.text()); //get its text
+    if (lookup[txt]) { //if we have had this text already, remove the element
+      elem.filter(":contains('Level A')").css("background", "red");
+      elem.filter(":contains('Level B')").css("background", "yellow")
+    } else {
+      lookup[txt] = true; //set the key in the lookup
+    }
+  });
+}());
