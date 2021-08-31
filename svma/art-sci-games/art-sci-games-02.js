@@ -19,7 +19,7 @@
 $(document).ready(function() {
   var lookup = {}; //store text here
   $('li.modtype_url').find(".snap-asset-content .no-overflow").removeClass("no-overflow");
-  $("li.snap-asset").each(function() { //loop through the elements
+  $("li.snap-asset .snap-asset-link").each(function() { //loop through the elements
     var elem = $(this); //reference to current
     var txt = $.trim(elem.text()); //get its text
     var URL = "li.modtype_url"
