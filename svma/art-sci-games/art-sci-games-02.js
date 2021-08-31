@@ -17,16 +17,9 @@
 });*/
 
 $(document).ready(function() {
-  $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
   var lookup = {}; //store text here
-  var blackList = [
-              "Book",
-              "H5P",
-              "URL",
-            ];
 
   $("li.snap-asset .snap-asset-link").each(function() { //loop through the elements
-
     var elem = $(this); //reference to current
     var txt = $.trim(elem.text()); //get its text
     var URL = "li.modtype_url"
