@@ -25,6 +25,7 @@ $(document).ready(function() {
             ];
 
   $("li.snap-asset .snap-asset-link").each(function() { //loop through the elements
+    $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
     var elem = $(this); //reference to current
     var txt = $.trim(elem.innerHTML()); //get its text
     var URL = "li.modtype_url"
