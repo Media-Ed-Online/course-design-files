@@ -1,7 +1,7 @@
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-/*$(document).ready(function(index) {
+$(document).ready(function(index) {
   var URL = $('li.modtype_url:contains("Level")');
   var BOOK = $('li.modtype_book:contains(textTitle)');
   var H5P = $('li.modtype_h5pactivity:contains(textTitle)');
@@ -14,10 +14,10 @@
     oldTitle.remove();
     newTitle.append(oldTitle);
   });
-});*/
+});
 
 
-function findElementByText(text) {
+/*function findElementByText(text) {
   var jSpot = $("p:contains(" + Level + ")")
     .filter(function() {
       $(this).css('background','red')
@@ -25,4 +25,4 @@ function findElementByText(text) {
     .parent(); // because you asked the parent of that element
 
   return jSpot;
-}
+}*/
