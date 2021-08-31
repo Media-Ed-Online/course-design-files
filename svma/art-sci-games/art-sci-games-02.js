@@ -18,8 +18,8 @@
 
 $(document).ready(function() {
   var lookup = {}; //store text here
-$('li.modtype_url').find(".snap-asset-content .no-overflow").removeClass("no-overflow");
-  $("li.snap-asset .snap-asset-link").each(function() { //loop through the elements
+  $('li.modtype_url').find(".snap-asset-content .no-overflow").removeClass("no-overflow");
+  $("li.snap-asset").each(function() { //loop through the elements
     var elem = $(this); //reference to current
     var txt = $.trim(elem.text()); //get its text
     var URL = "li.modtype_url"
@@ -39,7 +39,7 @@ $('li.modtype_url').find(".snap-asset-content .no-overflow").removeClass("no-ove
         newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
       });
     } else {
-      lookup[txt] = true; //set the key in the lookup
+      //lookup[txt] = true; //set the key in the lookup
     }
   });
 }());
