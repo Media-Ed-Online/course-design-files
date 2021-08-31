@@ -23,7 +23,6 @@ $(document).ready(function() {
     var txt = $.trim(elem.text()); //get its text
     if (lookup[txt]) {
       $(this).find(".snap-asset-link").remove()
-      $("li.modtype_book").find(".snap-asset-link").remove()
     } else {
       lookup[txt] = true; //set the key in the lookup
     }
