@@ -39,7 +39,7 @@ $(document).ready(function() {
         newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
       });
     } else {
-      //lookup[txt] = true; //set the key in the lookup
+      lookup[txt] = true; //set the key in the lookup
     }
   });
 }());
