@@ -18,9 +18,15 @@
 
 $(document).ready(function() {
   var lookup = {}; //store text here
+  var blackList = [
+              "Book",
+              "H5P",
+              "URL",
+            ];
+
   $("li.snap-asset .snap-asset-link").each(function() { //loop through the elements
     var elem = $(this); //reference to current
-    var txt = $.trim(elem.text()); //get its text
+    var txt = $.trim(elem.innerHTML()); //get its text
     var URL = "li.modtype_url"
     var BOOK = "li.modtype_book"
     var H5P = "li.modtype_h5pactivity"
