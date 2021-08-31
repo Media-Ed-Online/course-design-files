@@ -18,11 +18,11 @@
 
 $(document).ready(function() {
   var lookup = {}; //store text here
-  $("li.modtype_url").each(function() { //loop through the elements
+  $("li.snap-asset .snap-asset-link").each(function() { //loop through the elements
     var elem = $(this); //reference to current
     var txt = $.trim(elem.text()); //get its text
     if (lookup[txt]) {
-      $(this).find(".snap-asset-link").remove()
+      $("li.modtype_url").find(".snap-asset-link").remove()
     } else {
       lookup[txt] = true; //set the key in the lookup
     }
