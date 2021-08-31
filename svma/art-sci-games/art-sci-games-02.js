@@ -22,8 +22,12 @@ $(document).ready(function() {
     var elem = $(this); //reference to current
     var txt = $.trim(elem.text()); //get its text
     if (lookup[txt]) { //if we have had this text already, remove the element
-      elem.filter(":contains('Level A')").css("background", "red");
-      elem.filter(":contains('Level B')").css("background", "yellow")
+      // variables
+      let oldTitle = $(this).find(".snap-asset-link")
+      let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
+      // save the title, remove it, and add to new location
+      oldTitle.remove();
+      newTitle.append(oldTitle);
     } else {
       lookup[txt] = true; //set the key in the lookup
     }
