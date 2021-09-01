@@ -28,11 +28,7 @@ $(document).ready(function(index) {
 
         //3. -- move icons beneath new title home
         $(this).each(function(index) {
-          var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-          var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
-          let oldIcon_Book = $(this).closest(BOOK).find(oldIcon)
-          let newIconLocation = $(URL).find(newIcon)
-          newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
+          
         });
         /*$(this).each(function(index) {
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
