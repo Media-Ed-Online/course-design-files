@@ -1,15 +1,9 @@
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-$(document).ready(function(index) {
-  var list = {
-    'Level A',
-    'Level B',
-  };
-
-  $.each(list, function(index) {
-      $(this).find('div:contains("' + list + '")').css("display","none")
-  });
+var arr = ['Level A','Level B','three','four','five'];
+$.each(arr, function(index, value){
+	console.log('The value at arr[' + index + '] is: ' + value);
 });
 
 /*  $(this).find('ul.topics li').each(function() {
