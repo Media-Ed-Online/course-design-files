@@ -7,10 +7,8 @@ $(document).ready(function(index) {
     'Level B',
   };
 
-  $.each(list, function(index, value) {
-    if ($(this).find('p.instancename:contains(" '+ list +'")').length > 0) {
+  $.each(list, function(index) {
       $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
-    };
   });
 });
 
