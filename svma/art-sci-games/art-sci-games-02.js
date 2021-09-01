@@ -1,7 +1,7 @@
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-/*$(document).ready(function(index) {
+$(document).ready(function(index) {
   const tileTitles = ["Level A", "Level B"];
 
   if ($('li.activity').find('p:contains("' + tileTitles + '")').length > 0) {
@@ -15,15 +15,4 @@
 
     }
   };
-});*/
-
-
-var searchTerms = ["Level A", "Level B"];
-
-$('li').filter(function() {
-  $text = $(this).text();
-  $.each(searchTerms, function (index, term) {
-        found = $text.indexOf(term) > -1 ? found +1 : found;
-    })
-    return found;
-}).css('background','pink');
+});
