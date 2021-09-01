@@ -3,7 +3,7 @@
 ------------------ */
 var arr = ['Level A','Level B','three','four','five'];
 $.each(arr, function(index, value){
-	console.log('The value at arr[' + index + '] is: ' + value);
+	$(this).find('p.instancename:containts"[' + value + ']"').remove();
 });
 
 /*  $(this).find('ul.topics li').each(function() {
