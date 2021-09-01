@@ -2,7 +2,7 @@
 | URL MODULE GROUP   |
 ------------------ */
 $(document).ready(function(index) {
-  const tileTitles = ['Level A'];
+  const tileTitles = ['Level A','Level B'];
 
   if ($('li.activity').find('p:contains("' + tileTitles + '")').length > 0) {
     $(this).find('.modtype_url').each(function(index) {
@@ -11,5 +11,8 @@ $(document).ready(function(index) {
       oldTitle.remove();
       newTitle.append(oldTitle);
     });
+    else {
+
+    }
   };
 });
