@@ -27,14 +27,15 @@ $(document).ready(function(index) {
         });
 
         //3. -- move icons beneath new title home
-        $(this).first(BOOK).each(function() {
-          // find the first of each, add empty class to mark
-          let oldIcon_URL = $(URL).first().find(oldIcon).addClass("moved")
-          let oldIcon_BOOK = $(BOOK).first().addClass("moved").find(oldIcon)
-          let oldIcon_H5P = $(H5P).first().addClass("moved").find(oldIcon)
-          let newIconLocation = $(URL).first().addClass("moved").find(newIcon)
-          // relocated all moved-targeted items to new location
-          newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
+        var lookedUp = {}
+
+        $(this).each(function() {
+          var text = $(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")')
+          if (lookedUp[text]) {
+            $(this).css("background", "yellow")
+          } else {
+            lookedUp[text] = true;
+          }
         });
       };
     });
