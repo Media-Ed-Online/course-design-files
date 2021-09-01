@@ -3,8 +3,8 @@
 ------------------ */
 $(document).ready(function(index) {
 
-  $(this).find('ul.section li.activity').each(function() {
-    if ($(this).find('p.instancename:contains("Level A")').length > 0) {
+  $(this).find('ul.section').each(function() {
+    if ($(this).find('p.instancename:contains("Level")').length > 0) {
 
       $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
 
@@ -23,7 +23,7 @@ $(document).ready(function(index) {
           let oldIcon_BOOK = $('li.modtype_book').first().addClass("moved").find(oldIcon)
           let oldIcon_H5P = $('li.modtype_h5pactivity').first().addClass("moved").find(oldIcon)
           let newIconLocation = $('li.modtype_url').first().addClass("moved").find(newIcon)
-          newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
+          newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
         });
       });
     };
