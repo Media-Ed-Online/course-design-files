@@ -8,7 +8,7 @@ $(document).ready(function(index) {
 
         $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
 
-        $(this).find('.modtype_url').each(function(index) {
+        $('.modtype_url').each(function(index) {
           // variables
           let oldTitle = $(this).find(".snap-asset-link")
           let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
@@ -18,7 +18,6 @@ $(document).ready(function(index) {
         });
       }
       else {
-
       };
     });
   });
