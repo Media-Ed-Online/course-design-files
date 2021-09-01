@@ -8,7 +8,7 @@ $(document).ready(function(index) {
   };
 
   $.each(list, function(index) {
-      $(this).find$('div:contains("' + list + '")').css("display","none")
+      $(this).find('div:contains("' + list + '")').css("display","none")
   });
 });
 
