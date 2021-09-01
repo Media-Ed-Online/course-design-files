@@ -2,7 +2,7 @@
 | URL MODULE GROUP   |
 ------------------ */
 var arr = ['Level A','Level B','three','four','five'];
-$.each(arr, function(index, value){
+$.each(obj, function(key, value){
 	$(this).find('p.instancename:containts"[' + value + ']"').remove();
 });
 
