@@ -3,7 +3,7 @@
 ------------------ */
 $(document).ready(function(index) {
 
-  $(this).find('li.section > ul.section').each(function() {
+  $(this).find('li.section > ul.section li.activity').each(function() {
     if ($(this).find('p.instancename:contains("Level A")').length > 0) {
       $(URL).each(function(index) {
         let oldTitle = $(this).find(".snap-asset-link")
