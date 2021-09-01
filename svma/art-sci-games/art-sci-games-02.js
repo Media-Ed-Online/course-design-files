@@ -2,7 +2,7 @@
 | URL MODULE GROUP   |
 ------------------ */
 
-$(document).ready(function(index) {
+/*$(document).ready(function(index) {
   $(this).find('ul.topics li li.modtype_url, ul.topics li li.modtype_book').each(function() {
     if ($(this).find('p.instancename:contains("Level A")').length > 0) {
       $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
@@ -18,4 +18,13 @@ $(document).ready(function(index) {
 
     } else {};
   });
+});*/
+
+$(document).ready(function(index) {
+  var instanceName = 'p.instancname:contains("")'
+  var URL = 'li.modtype_url'
+  var BOOK = 'li.modtype_book'
+  var H5P = 'li.modtype_h5pactivity'
+
+  $(this).find(URL BOOK H5P).css("display","none")
 });
