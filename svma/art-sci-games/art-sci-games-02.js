@@ -26,9 +26,12 @@ $(document).ready(function(index) {
   var BOOK = 'li.modtype_book'
   var H5P = 'li.modtype_h5pactivity'
 
-  $(this).find(URL).add(BOOK).add(H5P).each(function() {
-    if ($(this).find(instanceName).length > 0) {
-      $(this).css("display", "none")
-    };
+  var substr = ['p.instancename: contains("Level A")', 2, 3, 4];
+  $.each(substr, function(index, value) {
+    $(this).find(URL).add(BOOK).add(H5P).each(function() {
+      if ($(this).find(substr).length > 0) {
+        $(this).css("display", "none")
+      };
+    });
   });
 });
