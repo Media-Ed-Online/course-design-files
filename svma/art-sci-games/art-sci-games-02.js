@@ -12,11 +12,10 @@ $(document).ready(function(index) {
         oldTitle.remove();
         newTitle.append(oldTitle);
       });
-      $(this).closest(".modtype_book").ready(function() {
-        var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-        var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
-        $("li.modtype_url").find(newIcon).append(oldIcon)
-      });
+
+      var oldIcon = $(this).closest(".modtype_book").find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+      var newIcon = $(this).closest(".modtype_book").find(".snap-asset-content .contentafterlink div.tile-completion")
+
     } else {};
   });
 });
