@@ -8,9 +8,11 @@ $(document).ready(function(index) {
 
         $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
 
-        $(this).find("li.modtype_url").ready(function(index) {
+        $('.modtype_url').each(function(index) {
+          // variables
           let oldTitle = $(this).find(".snap-asset-link")
           let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
+          // save the title, remove it, and add to new location
           oldTitle.remove();
           newTitle.append(oldTitle);
         });
