@@ -27,16 +27,7 @@ $(document).ready(function(index) {
         });
 
         //3. -- move icons beneath new title home
-        var lookedUp = {}
-
-        $(this).each(function() {
-          var text = $(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")')
-          if (lookedUp[text]) {
-            $(this).css("background", "yellow")
-          } else {
-            lookedUp[text] = true;
-          }
-        });
+        $(this).first().css("background", "yellow")
       };
     });
   };
