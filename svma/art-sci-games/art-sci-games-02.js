@@ -16,7 +16,7 @@ $(document).ready(function(index) {
           oldTitle.remove();
           newTitle.append(oldTitle);
         });
-      };
+      }
       else {
 
       };
