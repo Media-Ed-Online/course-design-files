@@ -21,13 +21,14 @@
 });*/
 
 $(document).ready(function(index) {
-  var instanceName = 'p.instancname:contains("")'
+  var instanceName = 'p.instancname:contains("Level A")'
   var URL = 'li.modtype_url'
   var BOOK = 'li.modtype_book'
   var H5P = 'li.modtype_h5pactivity'
 
-  $(this).find(URL, BOOK, H5P).each(function() {
-    $(this).css("display","none")
-
+  $(this).find(URL).add(BOOK).add(H5P).each(function() {
+    if ($(this).find(instanceName).length > 0) {
+      $(this).css("display", "none")
+    };
   });
 });
