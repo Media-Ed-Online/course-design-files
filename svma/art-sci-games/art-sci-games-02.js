@@ -16,7 +16,7 @@ jQuery.expr[':'].mcontains = function(obj, index, meta, stack){
     return false;
 };
 
-$(document).ready(function(index) {
+/*$(document).ready(function(index) {
   const tileTitles = ["Level A", "Level B"];
 
   if ($('li.activity').find('p:contains("' + tileTitles + '")').length > 0) {
@@ -30,5 +30,5 @@ $(document).ready(function(index) {
 
     }
   };
-});
+});*/
 $("li:mcontains('Level A','Level B')").css("color","red")
