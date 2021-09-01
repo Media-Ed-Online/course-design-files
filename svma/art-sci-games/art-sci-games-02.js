@@ -6,7 +6,7 @@ $(document).ready(function(index) {
     $(this).find('li.activity').each(function() {
       if ($(this).find('p.instancename:contains("Level A"), p.instancename:contains("Level B")').length > 0) {
         $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
-        $('.modtype_url').each(function() {
+        $(this).parent().find(".modtype_url").each(function() {
           // variables
           let oldTitle = $(this).find(".snap-asset-link")
           let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
