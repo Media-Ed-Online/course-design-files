@@ -11,7 +11,7 @@ var myArray = [
   //more objects...
 ];
 $(function(){
-  $("ul.topics li").each(function(index){
+  $("ul.topics li").each(function(){
     $(this).find('p.instancename:contains"[' + myArray[0] + ']"').remove();
   });
 });
