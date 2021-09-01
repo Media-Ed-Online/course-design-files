@@ -22,10 +22,8 @@ var searchTerms = ["Level A", "Level B"];
 
 $('.modtyle_url').filter(function() {
   $text = $(this).text();
-  $.each(searchTerms, function(index, term) {
-    let oldTitle = $(this).find(".snap-asset-link")
-    let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
-    oldTitle.remove();
-    newTitle.append(oldTitle);
-  });
-});
+  $.each(searchTerms, function (index, term) {
+        found = $text.indexOf(term) > -1 ? found +1 : found;
+    })
+    return found;
+}).css('background','pink');
