@@ -7,6 +7,7 @@ $(document).ready(function(index) {
   var BOOK = 'li.modtype_book'
   var H5P = 'li.modtype_h5pactivity'
 
+  // Find items based on character set
   var s = 'ABCDE';
   for (var i = 0; i < s.length; i++) {
     $(this).find(URL).add(BOOK).add(H5P).each(function() {
