@@ -27,7 +27,12 @@ $(document).ready(function(index) {
         });
 
         //3. -- move icons beneath new title home
-        $(this).each(function(index) {
+        $(this).each(fuction(index) {
+          var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+          var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
+          $(this).closest(BOOK).css("background","pink")
+        });
+        /*$(this).each(function(index) {
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
           var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
           $(this).each(function() {
@@ -37,7 +42,7 @@ $(document).ready(function(index) {
             let oldIcon_H5P = $(H5P).addClass("moved").find(oldIcon)
             let newIconLocation = $(URL).addClass("moved").find(newIcon)
             newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
-          });
+          });*/
         });
       };
     });
