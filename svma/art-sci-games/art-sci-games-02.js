@@ -14,7 +14,7 @@ $(document).ready(function(index) {
         oldTitle.remove();
         newTitle.append(oldTitle);
       });
-      
+
       $('li.modtype_book, li.modtype_h5pactivity').each(function() {
         var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
         var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
@@ -25,6 +25,7 @@ $(document).ready(function(index) {
           let newIconLocation = $('li.modtype_url').first().addClass("moved").find(newIcon)
           newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
         });
+      });
     };
   });
 });
