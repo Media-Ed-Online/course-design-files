@@ -1,6 +1,21 @@
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
+jQuery.expr[':'].mcontains = function(obj, index, meta, stack){
+    result = false;
+    theList = meta[3].split("','");
+
+    var contents = (obj.textContent || obj.innerText || jQuery(obj).text() || '')
+
+    for (x=0;x<theList.length;x++) {
+        if (contents.indexOf(theList[x]) >= 0) {
+            return true;
+        }
+    }
+
+    return false;
+};
+
 $(document).ready(function(index) {
   const tileTitles = ["Level A", "Level B"];
 
@@ -16,3 +31,4 @@ $(document).ready(function(index) {
     }
   };
 });
+$("li:mcontains('Level A','Level B')").css("color","red")
