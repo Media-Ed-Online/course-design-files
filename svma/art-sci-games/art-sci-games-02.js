@@ -2,7 +2,7 @@
 | URL MODULE GROUP   |
 ------------------ */
 $(document).ready(function(index) {
-  var tiles = ['Level A', 'Level B'];
+  var tiles = ['Level A'];
 
   if ($('li.activity').find('p:contains("' + tiles + '")').length > 0) {
     $(this).find('.modtype_url').each(function(index) {
