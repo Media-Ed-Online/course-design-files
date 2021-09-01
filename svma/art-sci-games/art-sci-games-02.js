@@ -20,7 +20,7 @@
 
 var searchTerms = ["Level A", "Level B"];
 
-$('.modtyle_url').filter(function() {
+$('li').filter(function() {
   $text = $(this).text();
   $.each(searchTerms, function (index, term) {
         found = $text.indexOf(term) > -1 ? found +1 : found;
