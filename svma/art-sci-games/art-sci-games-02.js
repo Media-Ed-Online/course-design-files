@@ -14,7 +14,7 @@ $(document).ready(function(index) {
       $(this).closest(".modtype_book").each(function() {
         var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
         var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
-
+        $.closest("li.modtype_url").find(newIcon).append($(this).find(oldIcon))
         // first of set
         $(this).each(function() {
           // find the first of each, add empty class to mark
