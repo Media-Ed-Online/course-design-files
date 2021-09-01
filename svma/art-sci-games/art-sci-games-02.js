@@ -28,11 +28,7 @@ $(document).ready(function(index) {
 
         //3. -- move icons beneath new title home
         $(URL).closest(BOOK).each(function(index) {
-          var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-          var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
-          let oldIcon_Book = $(this).find(oldIcon)
-          let newIconLocation = $(URL).find(newIcon)
-          newIconLocation.append(oldIcon_BOOK);
+          $(this).css("background","yellow")
         });
       };
     });
