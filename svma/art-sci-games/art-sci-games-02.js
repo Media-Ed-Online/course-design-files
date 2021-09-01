@@ -2,7 +2,19 @@
 | URL MODULE GROUP   |
 ------------------ */
 $(document).ready(function(index) {
-  $(this).find('ul.topics li').each(function() {
+  var list = {
+    'Level A',
+    'Level B',
+  };
+
+  $.each(list, function(index, value) {
+    if ($(this).find('p.instancename:contains(" '+ list +'")').length > 0) {
+      $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
+    };
+  });
+});
+
+/*  $(this).find('ul.topics li').each(function() {
     if ($(this).find('p.instancename:contains("Level A"), p.instancename:contains("Level B")').length > 0) {
       $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
       $(this).closest(".modtype_url").each(function() {
@@ -18,4 +30,4 @@ $(document).ready(function(index) {
       });
     } else {};
   });
-});
+});*/
