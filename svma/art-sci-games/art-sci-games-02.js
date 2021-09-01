@@ -8,7 +8,7 @@ $(document).ready(function(index) {
   };
 
   $.each(list, function(index) {
-      $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
+      $(this).find$('div:contains("' + list + '")').css("display","none")
   });
 });
 
