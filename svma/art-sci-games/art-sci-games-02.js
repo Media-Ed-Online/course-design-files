@@ -3,7 +3,7 @@
 ------------------ */
 
 $(document).ready(function(index) {
-  $(this).find('ul.topics li').each(function() {
+  $(this).find('ul.topics li li.modtype_url, ul.topics li li.modtype_book').each(function() {
     if ($(this).find('p.instancename:contains("Level A")').length > 0) {
       $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
       $(this).closest(".modtype_url").each(function() {
