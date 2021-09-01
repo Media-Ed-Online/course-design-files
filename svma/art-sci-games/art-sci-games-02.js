@@ -1,10 +1,16 @@
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-var arr = ['Level A','Level B','three','four','five'];
+/*var arr = ['Level A','Level B','three','four','five'];
 $.each(obj, function(key, value){
 	$(this).find('p.instancename:containts"[' + value + ']"').remove();
-});
+});*/
+
+const str = 'For more information, see Level A.B.C.';
+const re = /see (Level \d+(\.\d)*)/i;
+const found = str.match(re);
+
+console.log(found);
 
 /*  $(this).find('ul.topics li').each(function() {
     if ($(this).find('p.instancename:contains("Level A"), p.instancename:contains("Level B")').length > 0) {
