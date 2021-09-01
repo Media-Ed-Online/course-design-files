@@ -26,5 +26,8 @@ $(document).ready(function(index) {
   var BOOK = 'li.modtype_book'
   var H5P = 'li.modtype_h5pactivity'
 
-  $(this).find(URL BOOK H5P).css("display","none")
+  $(this).find(URL, BOOK, H5P).each(function() {
+    $(this).css("display","none")
+
+  });
 });
