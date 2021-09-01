@@ -9,7 +9,7 @@ $(document).ready(function(index) {
 
         $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
 
-        $('li.modtype_url').each(function(index) {
+        $(this).find('li.modtype_url').each(function(index) {
           let oldTitle = $(this).find(".snap-asset-link")
           let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
           oldTitle.remove();
