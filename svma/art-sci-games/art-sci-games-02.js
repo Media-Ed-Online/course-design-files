@@ -12,7 +12,7 @@ var myArray = [
 ];
 $(function(){
   $("ul.section").each(function(index){
-    $(this).find('p.instancename:contains"[' + myArray[0] + ']"').remove();
+    $(this).find('p.instancename:contains"[' + myArray + ']"').remove();
   });
 });
 
