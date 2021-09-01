@@ -27,7 +27,7 @@ $(document).ready(function(index) {
         });
 
         //3. -- move icons beneath new title home
-        $(URL).first(BOOK).css("background", "yellow")
+        $(this).first(BOOK).css("background", "yellow")
       };
     });
   };
