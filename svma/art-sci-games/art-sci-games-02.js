@@ -30,7 +30,8 @@ $(document).ready(function(index) {
         $(this).each(function(index) {
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
           var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
-          $(this).closest(BOOK).css("background","pink")
+          let oldIcon_Book = $.closest(BOOK).find(oldIcon)
+          newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
         });
         /*$(this).each(function(index) {
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
