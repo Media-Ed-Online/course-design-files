@@ -27,25 +27,13 @@ $(document).ready(function(index) {
         });
 
         //3. -- move icons beneath new title home
-        $(this).each(function(index) {
+        $(URL).closest(BOOK).each(function(index) {
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
           var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
-          let oldIcon_Book = $(this).closest(BOOK).find(oldIcon)
+          let oldIcon_Book = $(this).find(oldIcon)
           let newIconLocation = $(URL).find(newIcon)
           newIconLocation.append(oldIcon_BOOK);
         });
-        /*$(this).each(function(index) {
-          var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-          var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
-          $(this).each(function() {
-            // find the first of each, add empty class to mark
-            let oldIcon_URL = $(URL).find(oldIcon).addClass("moved")
-            let oldIcon_BOOK = $(BOOK).addClass("moved").find(oldIcon)
-            let oldIcon_H5P = $(H5P).addClass("moved").find(oldIcon)
-            let newIconLocation = $(URL).addClass("moved").find(newIcon)
-            newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
-          });
-        });*/
       };
     });
   };
