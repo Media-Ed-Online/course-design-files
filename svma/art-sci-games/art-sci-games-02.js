@@ -27,7 +27,7 @@ $(document).ready(function(index) {
         });
 
         //3. -- move icons beneath new title home
-        $(this).each(function() {
+        $(this).each(function(index) {
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
           var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
           $(this).each(function() {
