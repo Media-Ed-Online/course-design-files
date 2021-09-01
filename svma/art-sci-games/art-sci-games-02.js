@@ -3,7 +3,7 @@
 ------------------ */
 $(document).ready(function(index) {
 
-  $(this).find("li.activity").each(function(index) {
+  $(this).find("li.section ul.section li.activity").each(function(index) {
     $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
     if ($('li.activity').find('p:contains("Level A"), p:contains("Level B")').length > 0) {
       $(this).find('.modtype_url').each(function(index) {
