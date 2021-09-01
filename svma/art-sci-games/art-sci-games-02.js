@@ -7,7 +7,7 @@ $.each(obj, function(key, value){
 });*/
 
 var myArray = [
-  {'Level A','Level B'}
+  {'Level A'}
   //more objects...
 ];
 $(function(){
