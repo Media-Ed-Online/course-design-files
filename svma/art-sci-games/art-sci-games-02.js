@@ -14,8 +14,7 @@ $(document).ready(function(index) {
           let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
           oldTitle.remove();
           newTitle.append(oldTitle);
-        });
-        $(this).each(function() {
+
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
           var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
           // first of set
@@ -28,6 +27,7 @@ $(document).ready(function(index) {
             // relocated all moved-targeted items to new location
             newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
           });
+        });
       };
     });
   });
