@@ -27,7 +27,16 @@ $(document).ready(function(index) {
         });
 
         //3. -- move icons beneath new title home
-        $(this).first(BOOK).css("background", "yellow")
+        var lookedUp = {}
+
+        $(this).each(function() {
+          var text = $(this).text().trim();
+          if (lookedUp[text]) {
+            $(this).css("background", "yellow")
+          } else {
+            lookedUp[text] = true;
+          }
+        });
       };
     });
   };
