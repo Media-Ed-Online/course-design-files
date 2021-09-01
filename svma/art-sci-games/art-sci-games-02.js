@@ -27,10 +27,10 @@ $(document).ready(function(index) {
         });
 
         //3. -- move icons beneath new title home
-        $(BOOK).each(function(index) {
+        $(this).each(fuction(index) {
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
           var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
-          $(this).closest(BOOK).css("background", "pinks")
+          $(this).closest(BOOK).css("background","pink")
         });
         /*$(this).each(function(index) {
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
