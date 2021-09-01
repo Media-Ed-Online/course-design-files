@@ -17,6 +17,9 @@ $(document).ready(function(index) {
           newTitle.append(oldTitle);
         });
       };
+      else {
+        
+      };
     });
   });
 });
