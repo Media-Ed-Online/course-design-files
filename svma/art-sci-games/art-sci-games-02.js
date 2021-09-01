@@ -30,8 +30,14 @@ $(document).ready(function(index) {
         $(this).each(function() {
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
           var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
-          oldIcon.remove();
-          newIcon.append(oldIcon)
+          $(this).each(function() {
+            // find the first of each, add empty class to mark
+            let oldIcon_URL = $(URL).first().find(oldIcon).addClass("moved")
+            let oldIcon_BOOK = $(BOOK).first().addClass("moved").find(oldIcon)
+            let oldIcon_H5P = $(H5P).first().addClass("moved").find(oldIcon)
+            let newIconLocation = $(URL).first().addClass("moved").find(newIcon)
+            newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
+          });
         });
       };
     });
