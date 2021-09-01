@@ -6,11 +6,15 @@ $.each(obj, function(key, value){
 	$(this).find('p.instancename:containts"[' + value + ']"').remove();
 });*/
 
-const str = 'For more information, see Level A.B.C.';
-const re = /see (Level \d+(\.\d)*)/i;
-const found = str.match(re);
-
-console.log(found);
+var myArray = [
+  {'Level A','Level B'}
+  //more objects...
+];
+$(function(){
+  $("ul.section").each(function(index){
+    $(this).find('p.instancename:contains"[' + myArray[0] + ']"').remove();
+  });
+});
 
 /*  $(this).find('ul.topics li').each(function() {
     if ($(this).find('p.instancename:contains("Level A"), p.instancename:contains("Level B")').length > 0) {
