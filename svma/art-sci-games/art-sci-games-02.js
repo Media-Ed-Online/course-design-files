@@ -27,6 +27,7 @@ $(document).ready(function(index) {
 
           $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").each(function() {
             $(this).first().remove()
+            $(".snap-asset-content .contentafterlink div.tile-completion").append(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
           });
         });
 
