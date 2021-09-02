@@ -25,7 +25,7 @@ $(document).ready(function(index) {
             // save the title, remove it, and add to new location
             oldTitle.remove();
             newTitle.append(oldTitle);
-          };
+
 
           //-- 2.2 move module icons to new home
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
@@ -44,6 +44,7 @@ $(document).ready(function(index) {
               newIconLocation.append(oldIcon_URL)
             };
           });
+        };
         });
       };
     });
