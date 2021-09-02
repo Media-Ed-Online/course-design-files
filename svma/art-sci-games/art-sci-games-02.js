@@ -28,12 +28,16 @@ $(document).ready(function(index) {
           };
 
           //-- 2.2 move module icons to new home
-          var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-          var newIcon = $(".snap-asset-content .contentafterlink div.tile-completion")
-          let oldIcon_URL = $(this).find(oldIcon)
-          let newIconLocation = $(this).find(newIcon)
-          oldIcon_URL.remove()
-          newIconLocation.append(oldIcon_URL)
+          $(BOOK).each(function(index) {
+            if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+              var oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+              var newIcon = $(this).parent().find(URL + ".snap-asset-content .contentafterlink div.tile-completion")
+              let oldIcon_URL = $(this).find(oldIcon)
+              let newIconLocation = $(this).find(newIcon)
+              oldIcon_URL.remove()
+              newIconLocation.append(oldIcon_URL)
+            };
+          });
         });
       };
     });
