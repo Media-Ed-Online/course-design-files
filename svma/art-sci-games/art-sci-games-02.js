@@ -24,17 +24,25 @@ $(document).ready(function(index) {
           // save the title, remove it, and add to new location
           oldTitle.remove();
           newTitle.append(oldTitle);
+
+          var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+          var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
+          let oldIcon_URL = $(URL).find(oldIcon)
+          let oldIcon_BOOK = $(BOOK).find(oldIcon)
+          let oldIcon_H5P = $(H5P).find(oldIcon)
+          let newIconLocation = $(URL).find(newIcon)
+          $(this).first().append(oldIcon_URL)
         });
 
         //3. -- move icons beneath new title home
         // find the first of each, add empty class to mark
-        var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+        /*var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
         var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
         let oldIcon_URL = $(URL).find(oldIcon)
         let oldIcon_BOOK = $(BOOK).find(oldIcon)
         let oldIcon_H5P = $(H5P).find(oldIcon)
         let newIconLocation = $(URL).find(newIcon)
-        $(this).first().append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
+        $(this).first().append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);*/
       };
     });
   };
