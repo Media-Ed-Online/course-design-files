@@ -37,21 +37,23 @@ $(document).ready(function(index) {
 
 
 
-            $(this).ready(function() {
-              var lookedUp = {}
 
-              $('div').each(function() {
-                var text = $(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0).text().trim();
-                if (lookedUp[text]) {
-                  $(this).css("background", "yellow")
-                } else {
-                  lookedUp[text] = true;
-                }
-              });
-            });
           };
         });
       };
     });
   };
+});
+
+$(this).ready(function() {
+  var lookedUp = {}
+
+  $('div').each(function() {
+    var text = $(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0).text().trim();
+    if (lookedUp[text]) {
+      $(this).css("background", "yellow")
+    } else {
+      lookedUp[text] = true;
+    }
+  });
 });
