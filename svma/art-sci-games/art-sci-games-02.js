@@ -25,9 +25,9 @@ $(document).ready(function(index) {
           oldTitle.remove();
           newTitle.append(oldTitle);
 
-          $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").each(function () {
+          $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").each(function() {
             $(this).first().remove()
-          }
+          });
         });
 
         //3. -- move icons beneath new title home
