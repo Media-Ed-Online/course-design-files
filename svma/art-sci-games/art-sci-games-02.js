@@ -28,7 +28,9 @@ $(document).ready(function(index) {
 
         //3. -- move icons beneath new title home
         // find the first of each, add empty class to mark
-        let oldIcon_URL = $(URL).find(oldIcon).addClass("moved")
+        var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+        var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
+        let oldIcon_URL = $(URL).find(oldIcon)
         let oldIcon_BOOK = $(BOOK).find(oldIcon)
         let oldIcon_H5P = $(H5P).find(oldIcon)
         let newIconLocation = $(URL).find(newIcon)
