@@ -24,11 +24,15 @@ $(document).ready(function(index) {
           // save the title, remove it, and add to new location
           oldTitle.remove();
           newTitle.append(oldTitle);
+
+          $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").each(function () {
+            $(this).first().remove()
+          }
         });
 
         //3. -- move icons beneath new title home
         // find the first of each, add empty class to mark
-        
+
       };
     });
   };
