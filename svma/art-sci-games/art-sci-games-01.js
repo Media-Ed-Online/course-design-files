@@ -32,7 +32,7 @@ $(document).ready(function() {
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-$(document).querySelector('li').addEventListener('load', function(){
+$(document).ready(function(index) {
   var URL = "li.modtype_url"
   var BOOK = "li.modtype_book"
   var H5P = "li.modtype_h5pactivity"
