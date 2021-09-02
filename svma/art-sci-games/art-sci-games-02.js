@@ -31,7 +31,7 @@ $(document).ready(function(index) {
             var newIcon = $(".snap-asset-content .contentafterlink div.tile-completion")
             let oldIcon_URL = $(this).find(oldIcon)
             let newIconLocation = $(this).find(newIcon)
-            oldIcon.remove()
+            oldIcon_URL.remove()
             newIconLocation.append(oldIcon_URL)
             // save the title, remove it, and add to new location
           });
