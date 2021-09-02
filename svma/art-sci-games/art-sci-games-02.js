@@ -16,7 +16,7 @@ $(document).ready(function(index) {
         //-- 1. remove url overflow covering
         $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
 
-        //-- 2. move module title to new home
+        //-- 2.1 move module title to new home
         $(this).find(URL).each(function(index) {
           // variables
           let oldTitle = $(this).find(".snap-asset-link")
@@ -25,20 +25,14 @@ $(document).ready(function(index) {
           oldTitle.remove();
           newTitle.append(oldTitle);
 
-          // variables
+          //-- 2.2 move module icons to new home
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
           var newIcon = $(".snap-asset-content .contentafterlink div.tile-completion")
           let oldIcon_URL = $(this).find(oldIcon)
           let newIconLocation = $(this).find(newIcon)
           oldIcon_URL.remove()
           newIconLocation.append(oldIcon_URL)
-          // save the title, remove it, and add to new location
-
         });
-
-        //3. -- move icons beneath new title home
-        // find the first of each, add empty class to mark
-
       };
     });
   };
