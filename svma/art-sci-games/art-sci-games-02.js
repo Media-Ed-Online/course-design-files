@@ -17,7 +17,7 @@ $(document).ready(function(index) {
         $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
 
         //-- 2. move module title to new home
-        $(URL).each(function(index) {
+        $(URL).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0).each(function(index) {
           // variables
           let oldTitle = $(this).find(".snap-asset-link")
           let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
