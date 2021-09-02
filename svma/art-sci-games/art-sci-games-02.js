@@ -25,9 +25,15 @@ $(document).ready(function(index) {
           oldTitle.remove();
           newTitle.append(oldTitle);
 
-          $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").each(function() {
-            $(this).remove()
-            $(this).parentsUntil(URL).find(".snap-asset-content .contentafterlink div.tile-completion").append(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+          $(this).each(function() {
+            // variables
+            var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+            var newIcon = $(".snap-asset-content .contentafterlink div.tile-completion")
+            let oldIcon_URL = $(this).find(oldIcon)
+            let newIconLocation = $(this).find(newIcon)
+            oldIcon.remove()
+            newIconLocation.append(oldIcon_URL)
+            // save the title, remove it, and add to new location
           });
         });
 
