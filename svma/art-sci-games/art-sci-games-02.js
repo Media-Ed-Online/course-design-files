@@ -9,12 +9,12 @@ $(document).ready(function(index) {
   // FIND ITEMS BASED ON CHARACTER SET
   var s = 'ABCDE';
   for (var i = 0; i < s.length; i++) {
-    $(this).find(URL).add(BOOK).add(H5P).each(function() {
-      if ($(this).first().find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+    $(this).find(URL).each(function() {
+      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
         //-- 1. remove url overflow covering
-        $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
-
+        $(this).first().find(".snap-asset-content .no-overflow").removeClass("no-overflow");
+        $(this).next().find(".snap-asset-content").css("background", "pink")
 
       };
     });
