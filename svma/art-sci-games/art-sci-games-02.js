@@ -35,7 +35,10 @@ $(document).ready(function(index) {
             oldIcon_URL.remove()
             newIconLocation.append(oldIcon_URL)
 
-
+            var test = $(this).children().filter(function() {
+              return $(this).text() === s;
+            });
+            test.css('color', 'red');
 
             /*$(BOOK).each(function(index) {
               if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
