@@ -1,7 +1,7 @@
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-$('ul').each(function(index) {
+$('li.section').each(function(index) {
   var instanceName = 'p.instancename:contains("Level A")'
   var URL = 'li.modtype_url'
   var BOOK = 'li.modtype_book'
