@@ -36,7 +36,7 @@ $(document).ready(function(index) {
             newIconLocation.append(oldIcon_URL)
 
             var test = $(this).children().filter(function() {
-              return $(this).text() === s;
+              return $(this).text() === ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0);
             });
             test.css('color', 'red');
 
