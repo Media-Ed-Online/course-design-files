@@ -38,7 +38,7 @@ $(document).ready(function(index) {
 
 
             $(BOOK).first().each(function(index) {
-              if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+              if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0).first() {
                 var oldIcon = ".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img"
                 var newIcon = "li.modtype_url .snap-asset-content .contentafterlink div.tile-completion"
                 let oldIcon_URL = $(this).find(oldIcon)
