@@ -19,8 +19,8 @@ $(document).ready(function(index) {
         //-- 2.1 move module title to new home
         $(this).each(function(index) {
           // variables
-          let oldTitle = $(this).find(URL + ".snap-asset-link")
-          let newTitle = $(this).find(URL + ".snap-asset-content .contentafterlink div.tile-title")
+          let oldTitle = $(this).find("li.modtype_url .snap-asset-link")
+          let newTitle = $(this).find("li.modtype_url .snap-asset-content .contentafterlink div.tile-title")
           // save the title, remove it, and add to new location
           oldTitle.remove();
           newTitle.append(oldTitle);
