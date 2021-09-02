@@ -17,14 +17,13 @@ $(document).ready(function(index) {
         $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
 
         //-- 2. move module title to new home
-        $(URL).each(function(index) {
+        $(this).find(URL).each(function(index) {
           // variables
           let oldTitle = $(this).find(".snap-asset-link")
           let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
           // save the title, remove it, and add to new location
           oldTitle.remove();
           newTitle.append(oldTitle);
-
 
           // variables
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
