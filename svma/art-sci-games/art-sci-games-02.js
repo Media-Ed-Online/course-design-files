@@ -34,7 +34,10 @@ $(document).ready(function(index) {
             let newIconLocation = $(this).find(newIcon)
             oldIcon_URL.remove()
             newIconLocation.append(oldIcon_URL)
-            $(BOOK).each(function(index) {
+
+
+
+            /*$(BOOK).each(function(index) {
               if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
                 var oldIcon = ".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img"
                 var newIcon = "li.modtype_url .snap-asset-content .contentafterlink div.tile-completion"
@@ -43,7 +46,7 @@ $(document).ready(function(index) {
                 oldIcon_URL.remove()
                 newIconLocation.append(oldIcon_URL)
               };
-            });
+            });*/
           };
         });
       };
