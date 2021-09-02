@@ -17,17 +17,17 @@ $(document).ready(function(index) {
         $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
 
         //-- 2.1 move module title to new home
-        $(this).each(function(index) {
+        $(URL).each(function(index) {
           // variables
-          let oldTitle = $(this).find("li.modtype_url .snap-asset-link")
-          let newTitle = $(this).find("li.modtype_url .snap-asset-content .contentafterlink div.tile-title")
+          let oldTitle = $(this).find(".snap-asset-link")
+          let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
           // save the title, remove it, and add to new location
           oldTitle.remove();
           newTitle.append(oldTitle);
 
           //-- 2.2 move module icons to new home
-          var oldIcon = $(URL + ".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-          var newIcon = $(URL + ".snap-asset-content .contentafterlink div.tile-completion")
+          var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+          var newIcon = $(".snap-asset-content .contentafterlink div.tile-completion")
           let oldIcon_URL = $(this).find(oldIcon)
           let newIconLocation = $(this).find(newIcon)
           oldIcon_URL.remove()
