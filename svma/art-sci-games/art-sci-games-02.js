@@ -17,32 +17,18 @@ $(document).ready(function(index) {
         $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
 
         //-- 2. move module title to new home
-        $(URL).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0).each(function(index) {
+        $(URL).each(function(index) {
           // variables
           let oldTitle = $(this).find(".snap-asset-link")
           let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
           // save the title, remove it, and add to new location
           oldTitle.remove();
           newTitle.append(oldTitle);
-
-          var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-          var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
-          let oldIcon_URL = $(URL).find(oldIcon)
-          let oldIcon_BOOK = $(BOOK).find(oldIcon)
-          let oldIcon_H5P = $(H5P).find(oldIcon)
-          let newIconLocation = $(URL).find(newIcon)
-          $(this).first().append(oldIcon_URL)
         });
 
         //3. -- move icons beneath new title home
         // find the first of each, add empty class to mark
-        /*var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-        var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
-        let oldIcon_URL = $(URL).find(oldIcon)
-        let oldIcon_BOOK = $(BOOK).find(oldIcon)
-        let oldIcon_H5P = $(H5P).find(oldIcon)
-        let newIconLocation = $(URL).find(newIcon)
-        $(this).first().append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);*/
+        
       };
     });
   };
