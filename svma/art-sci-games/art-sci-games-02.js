@@ -18,7 +18,7 @@ $(document).ready(function(index) {
 
         $(forumla).each()
           .filter(function(index) {
-            return $(s, this).length === 1;
+            return $(this).length === 1;
           })
           .css("background-color", "red");
 
