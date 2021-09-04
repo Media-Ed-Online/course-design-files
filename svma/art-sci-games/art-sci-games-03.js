@@ -17,7 +17,7 @@ $(document).ready(function() {
           newIconLocation.append(oldIcon_URL)
         });
     } else {
-      lookedUp[text] = true;
+      lookedUp[text] = false;
     }
   });
 });
