@@ -9,15 +9,15 @@ $(document).ready(function() {
     if (lookedUp[text]) {
       $(this).parentsUntil('li.modtype_url').find(".snap-asset-content .no-overflow").removeClass("no-overflow");
       $('li.modtype_book').each(function(index) {
-          var oldIcon = ".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img"
-          var newIcon = "li.modtype_url .snap-asset-content .contentafterlink div.tile-completion"
-          let oldIcon_URL = $(this).find(oldIcon)
-          let newIconLocation = $(this).parent().find(newIcon)
-          oldIcon_URL.remove()
-          newIconLocation.append(oldIcon_URL)
+        let oldIcon_URL = $('li.modtype_url').first().find(oldIcon).addClass("moved")
+        let oldIcon_BOOK = $('li.modtype_book').first().addClass("moved").find(oldIcon)
+        let oldIcon_H5P = $('li.modtype_h5pactivity').first().addClass("moved").find(oldIcon)
+        let newIconLocation = $('li.modtype_url').first().addClass("moved").find(newIcon)
+        // relocated all moved-targeted items to new location
+        newIconLocation.append(oldIcon_URL).append(oldIcon_H5P).append(oldIcon_BOOK);
         });
     } else {
-      lookedUp[text] = false;
+      lookedUp[text] = true;
     }
   });
 });
