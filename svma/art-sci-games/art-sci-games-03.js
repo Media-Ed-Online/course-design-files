@@ -4,7 +4,7 @@
 $(document).ready(function() {
    var lookedUp = {}
 
-   $('p.instancename').each(function() {
+   $('p.instancename').parentsUntil('li.activity').each(function() {
       var text = $(this).text().trim();
       if (lookedUp[text]) {
          $(this).css("background","yellow")
