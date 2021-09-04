@@ -7,9 +7,8 @@ $(document).ready(function() {
   $('p.instancename').each(function() {
     var text = $(this).text().trim();
     if (lookedUp[text]) {
-      $(this).css("background","pink")
+      $(this).css("background","pink");
       $('li.modtype_book').each(function(index) {
-
           var oldIcon = ".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img"
           var newIcon = "li.modtype_url .snap-asset-content .contentafterlink div.tile-completion"
           let oldIcon_URL = $(this).find(oldIcon)
