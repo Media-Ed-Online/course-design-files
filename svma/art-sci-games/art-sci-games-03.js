@@ -10,7 +10,7 @@ $(document).ready(function() {
       $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
 
       //-- 2.1 move module title to new home
-      $(this).find('li.modtype_url').each(function(index) {
+      $('li.modtype_url').each(function(index) {
 
         let oldTitle = $(this).find(".snap-asset-link")
         let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
