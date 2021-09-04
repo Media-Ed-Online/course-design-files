@@ -8,7 +8,7 @@ $(document).ready(function() {
     var text = $(this).text().trim();
     if (lookedUp[text]) {
       $(this).parentsUntil('li.modtype_url').find(".snap-asset-content .no-overflow").removeClass("no-overflow");
-      $(this).each(function(index) {
+      $(this).parentsUntil('li.activity').each(function(index) {
         let oldIcon_URL = $('li.modtype_url').first().find(oldIcon).addClass("moved")
         let oldIcon_BOOK = $('li.modtype_book').first().addClass("moved").find(oldIcon)
         let oldIcon_H5P = $('li.modtype_h5pactivity').first().addClass("moved").find(oldIcon)
