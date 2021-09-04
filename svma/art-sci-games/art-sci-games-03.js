@@ -26,13 +26,14 @@ $(document).ready(function() {
         newIconLocation.append(oldIcon_URL)
       });
       $('li.modtype_book').each(function(index) {
-        if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
-          var oldIcon = ".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img"
-          var newIcon = "li.modtype_url .snap-asset-content .contentafterlink div.tile-completion"
-          let oldIcon_URL = $(this).find(oldIcon)
-          let newIconLocation = $(this).parent().first().find(newIcon)
-          oldIcon_URL.remove()
-          newIconLocation.append(oldIcon_URL)
+
+        var oldIcon = ".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img"
+        var newIcon = "li.modtype_url .snap-asset-content .contentafterlink div.tile-completion"
+        let oldIcon_URL = $(this).find(oldIcon)
+        let newIconLocation = $(this).parent().find(newIcon)
+        oldIcon_URL.remove()
+        newIconLocation.append(oldIcon_URL)
+      });
     } else {
       lookedUp[text] = true;
     }
