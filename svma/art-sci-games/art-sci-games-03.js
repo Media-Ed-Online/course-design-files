@@ -4,7 +4,7 @@
 $(document).ready(function() {
   var lookedUp = {}
 
-  $('p.instancename').each(function() {
+  $('li.activity p.instancename').each(function() {
     var text = $(this).text().trim();
     if (lookedUp[text]) {
       $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
