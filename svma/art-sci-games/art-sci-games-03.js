@@ -4,7 +4,7 @@
 $(document).ready(function() {
   var lookedUp = {}
 
-  $('p.instancename').parentsUntil('ul.section').each(function() {
+  $('p.instancename').parentsUntil('ul.section').find('li').each(function() {
     var text = $(this).text().trim();
     if (lookedUp[text]) {
       $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
