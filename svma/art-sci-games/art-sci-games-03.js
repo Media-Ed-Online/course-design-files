@@ -12,10 +12,7 @@ $(document).ready(function(index) {
   for (var i = 0; i < s.length; i++) {
     $(this).find(URL).add(BOOK).add(H5P).each(function() {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
-        // URLs
-        $(this).find(URL).each(function(index) {
-          $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
-        });
+        $(this).css("background", "green")
       };
     });
   };
