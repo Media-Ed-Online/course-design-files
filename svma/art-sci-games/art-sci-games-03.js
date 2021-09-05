@@ -2,6 +2,4 @@
 | URL MODULE GROUP   |
 ------------------ */
 
-$("ul.topics li.section").load(function(){
-  $('li.modtyple_url').css("display","none")
-});
+$('li.modtype_url').find(".snap-asset-content .no-overflow").removeClass("no-overflow");
