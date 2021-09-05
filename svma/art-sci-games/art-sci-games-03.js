@@ -19,7 +19,7 @@ $(document).ready(function(index) {
 });
 
 
-var mappedItems = $("li.activity").map(function(index) {
+var mappedItems = $("li.modtype_book .snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").map(function(index) {
   var replacement = $("p.instancename").text($(this).text()).get(0);
   if (index === 0) {
 
