@@ -21,7 +21,7 @@ $(document).ready(function(index) {
 
 
 var mappedItems = $( "li.activity" ).map(function( index ) {
-  var replacement = $( "<li>" ).text( $( this ).text() ).get( 0 );
+  var replacement = $( "p.instancename" ).text( $( this ).text() ).get( 0 );
   if ( index === 0 ) {
 
     // Make the first item all caps
