@@ -12,7 +12,8 @@ $(document).ready(function(index) {
   for (var i = 0; i < s.length; i++) {
     $(this).find(URL).add(BOOK).add(H5P).each(function() {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
-        $(this).css("background", "green")
+        $(this).first().css("background", "green");
+        $(this).next().css("background", "blue")
       };
     });
   };
