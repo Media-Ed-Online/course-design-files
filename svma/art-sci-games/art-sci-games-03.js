@@ -13,6 +13,17 @@ $(document).ready(function(index) {
     $(this).find(URL).add(BOOK).add(H5P).each(function() {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
         $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
+
+        //BOOK ICONS
+        $(this).each(function(index) {
+            var oldIcon = "li.modtype_book .snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img"
+            var newIcon = "li.modtype_url .snap-asset-content .contentafterlink div.tile-completion"
+            let oldIcon_URL = $(this).find(oldIcon)
+            let newIconLocation = $(this).find(newIcon)
+            oldIcon_URL.remove()
+            newIconLocation.append(oldIcon_URL)
+          };
+        });
       };
     });
   };
