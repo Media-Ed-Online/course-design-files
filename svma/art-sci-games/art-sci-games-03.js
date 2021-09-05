@@ -3,5 +3,5 @@
 ------------------ */
 
 $("li.section").load(function(){
-  $('li.modtyple_url').css("background","pink")
+  $('li.modtyple_url').css("display","none")
 });
