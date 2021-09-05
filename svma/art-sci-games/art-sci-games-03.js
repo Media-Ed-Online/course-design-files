@@ -10,9 +10,10 @@ $(document).ready(function(index) {
   // FIND ITEMS BASED ON CHARACTER SET
   var s = 'ABCDE';
   for (var i = 0; i < s.length; i++) {
-    var urlContains = ($(URL).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0);
-    var bookContains = ($(BOOK).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0);
-    if (urlContains == bookContains) {
+    let urlContains = ($(URL).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0);
+    let bookContains = ($(BOOK).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0);
+    let h5pContains = ($(H5P).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0);
+    if (urlContains == bookContains == h5pContains) {
       $(this).css("background","pink")
   };
 });
