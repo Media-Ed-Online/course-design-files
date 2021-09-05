@@ -11,6 +11,7 @@ $(document).ready(function(index) {
 
   var urlContains = $(this).find('li.modtype_url p.instancename').text()
   var bookContains = $(this).find('li.modtype_book p.instancename').text()
+  urlContains.remove()
   if (urlContains == bookContains) {
     $('li').find('div').css("background", "pink")
   };
