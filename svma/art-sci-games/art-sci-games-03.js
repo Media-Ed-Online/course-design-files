@@ -8,10 +8,9 @@ $(document).ready(function(index) {
   var H5P = 'li.modtype_h5pactivity'
 
   // FIND ITEMS BASED ON CHARACTER SET
-  var s = 'ABCDE';
-  for (var i = 0; i < s.length; i++) {
-    let urlContains = ($(this).find('.modtype_url p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0);
-    let bookContains = ($(this).find('.modtype_book p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0);
+
+    let urlContains = $(this).find('.modtype_url p.instancename').text();
+    let bookContains = ($(this).find('.modtype_book p.instancename').text();
     if (urlContains == bookContains) {
       $(this).css("background","pink")
   };
