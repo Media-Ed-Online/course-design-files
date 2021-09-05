@@ -22,8 +22,6 @@ $(document).ready(function(index) {
 var mappedItems = $("li.modtype_book .snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").map(function(index) {
   var replacement = $("p.instancename").text($(this).text()).get(0);
   if (index === 0) {
-
-    // Make the first item all caps
     $(replacement).text($(replacement).text().toUpperCase());
   }
   return replacement;
