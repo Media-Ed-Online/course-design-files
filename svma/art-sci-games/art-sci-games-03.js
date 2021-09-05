@@ -10,8 +10,8 @@ $(document).ready(function(index) {
   // FIND ITEMS BASED ON CHARACTER SET
 
   var urlContains = $(this).find('li.modtype_url p.instancename').text()
-  var bookContains = $(this).find('li.modtype_book p.instancename')
-  $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
-  bookContains.remove()
-
+  var bookContains = $(this).find('li.modtype_book p.instancename').text()
+  if (urlContains == bookContains) {
+    $(this).find('div').css("background", "pink")
+  };
 });
