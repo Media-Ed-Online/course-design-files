@@ -12,7 +12,7 @@ $(document).ready(function(index) {
   var urlContains = $(this).find('li.modtype_url p.instancename').text()
   var bookContains = $(this).find('li.modtype_book p.instancename').text()
   if (urlContains == bookContains) {
-    $(this).parentsUntil('li.modtype_url)'.remove()
-    $(this).parentsUntil('li.modtype_book)'.remove()
+    $(this).parentsUntil('li.modtype_url').remove()
+    $(this).parentsUntil('li.modtype_book').remove()
   };
 });
