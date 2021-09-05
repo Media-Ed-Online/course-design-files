@@ -3,5 +3,5 @@
 ------------------ */
 
 setTimeout(function() {
-  $('li.modtype_url').find(".snap-asset-content .no-overflow").removeClass("no-overflow");
+  $('ul.topics li.section li.modtype_url').find(".snap-asset-content .no-overflow").removeClass("no-overflow");
 });
