@@ -8,10 +8,12 @@ $(document).ready(function(index) {
   var H5P = 'li.modtype_h5pactivity'
 
   // FIND ITEMS BASED ON CHARACTER SET
-  var s = '12345';
-  for (var i = 0; i < s.length; i++) {
-    if ($(URL + 'p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
-      $(this).css("background", "pink")
+  $(this).find('p.instancename') {
+    var s = '12345';
+    for (var i = 0; i < s.length; i++) {
+      if ($(URL + 'p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+        $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
+      };
     };
   };
 });
