@@ -42,4 +42,4 @@ var mappedItems = $( "li.activity" ).map(function( index ) {
   // or an array of dom elements
   return replacement;
 });
-$( "#results" ).append( mappedItems );
+$( "li.modtype_url .snap-asset-content .contentafterlink div.tile-completion" ).append( mappedItems );
