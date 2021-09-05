@@ -18,3 +18,28 @@ $(document).ready(function(index) {
     });
   };
 });
+
+
+var mappedItems = $( "li.activity" ).map(function( index ) {
+  var replacement = $( "<li>" ).text( $( this ).text() ).get( 0 );
+  if ( index === 0 ) {
+
+    // Make the first item all caps
+    $( replacement ).text( $( replacement ).text().toUpperCase() );
+  } else if ( index === 1 || index === 3 ) {
+
+    // Delete the second and fourth items
+    replacement = null;
+  } else if ( index === 2 ) {
+
+    // Make two of the third item and add some text
+    replacement = [ replacement, $( "<li>" ).get( 0 ) ];
+    $( replacement[ 0 ] ).append( "<b> - A</b>" );
+    $( replacement[ 1 ] ).append( "Extra <b> - B</b>" );
+  }
+
+  // Replacement will be a dom element, null,
+  // or an array of dom elements
+  return replacement;
+});
+$( "#results" ).append( mappedItems );
