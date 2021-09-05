@@ -10,8 +10,8 @@ $(document).ready(function(index) {
   // FIND ITEMS BASED ON CHARACTER SET
   var s = 'ABCDE';
   for (var i = 0; i < s.length; i++) {
-    var urlContains = ($('li.modtype_url').find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0);
-    var bookContains = ($('li.modtype_book').find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0);
+    var urlContains = ($(URL).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0);
+    var bookContains = ($(BOOK).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0);
     if (urlContains == bookContains) {
       $(this).css("background","pink")
   };
