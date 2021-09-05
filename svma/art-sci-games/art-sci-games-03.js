@@ -2,6 +2,6 @@
 | URL MODULE GROUP   |
 ------------------ */
 
-$( "li" ).load(function() {
+window.addEventListener('hashchange', function() {
   $(this).find('li.modtyple_url').css("background","pink")
 });
