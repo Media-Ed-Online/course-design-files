@@ -12,6 +12,6 @@ $(document).ready(function(index) {
   let urlContains = $(this).find('.modtype_url p.instancename').text();
   let bookContains = $(this).find('.modtype_book p.instancename').text();
   if (urlContains == bookContains) {
-    $(this).css("background", "pink")
+    $(this)find('div').css("background", "pink")
   };
 });
