@@ -9,8 +9,8 @@ $(document).ready(function(index) {
 
   // FIND ITEMS BASED ON CHARACTER SET
 
-  let urlContains = $(this).find('.modtype_url p.instancename').text();
-  let bookContains = $(this).find('.modtype_book p.instancename').text();
+  let urlContains = $(this).find('li.modtype_url p.instancename')
+  let bookContains = $(this).find('li.modtype_book p.instancename')
   if (urlContains == bookContains) {
     $(this)find('div').css("background", "pink")
   };
