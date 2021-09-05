@@ -11,7 +11,7 @@ $(document).ready(function(index) {
   var s = 'ABCDE';
   for (var i = 0; i < s.length; i++) {
     $(this).find(URL).add(BOOK).add(H5P).each(function() {
-
+      $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
     });
   };
 });
