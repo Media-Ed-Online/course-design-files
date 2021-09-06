@@ -31,7 +31,6 @@ $(document).ready(function(index) {
         // save the icon, remove it, and add to new location
         oldIcon.remove()
         newIcon.append(oldIcon)
-        oldIcon.addClass('moved')
       };
     });
 
