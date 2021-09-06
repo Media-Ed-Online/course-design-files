@@ -59,7 +59,7 @@ $(document).ready(function(index) {
     });
 
     // H5P ACTIVITIES
-    $(this).find(H5P).each(function(index) {
+    /*$(this).find(H5P).each(function(index) {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
         //-- 1. move module icons to new home
@@ -69,6 +69,6 @@ $(document).ready(function(index) {
         oldIcon.remove()
         newIcon.append(oldIcon)
       };
-    });
+    });*/
   };
 });
