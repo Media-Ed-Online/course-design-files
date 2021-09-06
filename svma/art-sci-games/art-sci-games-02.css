@@ -25,16 +25,16 @@ li.modtype_url {
   margin-bottom: 50px;
 }
 
-.tile-title p.instancename {
+div.tile-title p.instancename {
   font-family: "Fredoka One";
-  font-size: 14px;
+  font-size: 10px;
   color: #4C5656;
   padding-right: 0px;
   margin: 0px;
 }
 
 .snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img,
-.snap-asset-content .contentafterlink div.tile-completion img {
+div.tile-completion img {
   width: 30px;
   height: 30px;
   font-size: 30px;
