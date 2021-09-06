@@ -41,7 +41,7 @@ $(document).ready(function(index) {
         var oldIcon = $(BOOK).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
         var newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion")
 
-        $(this).each(function(index) {
+        $.each(function(index) {
           //-- 1. loop through modules and their icons
           if ($(this).find(oldIcon).hasClass('moved')) {
             // save the icon, remove it, and add to new location
@@ -50,7 +50,6 @@ $(document).ready(function(index) {
           } else {
             //-- 2. move first module icons to new home
             $(this).find(oldIcon).remove()
-            newIcon.append(oldIcon)
           };
         });
       };
