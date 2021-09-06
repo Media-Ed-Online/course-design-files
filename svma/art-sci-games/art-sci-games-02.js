@@ -36,10 +36,10 @@ $(document).ready(function(index) {
 
         //-- 1. move module icons to new home
         let oldIcon = $(this).first().find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-        let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion")
+        let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").first()
         // save the icon, remove it, and add to new location
         oldIcon.remove()
-        newIcon.append(oldIcon).first()
+        newIcon.append(oldIcon)
       };
     });
   };
