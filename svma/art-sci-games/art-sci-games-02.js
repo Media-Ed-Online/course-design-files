@@ -26,7 +26,7 @@ $(document).ready(function(index) {
         newTitle.append(oldTitle);
 
         //-- 3. move module icons to new home
-        let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+        let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").addClass('moved')
         let newIcon = $(this).find(".snap-asset-content .contentafterlink div.tile-completion").addClass('moved')
         // save the icon, remove it, and add to new location
         oldIcon.remove()
