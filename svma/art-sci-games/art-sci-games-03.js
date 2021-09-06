@@ -16,8 +16,8 @@ $(document).ready(function(index) {
     urlContains.remo
   };
 
-  var $a = "Level 1";
-  var $b = "Level 2";
+  var $a = $(this).find('li.modtype_url p.instancename').text()
+  var $b = $(this).find('li.modtype_book p.instancename').text()
   if ($a.split(" ")[0] == $b.split(" ")[0]) {
     $(this).remove()
   }
