@@ -36,19 +36,22 @@ $(document).ready(function(index) {
     });
 
     // BOOK ACTIVITIES
-    // ARRAYS
-    const arr = [
-      'Level 1',
-      'Level 2',
-      'Level 3',
-      'Level 4',
-      'Level 5'
-    ];
 
-    $.each(arr, function(index, value) {
-      if ($(BOOK).find('p.instancename:contains("' + value + '")')) {
-        $(this).css("display", "none")
-      };
-    });
   };
+});
+
+// ARRAYS
+const arr = [
+  'Level 1',
+  'Level 2',
+  'Level 3',
+  'Level 4',
+  'Level 5'
+];
+
+$.each(arr, function(index, value) {
+  console.log(value);
+  if ($(this).find('p.instancename:contains("' + value + '")').length > 0) {
+    $(this).css("display","none")
+  }
 });
