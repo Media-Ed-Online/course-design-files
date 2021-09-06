@@ -12,7 +12,7 @@ li.modtyle_url .snap-assettype {
   height: 0px;
 }
 
-li.modtype_url .snap-resource-card li.snap-resource.modtype_url {
+body.snap-resource-card li.snap-resource.modtype_url {
   background-image: none;
 }
 
