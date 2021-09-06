@@ -38,25 +38,20 @@ $(document).ready(function(index) {
     // BOOK ACTIVITIES
     $(this).find(BOOK).each(function(index) {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+        var oldIcon = $(BOOK).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+        var newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion")
 
         $(this).each(function(index) {
           //-- 1. move first module icons to new home
-          if ($(this).find(BOOK).first()) {
-            let oldIcon = $(BOOK).first().find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-            let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").first()
+          if ($(this).find(oldIcon).hasClass('moved')) {
             // save the icon, remove it, and add to new location
             oldIcon.remove()
             newIcon.append(oldIcon)
-            oldIcon.addClass('moved')
-            newIcon.addClass('moved')
           } else {
             //-- 2. loop through modules and their icons
-            $(this).find(BOOK).next() {
-              let oldIcon = $(this).not('moved').find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").addClass('moved')
-              let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion")
-
-              // save the icon, remove it, and add to new location
-              newIcon.not('moved').append(oldIcon)
+            $(this).find(oldIcon).next() {
+              oldIcon.addClass('moved')
+              newIcon.addClass('moved')
             };
           };
         });
