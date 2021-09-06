@@ -49,7 +49,7 @@ $(document).ready(function(index) {
 
         //-- 2. loop through modules and their icons
         $(this).each(function(index) {
-          if ($(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img:not(.moved)")) {
+          if ($(this).find(BOOK).not('.moved')) {
             $('img').remove()
             $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").not('.moved').append('img')
           } else {
