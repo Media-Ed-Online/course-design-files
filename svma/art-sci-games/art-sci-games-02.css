@@ -41,7 +41,7 @@ div.tile-title p.instancename::after {
 
 .snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img,
 div.tile-completion img {
-  width: 30px;
-  height: 30px;
-  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
 }
