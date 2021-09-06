@@ -36,21 +36,19 @@ $(document).ready(function(index) {
     });
 
     // BOOK ACTIVITIES
-    $(this).find(BOOK).each(function(index) {
-      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
-        var oldIcon = $(BOOK).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-        var newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion")
+    // ARRAYS
+    const arr = [
+      'Level 1',
+      'Level 2',
+      'Level 3',
+      'Level 4',
+      'Level 5'
+    ];
 
-        $.each(function(index) {
-          //-- 1. loop through modules and their icons
-          if ($(this).find(oldIcon).hasClass('moved')) {
-            // save the icon, remove it, and add to new location
-            oldIcon.remove()
-            newIcon.append(oldIcon)
-          } else {
-          };
-        });
-      };
+    $.each(arr, function(index, value) {
+      if ($(this).find('p.instancename:contains("Level ' + value + '")').length > 0) {}
+      console.log(value);
+
     });
   };
 });
