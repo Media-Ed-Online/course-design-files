@@ -42,14 +42,13 @@ $(document).ready(function(index) {
         var newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion")
 
         $(this).each(function(index) {
-          //-- 1. move first module icons to new home
+          //-- 1. loop through modules and their icons
           if ($(this).find(oldIcon).hasClass('moved')) {
             // save the icon, remove it, and add to new location
             oldIcon.remove()
             newIcon.append(oldIcon)
           } else {
-            //-- 2. loop through modules and their icons
-            
+            //-- 2. move first module icons to new home
           };
         });
       };
