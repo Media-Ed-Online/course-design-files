@@ -13,8 +13,10 @@ $(document).ready(function(index) {
     $(this).find(URL).add(BOOK).add(H5P).each(function() {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
-        //-- 1. remove url overflow covering
-        $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
+        $(URL).first().ready(function(index) {
+          //-- 1. remove url overflow covering
+          $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
+        });
 
         //-- 2.1 move module title to new home
         $(URL).each(function(index) {
