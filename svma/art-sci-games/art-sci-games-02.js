@@ -55,7 +55,7 @@ $(document).ready(function(index) {
             // save the icon, remove it, and add to new location
             oldIcon.remove()
             newIcon.append(oldIcon)
-            newIcon.addClass('moved')
+            
           } else {
             //  block of code to be executed if the condition is false
           }
