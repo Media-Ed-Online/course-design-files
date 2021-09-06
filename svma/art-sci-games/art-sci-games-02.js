@@ -31,11 +31,11 @@ $(document).ready(function(index) {
         newIcon.append(oldIcon)
       };
     });
-    $(this).find(BOOK).each(function(index) {
+    $(this).find(BOOK).add(H5P).each(function(index) {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
         //-- 1. move module icons to new home
-        let oldIcon = $(BOOK).first().find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+        let oldIcon = $(BOOK, H5P).first().find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
         let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").first()
         // save the icon, remove it, and add to new location
         oldIcon.remove()
