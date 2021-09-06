@@ -62,7 +62,7 @@ $(document).ready(function(index) {
         });
 
         //-- 4. replace images
-        $(newIcon)find('img').each(function() {
+        $(newIcon).find('img').each(function() {
           var curSrc = $(this).attr('src');
           // Progress Tracking: Incomplete
           if (curSrc === 'https://moodle.umt.edu/theme/image.php/snap/core/1630655779/i/completion-auto-n') {
