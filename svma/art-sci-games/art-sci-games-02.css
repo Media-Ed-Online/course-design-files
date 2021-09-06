@@ -32,10 +32,8 @@ li.modtyle_url {
   margin: 0px;
 }
 
-$(oldIcon).css( {
-  'width': '30px',
-    'height': '30px',
-    'font-size': '30px',
+.snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
 }
-
-);
