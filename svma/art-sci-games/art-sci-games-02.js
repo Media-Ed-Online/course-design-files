@@ -50,8 +50,8 @@ $(document).ready(function(index) {
         //-- 2. loop through modules and their icons
         $(this).each(function(index) {
           if ($(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img:not(.moved)")) {
-            $(this).remove()
-            
+            $('img').remove()
+            $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").not('.moved').append('img')
           } else {
             //  block of code to be executed if the condition is false
           }
