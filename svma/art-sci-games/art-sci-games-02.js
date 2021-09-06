@@ -39,7 +39,7 @@ $(document).ready(function(index) {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
         $(this).each(function(index) {
-          if ($(this).find(BOOK).not('.moved').first()) {
+          if ($(this).find(BOOK).not('.moved').next()) {
             let oldIcon = $(BOOK).first().find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
             let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").first()
             // save the icon, remove it, and add to new location
