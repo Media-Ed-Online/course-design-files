@@ -4,16 +4,12 @@
 li.modtype_url .snap-asset-content .no-overflow,
 li.modtype_url .snap-header-card,
 li.modtype_url .snap-resource-card-fadeout,
-li.modtype_url .snap-asset-content .snap-asset-link a img {
+body.snap-resource-card li.snap-resource.modtype_url {
   display: none;
 }
 
 li.modtyle_url .snap-assettype {
   height: 0px;
-}
-
-body.snap-resource-card li.snap-resource.modtype_url {
-  background-image: none;
 }
 
 li.modtype_url {
