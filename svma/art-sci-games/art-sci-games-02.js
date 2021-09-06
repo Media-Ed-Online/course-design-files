@@ -15,8 +15,12 @@ $(document).ready(function(index) {
     $(this).find(URL).each(function(index) {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
-        //-- 1. remove url overflow covering
+        //-- 1. remove url overflow mask + other covers
         $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
+        $(this).find(".snap-assettype").css("height", "0px");
+        $(this).find(".snap-header-card").css("display", "none");
+        $(this).find("p.snap-resource-card-fadeout").remove();
+        $(this).find("body.snap-resource-card li.snap-resource.modtype_url").css("background-image: none;");
 
         //-- 2. move module title to new home
         let oldTitle = $(this).find(".snap-asset-link")
