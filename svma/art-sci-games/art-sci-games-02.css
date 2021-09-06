@@ -33,6 +33,12 @@ div.tile-title p.instancename {
   margin: 0px;
 }
 
+div.tile-title p.instancename::before,
+div.tile-title p.instancename::after,
+div.tile-title a.mod-link img {
+  display: none;
+}
+
 .snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img,
 div.tile-completion img {
   width: 30px;
