@@ -51,7 +51,7 @@ $(document).ready(function(index) {
         $(this).each(function(index) {
           if ($(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img:not(.moved)")) {
             $(this).remove()
-            $($(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion:not('.moved')")).append(this)
+            $($(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").not('.moved')).append(this)
           } else {
             //  block of code to be executed if the condition is false
           }
