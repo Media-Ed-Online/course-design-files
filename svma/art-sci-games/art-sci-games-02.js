@@ -54,7 +54,6 @@ $(document).ready(function(index) {
             let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").addClass('moved')
             let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion:not('.moved')")
             // save the icon, remove it, and add to new location
-            oldIcon.remove()
             newIcon.append(oldIcon).addClass('moved')
           } else {
             //
