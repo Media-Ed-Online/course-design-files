@@ -10,32 +10,25 @@ $(document).ready(function(index) {
   // FIND ITEMS BASED ON CHARACTER SET
   var s = '123456789';
   for (var i = 0; i < s.length; i++) {
-    $(this).find(URL).add(BOOK).add(H5P).each(function() {
+    $(this).find(URL).each(function(index) {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
-        $(URL).each(function(index) {
-          //-- 1. remove url overflow covering
-          $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
+        //-- 1. remove url overflow covering
+        $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
 
-          //-- 2. move module title to new home
-          let oldTitle = $(this).find(".snap-asset-link")
-          let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
-          // save the title, remove it, and add to new location
-          oldTitle.remove();
-          newTitle.append(oldTitle);
+        //-- 2. move module title to new home
+        let oldTitle = $(this).find(".snap-asset-link")
+        let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
+        // save the title, remove it, and add to new location
+        oldTitle.remove();
+        newTitle.append(oldTitle);
 
-          //-- 3. move module icons to new home
-          let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-          let newIcon = $(this).find(".snap-asset-content .contentafterlink div.tile-completion")
-          // save the icon, remove it, and add to new location
-          oldIcon.remove()
-          newIcon.append(oldIcon)
-        });
-
-        $(BOOK).each(function(index) {
-          let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-          let newIcon = $(this).parentsUntil('li.section').find(URL + ".snap-asset-content .contentafterlink div.tile-completion")
-        });
+        //-- 3. move module icons to new home
+        let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+        let newIcon = $(this).find(".snap-asset-content .contentafterlink div.tile-completion")
+        // save the icon, remove it, and add to new location
+        oldIcon.remove()
+        newIcon.append(oldIcon)
       };
     });
   };
