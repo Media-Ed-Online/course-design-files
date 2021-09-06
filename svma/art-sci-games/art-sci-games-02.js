@@ -46,9 +46,9 @@ $(document).ready(function(index) {
     ];
 
     $.each(arr, function(index, value) {
-      if ($(BOOK).find('p.instancename:contains("' + value + '")').length > 0) {}
-      $(this).css("display","none")
-
+      if ($(BOOK).find('p.instancename:contains("' + value + '")').length > 0) {
+        $(this).css("display", "none")
+      };
     });
   };
 });
