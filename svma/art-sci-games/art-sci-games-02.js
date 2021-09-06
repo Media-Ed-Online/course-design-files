@@ -11,9 +11,10 @@ $(document).ready(function(index) {
   var s = '123456789';
   for (var i = 0; i < s.length; i++) {
     if ($(URL).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+      $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
       $(this).first() {
         //-- 1. remove url overflow covering
-        $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
+
 
         //-- 2. move module title and icons to new home
         let oldTitle = $(this).find(".snap-asset-link")
