@@ -50,7 +50,7 @@ $(document).ready(function(index) {
         //-- 2. loop through modules and their icons
         $(this).each(function(index) {
           if ($(this).find(BOOK).not('.moved')) {
-            let oldIcon = $(BOOK).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+            let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
             let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion:not('.moved')").first()
             // save the icon, remove it, and add to new location
             oldIcon.remove()
@@ -61,18 +61,5 @@ $(document).ready(function(index) {
         });
       };
     });
-
-    // H5P ACTIVITIES
-    /*$(this).find(H5P).each(function(index) {
-      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
-
-        //-- 1. move module icons to new home
-        let oldIcon = $(H5P).first().find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-        let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").first()
-        // save the icon, remove it, and add to new location
-        oldIcon.remove()
-        newIcon.append(oldIcon)
-      };
-    });*/
   };
 });
