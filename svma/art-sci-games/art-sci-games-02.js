@@ -1,23 +1,4 @@
 /* ------------------
-| BACKGROUND         |
------------------- */
-$(document).ready(function() {
-  // Draw Shapes
-  var $backgroundShapes = $("<div class='bgShapes'><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>")
-  $("#page").prepend($backgroundShapes);
-
-  $("div.bgShapes span").each(function() {
-    // Random BG Colors
-    var bgShapesColorOpts = ["#DF3D9B", "#FDC273", "#0573CD"];
-    var bgShapesColorRand = bgShapesColorOpts[Math.floor(Math.random() * bgShapesColorOpts.length)];
-    console.log(bgShapesColorRand);
-    $(this).css('background', bgShapesColorRand);
-  });
-});
-
-
-
-/* ------------------
 | URL MODULE GROUP   |
 ------------------ */
 $(document).ready(function(index) {
@@ -70,6 +51,11 @@ $(document).ready(function(index) {
           let newIconLocation = $("li.modtype_url:not(.moved)").first().addClass("moved").find(newIcon)
           // relocated all moved-targeted items to new location
           newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
+        });
+
+        //-- 3. visually hide items from page (liked through URL)
+        $(BOOK).add(H5P).each(function() {
+          $(this).hide();
         });
       };
     });
