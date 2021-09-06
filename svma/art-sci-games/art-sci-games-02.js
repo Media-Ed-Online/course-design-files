@@ -39,18 +39,3 @@ $(document).ready(function(index) {
 
   };
 });
-
-// ARRAYS
-const arr = [
-  'Level 1',
-  'Level 2',
-  'Level 3',
-  'Level 4',
-  'Level 5'
-];
-
-$.each(arr, function(index, value) {
-  if ($('li.modtype_book p.instancename:contains("'value'")').length > 0) {
-    $(this).parentsUntil('li.modtype_book').remove()
-  }
-});
