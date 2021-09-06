@@ -32,7 +32,7 @@ $(document).ready(function(index) {
         oldIcon.remove()
         newIcon.append(oldIcon)
         oldIcon.addClass('moved')
-        newIcon.first().addClass('moved')
+
       };
     });
 
@@ -46,6 +46,7 @@ $(document).ready(function(index) {
         // save the icon, remove it, and add to new location
         oldIcon.remove()
         newIcon.append(oldIcon)
+        newIcon.first().addClass('moved')
 
         //-- 2. loop through modules and their icons
         $(this).each(function(index) {
