@@ -50,6 +50,8 @@ $(document).ready(function(index) {
           } else {
             //-- 2. loop through modules and their icons
             $(this).find(oldIcon).next() {
+              this.remove()
+              newIcon.append(oldIcon)
               oldIcon.addClass('moved')
               newIcon.addClass('moved')
             };
