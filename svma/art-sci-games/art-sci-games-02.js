@@ -40,7 +40,7 @@ $(document).ready(function(index) {
 
         $(this).each(function(index) {
           if ($(this).find(BOOK).not('.moved').first()) {
-            let oldIcon = $(BOOK).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+            let oldIcon = $(BOOK).first().find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
             let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").first()
             // save the icon, remove it, and add to new location
             oldIcon.remove()
