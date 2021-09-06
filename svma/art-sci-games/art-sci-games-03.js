@@ -9,16 +9,16 @@ $(document).ready(function(index) {
 
   // FIND ITEMS BASED ON CHARACTER SET
 
-  var s = 'ABCDE';
-  for (var i = 0; i < s.length; i++) {
-    $(this).find(URL).add(BOOK).add(H5P).each(function() {
-
-      var urlContains = $(this).find('li.modtype_url p.instancename:contains("Level ' + s.charAt(i) + '")');
-      var bookContains = $(this).find('li.modtype_book p.instancename:contains("Level ' + s.charAt(i) + '")');
-
-      if (urlContains == bookContains) {
-        $(this).remove()
-      };
-    });
+  var urlContains = $(this).find('li.modtype_url p.instancename')
+  var bookContains = $(this).find('li.modtype_book p.instancename')
+  if (urlContains == bookContains) {
+    bookContains.remove()
+    urlContains.remo
   };
+
+  var $a = "Level 1";
+  var $b = "Level 2";
+  if ($a.split(" ")[0] == $b.split(" ")[0]) {
+    $(this).remove()
+  }
 });
