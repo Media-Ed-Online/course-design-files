@@ -51,10 +51,10 @@ $(document).ready(function(index) {
         $(this).each(function(index) {
           if ($(this).find(BOOK).not('.moved').first()) {
             let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-            let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion:not('.moved')").first().addClass('moved')
+            let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion:not('.moved')").first()
             // save the icon, remove it, and add to new location
             oldIcon.remove()
-            newIcon.append(oldIcon)
+            newIcon.append(oldIcon).addClass('moved')
           } else {
             //  block of code to be executed if the condition is false
           }
