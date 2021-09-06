@@ -33,7 +33,8 @@ $(document).ready(function(index) {
         });
 
         $(BOOK).each(function(index) {
-
+          let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+          let newIcon = $(this).parentsUntil('li.section').find(URL + ".snap-asset-content .contentafterlink div.tile-completion")
         });
       };
     });
