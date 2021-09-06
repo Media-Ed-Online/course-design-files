@@ -49,6 +49,7 @@ $(document).ready(function(index) {
             newIcon.append(oldIcon)
           } else {
             //-- 2. move first module icons to new home
+            $(this).find(oldIcon).addClass('moved')
           };
         });
       };
