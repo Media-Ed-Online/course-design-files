@@ -54,7 +54,8 @@ $(document).ready(function(index) {
             let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion:not('.moved')").first()
             // save the icon, remove it, and add to new location
             oldIcon.remove()
-            newIcon.append(oldIcon).addClass('moved')
+            newIcon.append(oldIcon)
+            newIcon.addClass('moved')
           } else {
             //  block of code to be executed if the condition is false
           }
