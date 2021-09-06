@@ -26,7 +26,6 @@ $(document).ready(function(index) {
           oldTitle.remove();
           newTitle.append(oldTitle);
 
-
           //-- 2.2 move module icons to new home
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
           var newIcon = $(".snap-asset-content .contentafterlink div.tile-completion")
