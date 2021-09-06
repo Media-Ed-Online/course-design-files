@@ -11,14 +11,10 @@ $(document).ready(function(index) {
 
   var urlContains = $(this).find('li.modtype_url p.instancename')
   var bookContains = $(this).find('li.modtype_book p.instancename')
-  if (urlContains == bookContains) {
-    bookContains.remove()
-    urlContains.remo
-  };
 
-  var $a = $(this).find('li.modtype_url p.instancename').text()
-  var $b = $(this).find('li.modtype_book p.instancename').text()
-  if ($a.split(" ")[0] == $b.split(" ")[0]) {
-    $(this).remove()
+  if ($(urlContains).text().trim() === $(bookContains).text().trim()) {
+    console.log("Content is the same");
+  } else {
+    console.log("Content is not the same");
   }
 });
