@@ -28,7 +28,7 @@ $(document).ready(function(index) {
 
           //-- 2.2 move module icons to new home
           var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-          var newIcon = $(".snap-asset-content .contentafterlink div.tile-completion")
+          var newIcon = $("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion")
           let oldIcon_URL = $(this).find(oldIcon)
           let newIconLocation = $(this).find(newIcon)
           oldIcon_URL.remove()
