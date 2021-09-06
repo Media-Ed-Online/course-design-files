@@ -41,11 +41,11 @@ $(document).ready(function(index) {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
         //-- 1. move first module icons to new home
-        let oldIcon = $(BOOK).first().find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").not('moved').addClass('moved')
-        let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").not('moved').first() .addClass('moved')
+        let oldIcon = $(BOOK).first().find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").addClass('moved')
+        let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").first().addClass('moved')
         // save the icon, remove it, and add to new location
-        oldIcon.first().remove()
-        newIcon.first().append(oldIcon)
+        oldIcon.remove()
+        newIcon.append(oldIcon)
 
         //-- 2. loop through modules and their icons
         $(this).each(function(index) {
