@@ -15,6 +15,6 @@ $(document).ready(function(index) {
   if ($(urlContains).text().trim() === $(bookContains).text().trim()) {
     console.log("Content is the same");
   } else {
-    $(this).css("background","yellow")
+    $(this).parentsUntil('li').css("background","yellow")
   }
 });
