@@ -42,7 +42,7 @@ $(document).ready(function(index) {
 
         //-- 1. move first module icons to new home
         let oldIcon = $(BOOK).first().find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").addClass('moved')
-        let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").first().addClass('moved')
+        let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion")
         // save the icon, remove it, and add to new location
         oldIcon.remove()
         newIcon.append(oldIcon)
@@ -50,11 +50,11 @@ $(document).ready(function(index) {
         //-- 2. loop through modules and their icons
         $(this).each(function(index) {
           if ($(this).find(BOOK).not('.moved').first()) {
-            let oldIcon2 = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-            let newIcon2 = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").not('moved').first()
+            let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+            let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").not('moved').first()
             // save the icon, remove it, and add to new location
-            oldIcon2.remove()
-            newIcon2.append(oldIcon)
+            oldIcon.remove()
+            newIcon.append(oldIcon)
           } else {
             //  block of code to be executed if the condition is false
           }
