@@ -46,7 +46,7 @@ $(document).ready(function(index) {
     ];
 
     $.each(arr, function(index, value) {
-      if ($(this).find('p.instancename:contains("Level ' + value + '")').length > 0) {}
+      if ($(this).find('p.instancename:contains("' + value + '")').length > 0) {}
       console.log(value);
 
     });
