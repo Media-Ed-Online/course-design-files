@@ -13,7 +13,7 @@ $(document).ready(function(index) {
     $(this).find(URL).add(BOOK).add(H5P).each(function() {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
-        $(URL).first().ready(function(index) {
+        $(URL).first() {
           //-- 1. remove url overflow covering
           $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
 
@@ -42,7 +42,7 @@ $(document).ready(function(index) {
               newIconLocation.append(oldIcon_URL)
             };
           });
-        });
+        };
       };
     });
   };
