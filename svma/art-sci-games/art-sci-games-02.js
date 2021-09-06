@@ -8,7 +8,7 @@ $(document).ready(function(index) {
   var H5P = 'li.modtype_h5pactivity'
 
   // FIND ITEMS BASED ON CHARACTER SET
-  var s = 'ABCDE';
+  var s = '1,2,3,4,5,6,7,8,9,10';
   for (var i = 0; i < s.length; i++) {
     $(this).find(URL).add(BOOK).add(H5P).each(function() {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
