@@ -34,8 +34,7 @@ div.tile-title p.instancename {
 }
 
 div.tile-title p.instancename::before,
-div.tile-title p.instancename::after,
-div.tile-title p.instancename ~ img {
+div.tile-title p.instancename::after {
   display: none;
 }
 
