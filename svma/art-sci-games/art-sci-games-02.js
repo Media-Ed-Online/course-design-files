@@ -20,19 +20,16 @@ $(document).ready(function(index) {
           //-- 2.1 move module title to new home
           let oldTitle = $(this).find(".snap-asset-link")
           let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
-          let oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-          var newIcon = $(".snap-asset-content .contentafterlink div.tile-completion")
           // save the title, remove it, and add to new location
           oldTitle.remove();
           newTitle.append(oldTitle);
 
           //-- 2.2 move module icons to new home
-          var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-          var newIcon = $(".snap-asset-content .contentafterlink div.tile-completion")
-          let oldIcon_URL = $(BOOK).find(oldIcon)
-          let newIconLocation = $(this).find(newIcon)
-          oldIcon_URL.remove()
-          newIconLocation.append(oldIcon_URL)
+          let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+          let newIcon = $(this).find(".snap-asset-content .contentafterlink div.tile-completion")
+          // save the icon, remove it, and add to new location
+          oldIcon.remove()
+          newIcon.append(oldIcon)
         });
       };
     });
