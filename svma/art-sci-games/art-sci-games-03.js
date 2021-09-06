@@ -9,10 +9,17 @@ $(document).ready(function(index) {
 
   // FIND ITEMS BASED ON CHARACTER SET
 
-  $("p.instancename")
-    .contents()
-    .filter(function() {
-      return this.nodeType !== 1;
-    })
-    .wrap("<b></b>");
+  var s = 'ABCDE';
+  for (var i = 0; i < s.length; i++) {
+    $(this).find(URL).add(BOOK).add(H5P).each(function() {
+      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+        let a = $('li.modtype_url p.instancename').contents()
+        let b = $('li.modtype_book p.instancename').contents()
+
+        if (a == b) {
+          $('p').css("background","pink");
+        }
+      }
+    });
+  };
 });
