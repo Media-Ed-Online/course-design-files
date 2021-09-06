@@ -3,7 +3,8 @@
 ------------------ */
 li.modtype_url .snap-asset-content .no-overflow,
 li.modtype_url .snap-header-card,
-li.modtype_url p.snap-resource-card-fadeout {
+li.modtype_url .snap-resource-card-fadeout,
+li.modtype_url .snap-asset-content .snap-asset-link a img {
   display: none;
 }
 
