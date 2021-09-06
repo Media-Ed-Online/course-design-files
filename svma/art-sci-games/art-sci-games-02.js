@@ -31,5 +31,10 @@ $(document).ready(function(index) {
         newIcon.append(oldIcon)
       };
     });
+    $(this).find(BOOK).each(function(index) {
+      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+        
+      };
+    });
   };
 });
