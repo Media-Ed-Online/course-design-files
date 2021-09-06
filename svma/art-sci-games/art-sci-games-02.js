@@ -50,7 +50,7 @@ $(document).ready(function(index) {
         //-- 2. loop through modules and their icons
         $(this).each(function(index) {
           if ($(this).find(BOOK).not('.moved').first()) {
-            let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+            let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").addClass('moved')
             let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion:not('.moved')")
             // save the icon, remove it, and add to new location
             oldIcon.remove()
