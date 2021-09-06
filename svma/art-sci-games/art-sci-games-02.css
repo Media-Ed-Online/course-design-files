@@ -15,7 +15,7 @@ li.modtype_url .snap-resource-card li.snap-resource.modtype_url {
   background-image: none;
 }
 
-li.modtyle_url {
+li.modtype_url {
   height: auto;
   background-image: none;
   border: 1px solid #f1f1f1;
@@ -27,12 +27,14 @@ li.modtyle_url {
 
 .tile-title p.instancename {
   font-family: "Fredoka One";
+  font-size: 14px;
   color: #4C5656;
   padding-right: 0px;
   margin: 0px;
 }
 
-.snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img {
+.snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img,
+.snap-asset-content .contentafterlink div.tile-completion img {
   width: 30px;
   height: 30px;
   font-size: 30px;
