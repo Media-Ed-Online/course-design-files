@@ -46,7 +46,7 @@ $(document).ready(function(index) {
     ];
 
     $.each(arr, function(index, value) {
-      if ($(BOOK).find('p.instancename:contains("' + value + '")').length > 0) {
+      if ($(BOOK).find('p.instancename:contains("' + value + '")')) {
         $(this).css("display", "none")
       };
     });
