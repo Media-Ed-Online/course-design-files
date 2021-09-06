@@ -3,44 +3,34 @@
 ------------------ */
 li.modtype_url .snap-asset-content .no-overflow,
 li.modtype_url .snap-header-card,
-li.modtype_url  p.snap-resource-card-fadeout {
+li.modtype_url p.snap-resource-card-fadeout {
   display: none;
 }
+
 li.modtyle_url .snap-assettype {
   height: 0px;
 }
+
 li.modtype_url .snap-resource-card li.snap-resource.modtype_url {
   background-image: none;
 }
 
-/*
-$(URL).each(function(index) {
-
-  /// hide or remove additional unwanted asset styling
-  // new style
-  $(this).css( {
-    'height': 'auto',
-      'background-image': 'none',
-      'border': '1px solid #f1f1f1',
-      'border-radius': '10px',
-      'box-shadow': '0 14px 26px rgba(0,0,0,0.04)',
-      'margin-top': '2em',
-      'margin-bottom': '50px',
-  }
-
-  );
-
-  $(this).find("div.tile-title p.instancename").css( {
-    'font-family': '"Fredoka One"',
-      'color': '#4C5656',
-      'padding-right': '0px',
-      'margin': '0px',
-  }
-
-  );
+li.modtyle_url {
+  height: auto;
+  background-image: none;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+  margin-top: 2em;
+  margin-bottom: 50px;
 }
 
-);
+.tile-title p.instancename {
+  font-family: "Fredoka One";
+  color: #4C5656;
+  padding-right: 0px;
+  margin: 0px;
+}
 
 $(oldIcon).css( {
   'width': '30px',
