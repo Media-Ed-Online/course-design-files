@@ -11,7 +11,7 @@ $(document).ready(function(index) {
   var s = '123456789';
   for (var i = 0; i < s.length; i++) {
 
-    // URL ACTIVITIES
+    // MOVE TITLE
     $(this).find(URL).each(function(index) {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
@@ -24,18 +24,35 @@ $(document).ready(function(index) {
         // save the title, remove it, and add to new location
         oldTitle.remove();
         newTitle.append(oldTitle);
-
-        //-- 3. move module icons to new home
-        let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-        let newIcon = $(this).find(".snap-asset-content .contentafterlink div.tile-completion")
-        // save the icon, remove it, and add to new location
-        oldIcon.remove()
-        newIcon.append(oldIcon)
-        oldIcon.addClass('moved')
       };
     });
 
-    // BOOK ACTIVITIES
+    //-- MOVE ICONS
+    $(this).each(function() {
+      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
+        //-- 1. move first set of module icons to new home
+        var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+        var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
+        // find the first of each, add empty class to mark
+        let oldIcon_URL = $(URL).first().find(oldIcon).addClass("moved")
+        let oldIcon_BOOK = $(BOOK).first().addClass("moved").find(oldIcon)
+        let oldIcon_H5P = $(H5P).first().addClass("moved").find(oldIcon)
+        let newIconLocation = $(URL).first().addClass("moved").find(newIcon)
+        // save the icons, remove them, and add to new location
+        oldIcon_URL.add(oldIcon_BOOK).add(oldIcon_H5P).remove()
+        newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
+
+        //-- 2. move next set of module icons to new home, repeat until finished
+        $(this).each(function() {
+          let oldIcon_URL = $("li.modtype_url:not(.moved)").first().find(oldIcon).addClass("moved")
+          let oldIcon_BOOK = $("li.modtype_book:not(.moved)").first().addClass("moved").find(oldIcon)
+          let oldIcon_H5P = $("li.modtype_h5pactivity:not(.moved)").first().addClass("moved").find(oldIcon)
+          let newIconLocation = $("li.modtype_url:not(.moved)").first().addClass("moved").find(newIcon)
+          // relocated all moved-targeted items to new location
+          newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
+        });
+      };
+    });
   };
 });
