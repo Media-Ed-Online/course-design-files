@@ -31,6 +31,10 @@ $(document).ready(function(index) {
           oldIcon.remove()
           newIcon.append(oldIcon)
         });
+
+        $(BOOK).each(function(index) {
+
+        });
       };
     });
   };
