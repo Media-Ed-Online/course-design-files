@@ -9,8 +9,8 @@ $(document).ready(function(index) {
 
   // FIND ITEMS BASED ON CHARACTER SET
 
-  var h5pContains = $(this).find('li.modtype_h5pactivity p.instancename')
-  var bookContains = $(this).find('li.modtype_book p.instancename')
+  var h5pContains = $(this).find('li.modtype_h5pactivity a.mod-link')
+  var bookContains = $(this).find('li.modtype_book a.mod-link')
 
   if ($(bookContains).contents() === $(h5pContains).contents()) {
     console.log("Content is the same");
