@@ -18,7 +18,7 @@ $(document).ready(function(index) {
 
         //-- 2.1 move module title to new home
 
-        if ($(this).find(URL).first()) {
+        if ($(URL).first()) {
           // variables
           let oldTitle = $(this).find(".snap-asset-link")
           let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
