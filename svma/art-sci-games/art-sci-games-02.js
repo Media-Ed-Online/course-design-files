@@ -52,7 +52,7 @@ $(document).ready(function(index) {
         $(this).each(function(index) {
           if ($(this).find(BOOK).first().not('.moved')) {
             let oldIcon = $(this).first().find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").addClass('moved')
-            let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion:not('.moved')").first()
+            let newIcon = $(this).first().parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion:not('.moved')")
             // save the icon, remove it, and add to new location
             newIcon.append(oldIcon)
           } else {
