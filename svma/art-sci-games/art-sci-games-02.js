@@ -46,7 +46,6 @@ $(document).ready(function(index) {
         oldIcon.remove()
         newIcon.append(oldIcon)
         oldIcon.addClass('moved')
-        newIcon.addClass('moved')
 
         //-- 2. loop through modules and their icons
         $(this).each(function(index) {
