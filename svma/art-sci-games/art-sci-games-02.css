@@ -16,7 +16,7 @@ li.modtype_url .snap-resource-card li.snap-resource.modtype_url {
 }
 
 li.modtype_url {
-  height: auto;
+  height: auto !important;
   background-image: none;
   border: 1px solid #f1f1f1;
   border-radius: 10px;
