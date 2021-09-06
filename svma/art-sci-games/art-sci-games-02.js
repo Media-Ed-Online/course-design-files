@@ -52,10 +52,11 @@ $(document).ready(function(index) {
           } else {
             //-- 2. loop through modules and their icons
             $(this).find(BOOK).next() {
-              let oldIcon = $(this).first().not('moved').find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").addClass('moved')
-              let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion:not('.moved')").first()
+              let oldIcon = $(this).not('moved').find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img").addClass('moved')
+              let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion")
+
               // save the icon, remove it, and add to new location
-              newIcon.append(oldIcon)
+              newIcon.not('moved').append(oldIcon)
             };
           };
         });
