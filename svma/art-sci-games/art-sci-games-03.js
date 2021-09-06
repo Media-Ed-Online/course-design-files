@@ -15,6 +15,6 @@ $(document).ready(function(index) {
   if ($(h5pContains).text().trim() === $(bookContains).text().trim()) {
     console.log("Content is the same");
   } else {
-    $(this).parentsUntil('li').css("background","yellow")
+    console.log("Content is not the same");
   }
 });
