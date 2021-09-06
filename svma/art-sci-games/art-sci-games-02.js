@@ -32,7 +32,7 @@ $(document).ready(function(index) {
         oldIcon.remove()
         newIcon.append(oldIcon)
         oldIcon.addClass('moved')
-        newIcon.addClass('moved')
+        newIcon.first().addClass('moved')
       };
     });
 
