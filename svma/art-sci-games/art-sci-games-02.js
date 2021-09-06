@@ -10,6 +10,8 @@ $(document).ready(function(index) {
   // FIND ITEMS BASED ON CHARACTER SET
   var s = '123456789';
   for (var i = 0; i < s.length; i++) {
+
+    // URL ACTIVITIES
     $(this).find(URL).each(function(index) {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
@@ -31,11 +33,26 @@ $(document).ready(function(index) {
         newIcon.append(oldIcon)
       };
     });
-    $(this).find(BOOK).add(H5P).each(function(index) {
+
+    // BOOK ACTIVITIES
+    $(this).find(BOOK).each(function(index) {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
         //-- 1. move module icons to new home
-        let oldIcon = $(BOOK, H5P).first().find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+        let oldIcon = $(BOOK).first().find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+        let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").first()
+        // save the icon, remove it, and add to new location
+        oldIcon.remove()
+        newIcon.append(oldIcon)
+      };
+    });
+
+    // H5P ACTIVITIES
+    $(this).find(H5P).each(function(index) {
+      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+
+        //-- 1. move module icons to new home
+        let oldIcon = $(H5P).first().find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
         let newIcon = $(this).parentsUntil('li.section').find("li.modtype_url .snap-asset-content .contentafterlink div.tile-completion").first()
         // save the icon, remove it, and add to new location
         oldIcon.remove()
