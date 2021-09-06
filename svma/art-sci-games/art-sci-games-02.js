@@ -11,7 +11,7 @@ $(document).ready(function(index) {
   var s = '1,2,3,4,5,6,7,8,9,10';
   for (var i = 0; i < s.length; i++) {
     if ($(URL).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
-      $(this).first().ready(fuction(index) {
+      $(this).first() {
         //-- 1. remove url overflow covering
         $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
 
@@ -27,7 +27,7 @@ $(document).ready(function(index) {
         let newIconLocation = $(this).find(newIcon)
         oldIcon_URL.remove()
         newIconLocation.append(oldIcon_URL)
-      });
+      };
     };
   };
 });
