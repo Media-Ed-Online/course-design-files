@@ -48,8 +48,6 @@ $(document).ready(function(index) {
             oldIcon.remove()
             newIcon.append(oldIcon)
           } else {
-            //-- 2. move first module icons to new home
-            $(this).find(oldIcon).remove()
           };
         });
       };
