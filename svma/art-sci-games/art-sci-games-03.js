@@ -9,10 +9,10 @@ $(document).ready(function(index) {
 
   // FIND ITEMS BASED ON CHARACTER SET
 
-  var urlContains = $(this).find('li.modtype_url p.instancename')
+  var h5pContains = $(this).find('li.modtype_h5p p.instancename')
   var bookContains = $(this).find('li.modtype_book p.instancename')
 
-  if ($(urlContains).text().trim() === $(bookContains).text().trim()) {
+  if ($(h5pContains).text().trim() === $(bookContains).text().trim()) {
     console.log("Content is the same");
   } else {
     $(this).parentsUntil('li').css("background","yellow")
