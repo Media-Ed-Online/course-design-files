@@ -27,7 +27,7 @@ $(document).ready(function(index) {
 
         //-- 3. move module icons to new home
         let oldIcon = $(this).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-        let newIcon = $(this).find(".snap-asset-content .contentafterlink div.tile-completion")
+        let newIcon = $(this).find(".snap-asset-content .contentafterlink div.tile-completion").addClass('moved')
         // save the icon, remove it, and add to new location
         oldIcon.remove()
         newIcon.append(oldIcon)
@@ -38,10 +38,6 @@ $(document).ready(function(index) {
     $(this).find(BOOK).each(function(index) {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
-        //-- 1. move first module icons to new home
-
-
-        //-- 2. loop through modules and their icons
         $(this).each(function(index) {
           if ($(this).find(BOOK).not('.moved').first()) {
             let oldIcon = $(BOOK).find(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
