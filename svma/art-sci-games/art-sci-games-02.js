@@ -63,6 +63,7 @@ $(document).ready(function(index) {
           };
         });
 
+        //-- 4. Replace completion tracking icons
         $('img').each(function() {
           var curSrc = $(this).attr('src');
           // Progress Tracking: Incomplete
