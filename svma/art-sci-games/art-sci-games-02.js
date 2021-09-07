@@ -59,8 +59,8 @@ $(document).ready(function(index) {
         //-- 3. visually hide items from page (liked through URL)
         $(BOOK).add(H5P).each(function() {
           if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
-          $(this).hide();
-        };
+            $(this).hide();
+          };
         });
 
         $('img').each(function() {
