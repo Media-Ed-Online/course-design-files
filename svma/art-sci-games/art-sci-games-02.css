@@ -45,3 +45,10 @@ div.tile-completion img {
   height: 40px;
   font-size: 40px;
 }
+
+div.tile-completion img:first-of-type {
+  tranform: rotate(-5deg)
+}
+div.tile-completion img:last-of-type {
+  tranform: rotate(5deg)
+}
