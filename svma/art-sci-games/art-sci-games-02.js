@@ -1,7 +1,7 @@
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-$(window).ready(function(index) {
+$('li.section .state-visible').ready(function(index) {
   var URL = 'li.modtype_url'
   var BOOK = 'li.modtype_book'
   var H5P = 'li.modtype_h5pactivity'
@@ -87,29 +87,3 @@ $(window).ready(function(index) {
     });
   };
 });
-
-
-
-<!--Linked CSS and JS Overwrites-->
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        function loadjscssfile(filename, filetype) {
-            if (filetype == "js") {
-                var fileref = document.createElement('script')
-                fileref.setAttribute("type", "text/javascript")
-                fileref.setAttribute("src", filename)
-            } else if (filetype == "css") {
-                var fileref = document.createElement("link")
-                fileref.setAttribute("rel", "stylesheet")
-                fileref.setAttribute("type", "text/css")
-                fileref.setAttribute("href", filename)
-            }
-            if (typeof fileref != "undefined")
-                document.getElementsByTagName("head")[0].appendChild(fileref)
-        }
-
-        // Module JS
-        loadjscssfile("https://media-ed-online.github.io/course-design-files/svma/art-sci-games/art-sci-games-02.js", "js")
-    });
-</script>
