@@ -26,6 +26,9 @@ li.modtype_url {
   margin-bottom: 1em !important;
 }
 
+body.snap-resource-card .snap-resource-long .snap-asset-link a.mod-link p.instancename {
+  padding-right: 0;
+}
 div.tile-title p.instancename {
   font-family: "Fredoka One";
   font-size: 16px;
