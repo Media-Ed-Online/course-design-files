@@ -1,7 +1,7 @@
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-$('li.state-visible').ready(function(index) {
+$(this)[0].ready(function(index) {
   var URL = 'li.modtype_url'
   var BOOK = 'li.modtype_book'
   var H5P = 'li.modtype_h5pactivity'
