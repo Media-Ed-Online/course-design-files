@@ -14,13 +14,12 @@ li.modtyle_url .snap-assettype {
 body.snap-resource-card li.snap-resource.modtype_url {
   background-image: none !important;
   border-top: 0;
-  border: 1px solid #f1f1f1;
 }
 
 li.modtype_url {
   height: auto !important;
   background-image: none;
-  border: 1px solid #f1f1f1;
+  border: 2px solid #f1f1f1;
   border-radius: 10px;
   box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
   margin-top: 2em !important;
