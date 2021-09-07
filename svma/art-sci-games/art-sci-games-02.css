@@ -48,8 +48,10 @@ div.tile-completion img {
 }
 
 div.tile-completion img:first-of-type {
-  transform: rotate(-5deg)
+  transform: rotate(-15deg);
+  margin-top: 10px;
 }
 div.tile-completion img:last-of-type {
-  transform: rotate(5deg)
+  transform: rotate(15deg);
+  margin-top: 10px;
 }
