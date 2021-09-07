@@ -1,9 +1,9 @@
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-li.modtype_url .snap-asset-content .no-overflow,
+/*li.modtype_url .snap-asset-content .no-overflow,
 li.modtype_url .snap-header-card,
-li.modtype_url .snap-resource-card-fadeout /*
+li.modtype_url .snap-resource-card-fadeout {
   display: none;
 }*/
 
