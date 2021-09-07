@@ -1,7 +1,7 @@
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-$(this)[0].ready(function(index) {
+$(document).ready(function(index) {
   var URL = 'li.modtype_url'
   var BOOK = 'li.modtype_book'
   var H5P = 'li.modtype_h5pactivity'
@@ -11,7 +11,7 @@ $(this)[0].ready(function(index) {
   for (var i = 0; i < s.length; i++) {
 
     // MOVE TITLE
-    $(this).find(URL).each(function(index) {
+    $('li.section').children().find(URL).each(function(index) {
       if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
         //-- 1. remove url overflow mask + other covers
