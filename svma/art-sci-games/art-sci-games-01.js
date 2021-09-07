@@ -12,7 +12,7 @@
 /* ------------------
 | BACKGROUND         |
 ------------------ */
-$(document).ready(function() {
+/*$(document).ready(function() {
   // Draw Shapes
   var $backgroundShapes = $("<div class='bgShapes'><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>")
   $("#page").prepend($backgroundShapes);
@@ -24,7 +24,7 @@ $(document).ready(function() {
     console.log(bgShapesColorRand);
     $(this).css('background', bgShapesColorRand);
   });
-});
+});*/
 
 
 
