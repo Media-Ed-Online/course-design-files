@@ -1,7 +1,7 @@
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-$(document).ready(function(index) {
+$('ul.topics li > *').each(function(index) {
   var URL = 'li.modtype_url'
   var BOOK = 'li.modtype_book'
   var H5P = 'li.modtype_h5pactivity'
@@ -59,28 +59,8 @@ $(document).ready(function(index) {
         //-- 3. visually hide items from page (liked through URL)
         $(BOOK).add(H5P).each(function() {
           if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
-          $(this).hide();
-        };
-        });
-
-        $('img').each(function() {
-          var curSrc = $(this).attr('src');
-          // Progress Tracking: Incomplete
-          if (curSrc === 'https://moodle.umt.edu/theme/image.php/snap/core/1630655779/i/completion-auto-n') {
-            $(this).attr('src', 'https://media-ed-online.github.io/course-design-files/svma/art-sci-games/images/icon-incomplete.png');
-          }
-          // Progress Tracking: Complete
-          if (curSrc === 'https://moodle.umt.edu/theme/image.php/snap/core/1630655779/i/completion-auto-y') {
-            $(this).attr('src', 'https://media-ed-online.github.io/course-design-files/svma/art-sci-games/images/icon-complete-pass.png');
-          }
-          // Progress Tracking: Complete Alt
-          if (curSrc === 'https://moodle.umt.edu/theme/image.php/snap/core/1630655779/i/completion-auto-pass') {
-            $(this).attr('src', 'https://media-ed-online.github.io/course-design-files/svma/art-sci-games/images/icon-complete-pass.png');
-          }
-          // Progress Tracking: Incomplete
-          if (curSrc === 'https://moodle.umt.edu/theme/image.php/snap/core/1630655779/i/completion-auto-fail') {
-            $(this).attr('src', 'https://media-ed-online.github.io/course-design-files/svma/art-sci-games/images/icon-complete-fail.png');
-          }
+            $(this).hide();
+          };
         });
       };
     });
