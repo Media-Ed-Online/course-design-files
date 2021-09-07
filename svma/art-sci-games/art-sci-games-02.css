@@ -14,7 +14,7 @@ li.modtyle_url .snap-assettype {
 body.snap-resource-card li.snap-resource.modtype_url {
   background-image: none !important;
   border-top: 0;
-    border: 2px solid #f1f1f1;
+  border: 2px solid #f1f1f1;
   height: auto !important;
   background-image: none;
   border-radius: 10px;
@@ -29,7 +29,7 @@ body.snap-resource-card .snap-resource-long .snap-asset-link a.mod-link p.instan
 
 div.tile-title p.instancename {
   font-family: "Fredoka One";
-  font-size: 18px;
+  font-size: 20px;
   color: #4C5656;
   padding-right: 0px;
   margin: 0px;
