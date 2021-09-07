@@ -32,6 +32,7 @@ div.tile-title p.instancename {
   color: #4C5656;
   padding-right: 0px;
   margin: 0px;
+  padding-right: 0;
 }
 
 div.tile-title p.instancename::before,
