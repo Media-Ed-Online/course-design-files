@@ -11,9 +11,9 @@ li.modtyle_url .snap-assettype {
   height: 0px;
 }
 
-/*body.snap-resource-card li.snap-resource.modtype_url {
+body.snap-resource-card li.snap-resource.modtype_url {
   background-image: none !important;
-}*/
+}
 
 li.modtype_url {
   height: auto !important;
