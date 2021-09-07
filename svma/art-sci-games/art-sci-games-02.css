@@ -1,11 +1,11 @@
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-/*li.modtype_url .snap-asset-content .no-overflow,
+li.modtype_url .snap-asset-content .no-overflow,
 li.modtype_url .snap-header-card,
 li.modtype_url .snap-resource-card-fadeout {
   display: none;
-}*/
+}
 
 li.modtyle_url .snap-assettype {
   height: 0px;
@@ -13,6 +13,8 @@ li.modtyle_url .snap-assettype {
 
 body.snap-resource-card li.snap-resource.modtype_url {
   background-image: none !important;
+  border-top: 0;
+  border: 1px solid #f1f1f1;
 }
 
 li.modtype_url {
