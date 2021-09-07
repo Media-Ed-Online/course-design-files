@@ -23,7 +23,7 @@ li.modtype_url {
   border-radius: 10px;
   box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
   margin-top: 1em !important;
-  margin-bottom: 50px !important;
+  margin-bottom: 1em !important;
 }
 
 div.tile-title p.instancename {
