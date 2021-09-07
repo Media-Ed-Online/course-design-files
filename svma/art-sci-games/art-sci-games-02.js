@@ -60,8 +60,6 @@ $(document).ready(function(index) {
         $(BOOK).add(H5P).each(function() {
           $(this).hide();
         });
-
-
       };
     });
   };
