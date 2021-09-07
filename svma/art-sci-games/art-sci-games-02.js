@@ -61,26 +61,7 @@ $(document).ready(function(index) {
           $(this).hide();
         });
 
-        //-- 4. replace images
-        $(newIcon).find('img').each(function() {
-          var curSrc = $(this).attr('alt');
-          // Progress Tracking: Incomplete
-          if (curSrc === 'Not completed') {
-            $(this).attr('src', 'https://media-ed-online.github.io/course-design-files/svma/art-sci-games/images/icon-incomplete.png');
-          }
-          // Progress Tracking: Complete
-          if (curSrc === 'Completed') {
-            $(this).attr('src', 'https://media-ed-online.github.io/course-design-files/svma/art-sci-games/images/icon-complete-pass.png');
-          }
-          // Progress Tracking: Complete Alt
-          if (curSrc === 'https://moodle.umt.edu/theme/image.php/snap/core/1630655779/i/ompletion-auto-pass') {
-            $(this).attr('src', 'https://media-ed-online.github.io/course-design-files/svma/art-sci-games/images/icon-complete-pass.png');
-          }
-          // Progress Tracking: Incomplete
-          if (curSrc === 'https://moodle.umt.edu/theme/image.php/snap/core/1630655779/i/completion-auto-fail') {
-            $(this).attr('src', 'https://media-ed-online.github.io/course-design-files/svma/art-sci-games/images/icon-complete-fail.png');
-          }
-        });
+
       };
     });
   };
