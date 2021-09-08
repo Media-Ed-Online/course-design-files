@@ -56,7 +56,7 @@ $('ul.topics li > *').each(function(index) {
           newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
         });
 
-        //-- 3. visually hide items from page (liked through URL)
+        //-- 3. visually hide items from page (linked through URL)
         $(BOOK).add(H5P).each(function() {
           if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '"),p.instancename:contains("Boss")').length > 0) {
             $(this).hide();
