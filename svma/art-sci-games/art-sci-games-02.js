@@ -1,68 +1,74 @@
 /* ------------------
-| URL MODULE GROUP   | 
+| URL MODULE GROUP   |
 ------------------ */
-$('ul.topics li > *').each(function(index) {
-  var URL = 'li.modtype_url'
-  var BOOK = 'li.modtype_book'
-  var H5P = 'li.modtype_h5pactivity'
+jQuery(document).ready(checkContainer);
 
-  // FIND ITEMS BASED ON CHARACTER SET
-  var s = '123456789';
-  for (var i = 0; i < s.length; i++) {
+function checkContainer() {
+  if ($('ul.topics li').is(':visible'))) {
 
-    // MOVE TITLE
-    $(this).find(URL).each(function(index) {
-      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+  $('ul.topics li > *').each(function(index) {
+    var URL = 'li.modtype_url'
+    var BOOK = 'li.modtype_book'
+    var H5P = 'li.modtype_h5pactivity'
 
-        //-- 1. remove url overflow mask + other covers
-        $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
-        $(this).find(".snap-assettype").css("height", "0px");
-        $(this).find(".snap-header-card").css("display", "none");
-        $(this).find("p.snap-resource-card-fadeout").remove();
-        $(this).find("body.snap-resource-card li.snap-resource.modtype_url").css("background-image: none;");
+    // FIND ITEMS BASED ON CHARACTER SET
+    var s = '123456789';
+    for (var i = 0; i < s.length; i++) {
 
-        //-- 2. move module title to new home
-        let oldTitle = $(this).find(".snap-asset-link")
-        let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
-        // save the title, remove it, and add to new location
-        oldTitle.remove();
-        newTitle.append(oldTitle);
-      };
-    });
+      // MOVE TITLE
+      $(this).find(URL).each(function(index) {
+        if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
 
-    //-- MOVE ICONS
-    $(URL).each(function() {
-      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+          //-- 1. remove url overflow mask + other covers
+          $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
+          $(this).find(".snap-assettype").css("height", "0px");
+          $(this).find(".snap-header-card").css("display", "none");
+          $(this).find("p.snap-resource-card-fadeout").remove();
+          $(this).find("body.snap-resource-card li.snap-resource.modtype_url").css("background-image: none;");
 
-        //-- 1. move first set of module icons to new home
-        var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
-        var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
-        // find the first of each, add empty class to mark
-        let oldIcon_URL = $(this).first().find(oldIcon).addClass("moved")
-        let oldIcon_BOOK = $(this).parent().find(BOOK).first().addClass("moved").find(oldIcon)
-        let oldIcon_H5P = $(this).parent().find(H5P).first().addClass("moved").find(oldIcon)
-        let newIconLocation = $(this).first().addClass("moved").find(newIcon)
-        // save the icons, remove them, and add to new location
-        oldIcon_URL.add(oldIcon_BOOK).add(oldIcon_H5P).remove()
-        newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
+          //-- 2. move module title to new home
+          let oldTitle = $(this).find(".snap-asset-link")
+          let newTitle = $(this).find(".snap-asset-content .contentafterlink div.tile-title")
+          // save the title, remove it, and add to new location
+          oldTitle.remove();
+          newTitle.append(oldTitle);
+        };
+      });
 
-        //-- 2. move next set of module icons to new home, repeat until finished
-        $(this).each(function() {
-          let oldIcon_URL = $(this).parent().find("li.modtype_url:not(.moved)").first().find(oldIcon).addClass("moved")
-          let oldIcon_BOOK = $(this).parent().find("li.modtype_book:not(.moved)").first().addClass("moved").find(oldIcon)
-          let oldIcon_H5P = $(this).parent().find("li.modtype_h5pactivity:not(.moved)").first().addClass("moved").find(oldIcon)
-          let newIconLocation = $(this).parent().find("li.modtype_url:not(.moved)").first().addClass("moved").find(newIcon)
-          // relocated all moved-targeted items to new location
+      //-- MOVE ICONS
+      $(URL).each(function() {
+        if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+
+          //-- 1. move first set of module icons to new home
+          var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
+          var newIcon = ".snap-asset-content .contentafterlink div.tile-completion"
+          // find the first of each, add empty class to mark
+          let oldIcon_URL = $(this).first().find(oldIcon).addClass("moved")
+          let oldIcon_BOOK = $(this).parent().find(BOOK).first().addClass("moved").find(oldIcon)
+          let oldIcon_H5P = $(this).parent().find(H5P).first().addClass("moved").find(oldIcon)
+          let newIconLocation = $(this).first().addClass("moved").find(newIcon)
+          // save the icons, remove them, and add to new location
+          oldIcon_URL.add(oldIcon_BOOK).add(oldIcon_H5P).remove()
           newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
-        });
 
-        //-- 3. visually hide items from page (liked through URL)
-        $(BOOK).add(H5P).each(function() {
-          if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
-            $(this).hide();
-          };
-        });
-      };
-    });
-  };
-});
+          //-- 2. move next set of module icons to new home, repeat until finished
+          $(this).each(function() {
+            let oldIcon_URL = $(this).parent().find("li.modtype_url:not(.moved)").first().find(oldIcon).addClass("moved")
+            let oldIcon_BOOK = $(this).parent().find("li.modtype_book:not(.moved)").first().addClass("moved").find(oldIcon)
+            let oldIcon_H5P = $(this).parent().find("li.modtype_h5pactivity:not(.moved)").first().addClass("moved").find(oldIcon)
+            let newIconLocation = $(this).parent().find("li.modtype_url:not(.moved)").first().addClass("moved").find(newIcon)
+            // relocated all moved-targeted items to new location
+            newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
+          });
+
+          //-- 3. visually hide items from page (liked through URL)
+          $(BOOK).add(H5P).each(function() {
+            if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+              $(this).hide();
+            };
+          });
+        };
+      });
+    };
+  });
+}
