@@ -8,7 +8,7 @@ $('ul.topics li > *').each(function(index) {
 
   // FIND ITEMS BASED ON CHARACTER SET
   var s = '123456789';
-  var contentTitles = $(this).find('p.instancename:contains("Level ' + s.charAt(i) + '"), p.instancename:contains("Boss"),p.instancename:contains("Syllabus"),p.instancename:contains("Schedule"),p.instancename:contains("Contact")')
+  var contentTitles = $(this).find('p.instancename:contains("Level ' + s.charAt(i) + '"), p.instancename:contains("Boss")')
   for (var i = 0; i < s.length; i++) {
 
     // MOVE TITLE
