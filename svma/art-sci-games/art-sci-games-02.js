@@ -33,7 +33,7 @@ $('ul.topics li > *').each(function(index) {
 
     //-- MOVE ICONS
     $(URL).each(function() {
-      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+      if ($(this).find(contentTitles).length > 0) {
 
         //-- 1. move first set of module icons to new home
         var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
@@ -59,7 +59,7 @@ $('ul.topics li > *').each(function(index) {
 
         //-- 3. visually hide items from page (liked through URL)
         $(BOOK).add(H5P).each(function() {
-          if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+          if ($(this).find(contentTitles).length > 0) {
             $(this).hide();
           };
         });
