@@ -1,18 +1,18 @@
 /* ------------------
 | TABLE OF CONTENTS  |
 ------------------ */
-/*$("nav#course-toc h2").each(function() {
+$("nav#course-toc h2").each(function() {
   var text = $(this).text();
-  text = text.replace("Contents", "Levels");
+  text = text.replace("Contents", "Worlds");
   $(this).text(text);
-});*/
+});
 
 
 
 /* ------------------
 | BACKGROUND         |
 ------------------ */
-/*$(document).ready(function() {
+$(document).ready(function() {
   // Draw Shapes
   var $backgroundShapes = $("<div class='bgShapes'><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>")
   $("#page").prepend($backgroundShapes);
@@ -24,7 +24,7 @@
     console.log(bgShapesColorRand);
     $(this).css('background', bgShapesColorRand);
   });
-});*/
+});
 
 
 
