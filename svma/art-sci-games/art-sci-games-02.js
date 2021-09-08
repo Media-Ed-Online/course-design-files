@@ -8,11 +8,12 @@ $('ul.topics li > *').each(function(index) {
 
   // FIND ITEMS BASED ON CHARACTER SET
   var s = '123456789';
+  var contentTitles = 'p.instancename:contains("Level ' + s.charAt(i) + '"), p.instancename:contains("Boss")'
   for (var i = 0; i < s.length; i++) {
 
     // MOVE TITLE
     $(this).find(URL).each(function(index) {
-      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '")').length > 0) {
+      if ($(this).find(contentTitles).length > 0) {
 
         //-- 1. remove url overflow mask + other covers
         $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
