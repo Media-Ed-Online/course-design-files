@@ -12,7 +12,7 @@ $('ul.topics li > *').each(function(index) {
 
     // MOVE TITLE
     $(this).find(URL).each(function(index) {
-      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '"),p.instancename:contains("Boxx")').length > 0) {
+      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '"),p.instancename:contains("Boss")').length > 0) {
 
         //-- 1. remove url overflow mask + other covers
         $(this).find(".snap-asset-content .no-overflow").removeClass("no-overflow");
@@ -32,7 +32,7 @@ $('ul.topics li > *').each(function(index) {
 
     //-- MOVE ICONS
     $(URL).each(function() {
-      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '"),p.instancename:contains("Boxx")').length > 0) {
+      if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '"),p.instancename:contains("Boss")').length > 0) {
 
         //-- 1. move first set of module icons to new home
         var oldIcon = $(".snap-header-card .snap-header-card-icons .snap-asset-completion-tracking img")
@@ -58,7 +58,7 @@ $('ul.topics li > *').each(function(index) {
 
         //-- 3. visually hide items from page (liked through URL)
         $(BOOK).add(H5P).each(function() {
-          if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '"),p.instancename:contains("Boxx")').length > 0) {
+          if ($(this).find('p.instancename:contains("Level ' + s.charAt(i) + '"),p.instancename:contains("Boss")').length > 0) {
             $(this).hide();
           };
         });
