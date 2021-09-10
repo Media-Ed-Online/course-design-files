@@ -1,7 +1,9 @@
 /* ------------------
 | URL MODULE GROUP   |
 ------------------ */
-window.addEventListener("onhashchange", function() {
+$(window).hashchange(function() {
+  var hash = location.hash;
+
   $('ul.topics li').each(function(index) {
     var URL = 'li.modtype_url'
     var BOOK = 'li.modtype_book'
@@ -67,6 +69,7 @@ window.addEventListener("onhashchange", function() {
       });
     };
   });
+  $(window).hashchange();
 });
 
 
