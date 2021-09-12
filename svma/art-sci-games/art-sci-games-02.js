@@ -27,6 +27,8 @@ $('ul.topics li').each(function(index) {
         // save the title, remove it, and add to new location
         oldTitle.remove();
         newTitle.append(oldTitle);
+
+        // -- 3.
       };
     });
 
@@ -91,24 +93,4 @@ $('img').each(function() {
   if (curSrc === 'https://moodle.umt.edu/theme/image.php/snap/core/1630655779/i/completion-auto-fail') {
     $(this).attr('src', 'https://media-ed-online.github.io/course-design-files/svma/art-sci-games/images/icon-complete-fail.png');
   }
-});
-
-
-
-/* ------------------
-| CARD ANIMATION    |
------------------- */
-$('ul.topics li').each(function(index) {
-  $(this).find(URL).filter(":odd").each(function(index) {
-    $(this).css({
-      'transform': 'translateY(-5px) scale(1.005) translateZ(0) rotate(5deg)',
-      'box-shadow': '0 24px 36px rgba(0,0,0,0.11), 0 24px 46px rgba(255, 215, 97, 0.48)',
-    });
-  });
-  $(this).find(URL).filter(":even").each(function(index) {
-    $(this).css({
-      'transform': 'translateY(-5px) scale(1.005) translateZ(0) rotate(-5deg)',
-      'box-shadow': '0 24px 36px rgba(0,0,0,0.11), 0 24px 46px rgba(255, 215, 97, 0.48)',
-    });
-  });
 });
