@@ -64,7 +64,7 @@ div.tile-completion img:last-of-type {
 | URL MODULE STYLE   |
 ------------------- */
 .section li.snap-resource li.modtype_url.moved {
-  transition: all 0.2s ease-in-out !important;
+  transition: all 0.2s linear !important;
 }
 .section li.snap-resource li.modtype_url.moved:last-of-type {
   margin-bottom: 2em;
