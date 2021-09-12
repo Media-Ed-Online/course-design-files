@@ -1,5 +1,5 @@
 /* ------------------
-| TABLE OF CONTENTS  |
+| TABLE OF CONTENTS |
 ------------------ */
 $("nav#course-toc h2").each(function() {
   var text = $(this).text();
@@ -10,9 +10,13 @@ $("nav#course-toc h2").each(function() {
 
 
 /* ------------------
-| BACKGROUND         |
+| COLORS & BGs      |
 ------------------ */
-$(document).ready(function() {
+// random color input
+var colorPaletteOpts = ["#E94141", "#FC5A95", "#FFC80D", "#4CBD84", "#59D9D5", "#1A73D9"];
+var colorPaletteRand = colorPaletteOpts[Math.floor(Math.random() * bgShapesColorOpts.length)];
+
+/*$(document).ready(function() {
   // Draw Shapes
   var $backgroundShapes = $("<div class='bgShapes'><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>")
   $("#page").prepend($backgroundShapes);
@@ -24,7 +28,7 @@ $(document).ready(function() {
     console.log(bgShapesColorRand);
     $(this).css('background', bgShapesColorRand);
   });
-});
+});*/
 
 
 
