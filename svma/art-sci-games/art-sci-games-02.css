@@ -62,7 +62,7 @@ div.tile-completion img:last-of-type {
 | URL MODULE STYLE   |
 ------------------- */
 .section li.snap-resource li.modtype_url.moved {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out !important;
 }
 li.modtype_url.moved:nth-of-type(odd) > *:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0) rotate(5deg);
