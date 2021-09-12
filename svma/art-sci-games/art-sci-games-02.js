@@ -28,7 +28,11 @@ $('ul.topics li').each(function(index) {
         oldTitle.remove();
         newTitle.append(oldTitle);
 
-        // -- 3.
+        // -- 3. styling
+        $(this).css({
+            'transform': 'translateY(-5px) scale(1.005) translateZ(0) rotate(5deg)',
+            'box-shadow': '0 24px 36px rgba(0,0,0,0.11), 0 24px 46px rgba(255, 215, 97, 0.48)',
+        });
       };
     });
 
