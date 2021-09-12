@@ -66,6 +66,7 @@ div.tile-completion img:last-of-type {
 .section li.snap-resource li.modtype_url.moved {
   transition: all 0.2s linear !important;
 }
+
 .section li.snap-resource li.modtype_url.moved:last-of-type {
   margin-bottom: 2em;
 }
@@ -75,7 +76,11 @@ li.modtype_url.moved:nth-of-type(odd) > *:hover {
   box-shadow: 0 16px 24px rgba(0, 0, 0, 0.11), 0 16px 30px rgba(255, 215, 97, 0.5);
 }
 
-li.modtype_url.moved:nth-of-type(even):hover {
+li.modtype_url.moved:nth-of-type(even) > *:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0) rotate(-5deg);
   box-shadow: 0 16px 24px rgba(0, 0, 0, 0.11), 0 16px 30px rgba(255, 215, 97, 0.5);
+}
+
+li.modtype_url.moved:nth-of-type(odd) .overlay:hover, li.modtype_url.moved:nth-of-type(even) .overlay:hover {
+  transform: scale(4) translateZ(0);
 }
