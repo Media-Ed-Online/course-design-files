@@ -61,9 +61,8 @@ div.tile-completion img:last-of-type {
 /* ------------------
 | URL MODULE STYLE   |
 ------------------- */
-li.modtype_url.moved {
-  animation-duration: 0.5s !important;
-  transition-duration: 0.5s !important;
+.section li.snap-resource li.modtype_url.moved {
+  transition: all 0.3s ease-in-out;
 }
 li.modtype_url.moved:nth-of-type(odd):hover {
   transform: translateY(-5px) scale(1.005) translateZ(0) rotate(5deg);
@@ -72,5 +71,5 @@ li.modtype_url.moved:nth-of-type(odd):hover {
 
 li.modtype_url.moved:nth-of-type(even):hover {
   transform: translateY(-5px) scale(1.005) translateZ(0) rotate(-5deg);
-  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px rgba(255, 215, 97, 0.48);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.11), 0 16px 30px rgba(255, 215, 97, 0.5);
 }
