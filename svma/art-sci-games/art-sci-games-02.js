@@ -29,9 +29,11 @@ $('ul.topics li').each(function(index) {
         newTitle.append(oldTitle);
 
         // -- 3. styling
-        $(this).filter(":odd").css({
+        $(this).hover(function() {
+          $(this).filter(":odd").css({
             'transform': 'translateY(-5px) scale(1.005) translateZ(0) rotate(5deg)',
             'box-shadow': '0 24px 36px rgba(0,0,0,0.11), 0 24px 46px rgba(255, 215, 97, 0.48)',
+          });
         });
       };
     });
