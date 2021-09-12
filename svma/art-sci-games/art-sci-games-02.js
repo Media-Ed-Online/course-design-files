@@ -55,7 +55,7 @@ $('ul.topics li').each(function(index) {
           let oldIcon_BOOK = $(this).parent().find("li.modtype_book:not(.moved)").first().addClass("moved").find(oldIcon)
           let oldIcon_H5P = $(this).parent().find("li.modtype_h5pactivity:not(.moved)").first().addClass("moved").find(oldIcon)
           let newIconLocation = $(this).parent().find("li.modtype_url:not(.moved)").first().addClass("moved").find(newIcon)
-          // relocated all moved-targeted items to new location
+          // relocate all moved-targeted items to new location
           newIconLocation.append(oldIcon_URL).append(oldIcon_BOOK).append(oldIcon_H5P);
         });
 
