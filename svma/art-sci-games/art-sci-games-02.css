@@ -68,7 +68,7 @@ div.tile-completion img:last-of-type {
 }
 
 .section li.snap-resource li.modtype_url.moved:last-of-type {
-  margin-bottom: 2em;
+  margin-bottom: 2em !important;
 }
 
 li.modtype_url.moved:nth-of-type(odd) > *:hover {
