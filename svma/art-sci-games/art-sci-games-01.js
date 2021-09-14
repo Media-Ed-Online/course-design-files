@@ -6,7 +6,7 @@ $("nav#course-toc h2").each(function() {
   text = text.replace("Contents", "Worlds");
   $(this).text(text);
 });
-
+$("nav#course-toc h2 a.chapter-title + span.completionstatus").hide();
 
 
 /* ------------------
