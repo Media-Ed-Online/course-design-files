@@ -146,7 +146,6 @@ ul.topics li h2.sectionname {
   margin: 1em 0 2em 0;
   padding-top: 45px;
   border-radius: 20px;
-  background: pink;
 }
 
 .buy-box .row {
@@ -157,6 +156,7 @@ ul.topics li h2.sectionname {
 }
 
 .buy-box .col-md-6:first-of-type {
+  width: 300px;
   position: relative;
   background: #D7E7EC;
   padding: 0em 30px 30px 30px;
