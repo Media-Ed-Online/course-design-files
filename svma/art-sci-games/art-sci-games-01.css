@@ -4,14 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 #page-mast h1, #page-mast h1 a {
-    color: #34d2cc;
-    font-family: "Fredoka One", sans-serif;
+  color: #34d2cc;
+  font-family: "Fredoka One", sans-serif;
 }
+
 ul.topics li h2.sectionname {
   visibility: hidden;
 }
-
-
 
 /* ------------------
 | LAYOUT             |
@@ -19,8 +18,6 @@ ul.topics li h2.sectionname {
 #region-main {
   background: transparent;
 }
-
-
 
 /* ------------------
 | BACKGROUND        |
@@ -140,4 +137,158 @@ ul.topics li h2.sectionname {
     opacity: .1;
     border-radius: 50%;
   }
+}
+
+/* ------------------
+| GAME BUY BOX      |
+------------------ */
+.atto_bsgrid.buy-box {
+  margin: 1em 0 2em 0;
+  padding-top: 45px;
+  border-radius: 20px;
+}
+
+.buy-box .row {
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy-box .col-md-6:first-of-type {
+  position: relative;
+  background: #D7E7EC;
+  padding: 0em 30px 30px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.buy-box .col-md-6:first-of-type .store {
+  width: 120px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -30px auto 10px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 5px outset rgba(170, 131, 0, 0.5);
+  background: #ffc80d;
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 30px;
+  color: #453F3C;
+}
+
+.buy-box .col-md-6:first-of-type .store::before {
+  content: '';
+  position: absolute;
+  left: -35px;
+  top: 7px;
+  z-index: -1;
+  border-bottom: 50px solid rgb(170, 131, 0);
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0;
+  width: 180px;
+}
+
+.buy-box .col-md-6:first-of-type .store::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  opacity: .7;
+  z-index: 1;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  height: 12px;
+  width: 50px;
+  border-top-right-radius: 10px;
+}
+
+.buy-box .col-md-6:first-of-type .game-img {
+  width: 130px;
+  height: 130px;
+  margin: 20px 0;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.buy-box .col-md-6:first-of-type .title {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 25px;
+  color: #453F3C;
+  text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff;
+}
+
+.buy-box .col-md-6:first-of-type .subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #453F3C;
+}
+
+.buy-box .col-md-6:first-of-type a.purchase {
+  display: inline-block;
+  position: relative;
+  padding: 8px 25px;
+  cursor: pointer;
+  outline: none;
+  background-color: #4CBD84;
+  border: 2px solid #3C9769;
+  border-radius: 15px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 7px #aeaeae;
+}
+
+.buy-box .col-md-6:first-of-type a.purchase::after {
+  content: '';
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  opacity: .7;
+  z-index: 1;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  height: 10px;
+  width: 30px;
+  border-top-right-radius: 12px;
+}
+
+.buy-box .col-md-6:first-of-type a.purchase:hover {
+  background: #44AA76;
+}
+
+.buy-box .col-md-6:first-of-type a.purchase:active {
+  background: #44AA76;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.buy-box .col-md-6:first-of-type a.purchase img {
+  height: 25px;
+  margin-right: 10px;
+  vertical-align: text-top;
+}
+
+.buy-box .col-md-6:first-of-type ul {
+  margin: 10px;
+  padding: 0;
+  overflow-y: none;
+}
+
+.buy-box .col-md-6:first-of-type li {
+  display: inline;
+  color: #453F3C;
+  font-size: 25px;
 }
