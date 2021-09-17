@@ -142,13 +142,10 @@ ul.topics li h2.sectionname {
 /* ------------------
 | GAME BUY BOX      |
 ------------------ */
-.atto_bsgrid .buy-box {
-  margin: 1em 0 2em 0;
-  padding-top: 45px;
-  border-radius: 20px;
-}
+.atto_bsgrid .game-info {
+  margin: 45px 0;
 
-.atto_bsgrid .game-info {}
+}
 
 .game-info .row {
   min-height: 250px;
