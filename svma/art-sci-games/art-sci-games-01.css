@@ -148,96 +148,100 @@ ul.topics li h2.sectionname {
   border-radius: 20px;
 }
 
-.buy-box .row {
+.atto_bsgrid .game-info {}
+
+.game-info .row {
   min-height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.buy-box .col-md-6:first-of-type {
+.game-info .game-purchase {
   width: 300px;
   position: relative;
-  background: #D7E7EC;
-  padding: 0em 30px 30px 30px;
+  padding-bottom: 20px;
+  background: #F2F2F2;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
+  color: #453F3C;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.buy-box .col-md-6:first-of-type .store {
-  width: 120px;
+.game-purchase .store-sign {
+  width: 200px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: -30px auto 10px;
-  padding: 10px 15px;
+  top: -40px;
+  margin: auto;
+}
+
+.game-purchase .store-sign .store-name {
+  /*actual: 130pxW x 65pxH*/
+  /*previous: 100pxW x 35pxH*/
+  width: 130px;
+  height: 65px;
+  position: absolute;
+  top: 0px;
+  left: 35px;
+  padding: 10px;
+  margin: 0px;
   border-radius: 15px;
   border: 5px outset rgba(170, 131, 0, 0.5);
-  background: #ffc80d;
+  background: #FFC80D;
+  line-height: 35px;
   font-family: 'Fredoka One', sans-serif;
   font-size: 30px;
-  color: #453F3C;
 }
 
-.buy-box .col-md-6:first-of-type .store::before {
+.game-purchase .store-sign .store-name::after {
   content: '';
+  width: 50px;
+  height: 12px;
   position: absolute;
-  left: -35px;
-  top: 7px;
-  z-index: -1;
-  border-bottom: 50px solid rgb(170, 131, 0);
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  height: 0;
-  width: 180px;
-}
-
-.buy-box .col-md-6:first-of-type .store::after {
-  content: '';
-  position: absolute;
-  right: 0px;
   top: 0px;
+  right: 0px;
   opacity: .7;
   z-index: 1;
-  border-top: 3px solid white;
-  border-right: 3px solid white;
-  height: 12px;
-  width: 50px;
+  border-top: 3px solid #FFF;
+  border-right: 3px solid #FFF;
   border-top-right-radius: 10px;
 }
 
-.buy-box .col-md-6:first-of-type .game-img {
+.game-purchase .store-sign .store-sign svg {
+  postion: absolute;
+  top: 0;
+  left: 0;
+}
+
+.game-purchase .game-img {
   width: 130px;
   height: 130px;
-  margin: 20px 0;
-  border: 5px solid white;
+  border: 5px solid #FFF;
   border-radius: 50%;
+  margin-bottom: 20px;
 }
 
-.buy-box .col-md-6:first-of-type .title {
+.game-purchase .game-title {
+  margin-bottom: 2px;
   font-family: 'Fredoka One', sans-serif;
   font-size: 25px;
-  color: #453F3C;
-  text-shadow:
-    -2px -2px 0 #fff,
-    2px -2px 0 #fff,
-    -2px 2px 0 #fff,
-    2px 2px 0 #fff;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
 }
 
-.buy-box .col-md-6:first-of-type .subtitle {
+.game-purchase .game-subtitle {
+  margin: 0px;
   font-size: 12px;
   text-transform: uppercase;
-  color: #453F3C;
 }
 
-.buy-box .col-md-6:first-of-type a.purchase {
-  display: inline-block;
+.game-purchase a.game-cost {
+  width: 130px;
+  height: 50px;
   position: relative;
-  padding: 8px 25px;
-  cursor: pointer;
+  margin: 20px auto 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   outline: none;
   background-color: #4CBD84;
   border: 2px solid #3C9769;
@@ -248,48 +252,92 @@ ul.topics li h2.sectionname {
   text-decoration: none;
   font-family: 'Fredoka One', sans-serif;
   font-size: 20px;
-  color: #fff;
+  color: #FFF !important;
+  cursor: pointer;
   box-shadow: 0 7px #aeaeae;
 }
 
-.buy-box .col-md-6:first-of-type a.purchase::after {
+.game-purchase a.game-cost::after {
   content: '';
+  width: 70px;
+  height: 10px;
   position: absolute;
-  right: 1px;
   top: 1px;
+  right: 1px;
   opacity: .7;
   z-index: 1;
-  border-top: 2px solid white;
-  border-right: 2px solid white;
-  height: 10px;
-  width: 30px;
+  border-top: 2px solid #FFF;
+  border-right: 2px solid #FFF;
   border-top-right-radius: 12px;
 }
 
-.buy-box .col-md-6:first-of-type a.purchase:hover {
+.game-purchase a.game-cost:hover {
   background: #44AA76;
 }
 
-.buy-box .col-md-6:first-of-type a.purchase:active {
+.game-purchase a.game-cost:active {
   background: #44AA76;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-.buy-box .col-md-6:first-of-type a.purchase img {
-  height: 25px;
-  margin-right: 10px;
-  vertical-align: text-top;
+.game-purchase a.game-cost:visited {
+  color: #FFF !important;
 }
 
-.buy-box .col-md-6:first-of-type ul {
-  margin: 10px;
-  padding: 0;
-  overflow-y: none;
-}
-
-.buy-box .col-md-6:first-of-type li {
-  display: inline;
-  color: #453F3C;
+.game-purchase .game-list {
+  margin: 10px 0;
+  letter-spacing: 2px;
   font-size: 25px;
+}
+
+.game-purchase .game-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -45px;
+}
+
+.game-purchase .game-nav a.game-button {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  padding: 3px;
+  margin: 0 40px;
+  outline: none;
+  background-color: #FFC80D;
+  border: 2px solid #AA8300;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 5px #aeaeae;
+}
+
+.game-purchase .game-nav a.game-button::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  opacity: .7;
+  z-index: 1;
+  border-top: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+  border-top-right-radius: 50px;
+}
+
+.game-purchase .game-nav a.game-button:hover {
+  background: #D4A502;
+}
+
+.game-purchase .game-nav a.game-button:active {
+  background: #D4A502;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+.game-purchase .game-nav a.game-button:visited {
+  color: #FFF !important;
 }
