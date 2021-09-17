@@ -142,13 +142,9 @@ ul.topics li h2.sectionname {
 /* ------------------
 | GAME BUY BOX      |
 ------------------ */
-.atto_bsgrid .container-fluid .game-info {
-  margin: 0 0 50px 0 !important;
-
-}
-
 .game-info .row {
   min-height: 250px;
+  padding: 0 0 50px 0 !important;
   display: flex;
   justify-content: center;
   align-items: center;
