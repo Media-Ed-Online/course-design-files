@@ -36,7 +36,7 @@ mark {
 }
 
 .img-cap-text {
-  font-family: monospace;
+  padding: 1em !important;
   margin-left: 15px;
   border-radius: 20px;
   font-style: italic;
@@ -44,7 +44,7 @@ mark {
 }
 
 .img-cap-text::before {
-  content: '\f0d8';
+  content: '/f0d8';
   font-family: "Font Awesome";
   display: inline-block;
   font-style: normal;
