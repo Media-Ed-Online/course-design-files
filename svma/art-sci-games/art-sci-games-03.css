@@ -28,6 +28,10 @@ span#maincontent+h2 {
   border-radius: 20px;
 }
 
+.img-cap-cont::after {
+  clear: both;
+}
+
 .img-cap-pict {
   width: 100%;
   height: auto;
@@ -54,8 +58,4 @@ span#maincontent+h2 {
   margin-right: 10px;
   color: #E94141;
   font-size: 20px;
-}
-
-.img-cap-text::after {
-  clear: both;
 }
