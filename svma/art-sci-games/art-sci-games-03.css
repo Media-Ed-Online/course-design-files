@@ -1,0 +1,33 @@
+/* ------------------
+| MOODLE BOOKS       |
+------------------ */
+/* typography */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+#page-mast h1, #page-mast h1 a {
+  font-family: "Fredoka One", sans-serif;
+  color: #34d2cc;
+}
+
+span#maincontent+h2 {
+  font-family: "Fredoka One", sans-serif;
+}
+
+/* images */
+.img-cap-cont {
+  max-width: 300px;
+  background: #aeaeae;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+}
+.img-cap-pict {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.img-cap-text {
+  font-family: monospace;
+  margin-left: 15px;
+  font-style: italic;
+  font-size: 12px;
+}
