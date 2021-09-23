@@ -29,6 +29,8 @@ span#maincontent+h2 {
 }
 
 .img-cap-cont::after {
+  content: '';
+  display: table;
   clear: both;
 }
 
