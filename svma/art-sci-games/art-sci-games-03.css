@@ -55,3 +55,9 @@ span#maincontent+h2 {
   color: #E94141;
   font-size: 20px;
 }
+
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+}
