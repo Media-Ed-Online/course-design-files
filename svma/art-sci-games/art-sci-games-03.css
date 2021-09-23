@@ -36,6 +36,7 @@ span#maincontent+h2 {
 }
 
 .img-cap-text {
+  margin: 0px !important;
   padding: 1em !important;
   border-radius: 20px;
   font-style: italic;
@@ -53,4 +54,8 @@ span#maincontent+h2 {
   margin-right: 10px;
   color: #E94141;
   font-size: 20px;
+}
+
+.img-cap-text::after {
+  clear: both;
 }
