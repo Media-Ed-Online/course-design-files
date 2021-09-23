@@ -28,9 +28,7 @@ span#maincontent+h2 {
   border-radius: 20px;
 }
 
-.img-cap-cont::after {
-  content: '';
-  display: block;
+.img-cap-cont + * {
   clear: both;
 }
 
