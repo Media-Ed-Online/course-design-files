@@ -28,10 +28,6 @@ span#maincontent+h2 {
   border-radius: 20px;
 }
 
-.img-cap-cont + * {
-  clear: both;
-}
-
 .img-cap-pict {
   width: 100%;
   height: auto;
