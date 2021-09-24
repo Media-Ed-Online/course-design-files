@@ -62,3 +62,44 @@ mark {
   display: block;
   clear: both;
 }
+
+/* quotes */
+.quote-button {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  padding: 3px;
+  margin: 0 40px;
+  outline: none;
+  background-color: #FFC80D;
+  border: 2px solid #AA8300;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 5px #aeaeae;
+}
+
+.quote-button::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  opacity: .7;
+  z-index: 1;
+  border-top: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+  border-top-right-radius: 50px;
+}
+
+.quote-button:hover {
+  background: #D4A502;
+}
+
+.quote-button:active {
+  background: #D4A502;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
