@@ -25,6 +25,7 @@ mark {
 .img-cap-cont {
   max-width: 300px;
   float: right;
+  margin: 10px 0 10px 10px;
   background: #f2f2f2;
   border-radius: 20px;
 }
